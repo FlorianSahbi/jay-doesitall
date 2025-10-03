@@ -17,11 +17,13 @@ export default function HomeWhyMe({ data }: { data: any }) {
 
       <div className="relative z-10 flex h-full items-end justify-center">
         <div className="grid-layout w-full text-white">
-          <h2 className="text-title-2 lg:text-display-s col-span-full text-center">
-            {data.title}
-          </h2>
+          <div className="col-span-4 col-start-2 md:col-span-12 md:col-start-2">
+            <h2 className="text-title-2 lg:text-display-s col-span-full text-center">
+              {data.title}
+            </h2>
+          </div>
 
-          <div className="col-span-12 col-start-2">
+          <div className="col-span-4 col-start-2 md:col-span-12 md:col-start-2">
             <div className="mx-auto max-w-80 md:max-w-2xl lg:max-w-5xl">
               <div className="mt-8 mb-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
                 {data.items.map((item: any) => (
@@ -42,7 +44,7 @@ export default function HomeWhyMe({ data }: { data: any }) {
             </div>
           </div>
 
-          <div className="col-span-full text-center">
+          <div className="col-span-4 col-start-2 justify-self-center md:col-span-12 md:col-start-2">
             <button className="btn btn-yellow-fill btn-sm lg:btn-lg text-cta-s lg:text-cta-l">
               {data.ctaLabel}
             </button>
