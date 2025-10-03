@@ -1,8 +1,8 @@
 // @path: src/app/services/page.tsx
 
 import { loadPage } from '@/content/loader'
-import ServiceSquareCard from '@/components/shared/ServiceSquareCard'
 import StickyHeroSection from '@/components/shared/StickyHeroSection'
+import ServiceCard from '@/components/shared/ServiceCard'
 
 export default function ServicesPage() {
   const DATA = loadPage('services') as any
@@ -20,7 +20,7 @@ export default function ServicesPage() {
     >
       <div className="grid grid-cols-1 gap-4 gap-y-6 md:mt-16 md:grid-cols-2 lg:gap-8">
         {cards.map((c: any) => (
-          <ServiceSquareCard
+          <ServiceCard
             className="aspect-[311/420] lg:aspect-square"
             key={c.href}
             href={c.href}

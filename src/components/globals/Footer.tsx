@@ -1,6 +1,5 @@
 // @path: src/components/globals/Footer.tsx
 import Link from 'next/link'
-import navFR from '@/content/navigation.fr.json'
 import SocialBadge from '@/components/shared/SocialBadge'
 
 type NavItem = { label: string; href: string }
@@ -10,12 +9,17 @@ type SocialItem = {
   icon: 'instagram' | 'youtube' | 'tiktok'
 }
 
-export default function Footer() {
-  const menu = navFR.menu as NavItem[]
-  const socials = navFR.socials as SocialItem[]
-  const followLabel = navFR.followLabel as string
-  const copyright = navFR.copyright as string
-
+export default function Footer({
+  menu,
+  socials,
+  followLabel,
+  copyright,
+}: {
+  menu: NavItem[]
+  socials: SocialItem[]
+  followLabel: string
+  copyright: string
+}) {
   return (
     <footer className="grid-layout col-span-full bg-black">
       <div className="col-span-4 col-start-2 md:col-span-12 md:col-start-2 lg:mb-16 lg:flex lg:items-end lg:justify-between">

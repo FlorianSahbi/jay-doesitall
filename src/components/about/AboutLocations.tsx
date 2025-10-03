@@ -14,7 +14,7 @@ type LocationsData = {
 
 export default function AboutLocations({ data }: { data: LocationsData }) {
   return (
-    <section className="grid-layout col-span-full text-white">
+    <section className="grid-layout col-span-full bg-white text-white">
       <div className="col-span-6 col-start-1 bg-black p-20 px-8 py-12 md:col-span-12 md:col-start-2 md:rounded-4xl">
         <h3 className="text-title-2 md:text-title-1 mb-10 text-center">
           {data.wrapperTitle}

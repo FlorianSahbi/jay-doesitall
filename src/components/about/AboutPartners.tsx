@@ -43,7 +43,10 @@ export default function AboutPartners({ data }: { data: PartnersData }) {
   const yRight = useSpring(rightRaw, { stiffness: 120, damping: 20, mass: 0.2 })
 
   return (
-    <section ref={sectionRef} className="grid-layout col-span-full py-20">
+    <section
+      ref={sectionRef}
+      className="grid-layout col-span-full bg-white py-20"
+    >
       <div className="col-span-4 col-start-2 mb-6 md:col-span-12 md:col-start-2 lg:col-span-8 lg:col-start-4">
         <h3 className="text-title-1">{data.title}</h3>
       </div>

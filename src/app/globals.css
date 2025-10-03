@@ -13,3 +13,9 @@
 @import '../styles/utilities/ui.links.css';
 @import '../styles/utilities/ui.cards.css';
 @import '../styles/utilities/animations.css';
+
+html,
+body {
+  margin: 0;
+  background: var(--foreground);
+}

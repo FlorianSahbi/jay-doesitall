@@ -1,9 +1,10 @@
-// @path: src/app/(home)/layout.tsx
+// @path: src/app/layout.tsx
 import { Poppins, Mohave } from 'next/font/google'
 import './globals.css'
 import Footer from '@/components/globals/Footer'
 import Navigation from '@/components/globals/Navigation'
 import { Metadata } from 'next'
+import { loadGlobals } from '@/content/loader'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -53,14 +54,8 @@ export const metadata: Metadata = {
     shortcut: '/favicon-16x16.png',
     apple: '/apple-touch-icon.png',
     other: [
-      {
-        rel: 'android-chrome',
-        url: '/android-chrome-192x192.png',
-      },
-      {
-        rel: 'android-chrome',
-        url: '/android-chrome-512x512.png',
-      },
+      { rel: 'android-chrome', url: '/android-chrome-192x192.png' },
+      { rel: 'android-chrome', url: '/android-chrome-512x512.png' },
     ],
   },
 }
@@ -70,13 +65,22 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const globals = loadGlobals('fr')
+
+  const { menu, socials, followLabel, copyright } = globals
+
   return (
     <html lang="fr">
       <body className={`${poppins.variable} ${mohave.variable} antialiased`}>
         <div className="grid-layout min-h-screen">
-          {/* <Navigation /> */}
+          <Navigation menu={menu} />
           <main className="contents">{children}</main>
-          <Footer />
+          <Footer
+            menu={menu}
+            socials={socials}
+            followLabel={followLabel}
+            copyright={copyright}
+          />
         </div>
       </body>
     </html>

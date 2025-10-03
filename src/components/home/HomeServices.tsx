@@ -2,7 +2,7 @@
 'use client'
 
 import Link from 'next/link'
-import ServiceSquareCard from '@/components/shared/ServiceSquareCard'
+import ServiceCard from '../shared/ServiceCard'
 
 export default function HomeServices({ data }: { data: any }) {
   return (
@@ -16,7 +16,7 @@ export default function HomeServices({ data }: { data: any }) {
           <div className="grid grid-cols-1 gap-y-6 md:grid-cols-2 md:gap-8">
             {data.cards.map((c: any) => (
               <div key={c.href}>
-                <ServiceSquareCard
+                <ServiceCard
                   className="aspect-[311/420] md:aspect-[304/420] lg:aspect-[515/420]"
                   href={c.href}
                   title={c.title}

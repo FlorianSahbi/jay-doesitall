@@ -21,7 +21,7 @@ export default function AboutReasons({ data }: { data?: ReasonsData }) {
   const ctaLabel = data?.ctaLabel ?? 'DÉCOUVRIR MES PRESTATIONS'
 
   return (
-    <section className="grid-layout col-span-full py-20 lg:py-32">
+    <section className="grid-layout col-span-full bg-white py-20 lg:py-32">
       <div className="col-span-4 col-start-2 mb-6 md:col-span-12 md:col-start-2 lg:col-span-8 lg:col-start-4">
         <h3 className="text-title-2">{title}</h3>
       </div>

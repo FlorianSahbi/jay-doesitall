@@ -5,7 +5,6 @@ type Props = {
   title: string
   price: string
   features: string[]
-  /** ex: "COACHING", "PLAN"… facultatif */
   type?: string
   className?: string
 }

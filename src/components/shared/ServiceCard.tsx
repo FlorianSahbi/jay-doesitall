@@ -1,10 +1,10 @@
-// @path: src/components/shared/ServiceSquareCard.tsx
+// @path: src/components/shared/ServiceCard.tsx
 'use client'
 
 import Link from 'next/link'
 import Image from 'next/image'
 
-export default function ServiceSquareCard({
+export default function ServiceCard({
   href,
   title,
   cover,
@@ -29,7 +29,7 @@ export default function ServiceSquareCard({
         alt={title}
         fill
         sizes={sizes}
-        className="object-cover transition-transform duration-300 group-hover:scale-105"
+        className="object-cover transition-transform duration-1200 group-hover:scale-105"
       />
 
       <div className="absolute inset-0 flex flex-col items-center justify-end p-6 pb-10 lg:pb-12">

@@ -1,4 +1,4 @@
-// @path: src/components/layouts/StickyHeroSection.tsx
+// @path: src/components/shared/StickyHeroSection.tsx
 'use client'
 
 import Image from 'next/image'
