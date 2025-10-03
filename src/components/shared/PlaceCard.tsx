@@ -45,7 +45,7 @@ export default function PlaceCard({
               s.subtitle.href ? (
                 <a
                   href={s.subtitle.href}
-                  className="text-body-s-reg btn-link inline-block text-white"
+                  className="text-body-s-reg btn-link inline-block font-light text-white"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

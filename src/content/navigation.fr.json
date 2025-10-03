@@ -3,7 +3,6 @@
     { "label": "ACCUEIL", "href": "/" },
     { "label": "À PROPOS", "href": "/about" },
     { "label": "PRESTATIONS", "href": "/services" },
-    { "label": "PRESSE", "href": "/press" },
     { "label": "CONTACT", "href": "/contact" }
   ],
   "socials": [

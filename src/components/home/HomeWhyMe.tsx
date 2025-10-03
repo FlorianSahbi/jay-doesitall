@@ -21,19 +21,25 @@ export default function HomeWhyMe({ data }: { data: any }) {
             {data.title}
           </h2>
 
-          <div className="col-span-4 col-start-2 mt-8 mb-10 grid grid-cols-1 gap-6 md:col-span-12 md:col-start-2 md:grid-cols-2 lg:col-span-10 lg:col-start-3 lg:grid-cols-4">
-            {data.items.map((item: any) => (
-              <div
-                key={item.num}
-                className="aspect-[312/175] rounded-3xl bg-white p-6 md:aspect-[312/204] lg:aspect-square"
-              >
-                <div className="text-black">
-                  <span className="text-title-1 text-yellow">{item.num}</span>
-                  <h3 className="text-title-3 mt-4 mb-1">{item.title}</h3>
-                  <p className="text-body-s-reg">{item.desc}</p>
-                </div>
+          <div className="col-span-12 col-start-2">
+            <div className="mx-auto max-w-80 md:max-w-2xl lg:max-w-5xl">
+              <div className="mt-8 mb-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+                {data.items.map((item: any) => (
+                  <div
+                    key={item.num}
+                    className="aspect-[312/175] rounded-3xl bg-white p-6 md:aspect-[312/204] lg:aspect-square"
+                  >
+                    <div className="text-black">
+                      <span className="text-title-1 text-yellow">
+                        {item.num}
+                      </span>
+                      <h3 className="text-title-3 mt-4 mb-1">{item.title}</h3>
+                      <p className="text-body-s-reg">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
 
           <div className="col-span-full text-center">

@@ -17,20 +17,20 @@ export default function HomeTestimonials({ data }: { data: any }) {
         <Swiper
           modules={[Pagination]}
           pagination={{ clickable: true, el: '.testimonials-pagination' }}
-          className="my-8"
-          slidesPerView={1.1}
+          className="my-8 [--slide-w:280px] md:[--slide-w:340px] xl:[--slide-w:400px]"
+          slidesPerView="auto"
           spaceBetween={16}
           slidesOffsetBefore={24}
           slidesOffsetAfter={24}
+          watchOverflow
+          centerInsufficientSlides
           breakpoints={{
             768: {
-              slidesPerView: 2.1,
               spaceBetween: 16,
               slidesOffsetBefore: 64,
               slidesOffsetAfter: 64,
             },
             1440: {
-              slidesPerView: 3.1,
               spaceBetween: 32,
               slidesOffsetBefore: 80,
               slidesOffsetAfter: 80,
@@ -38,8 +38,8 @@ export default function HomeTestimonials({ data }: { data: any }) {
           }}
         >
           {data.items.map((item: any, i: number) => (
-            <SwiperSlide key={i}>
-              <div className="aspect-[327/209] rounded-3xl bg-white p-6 text-black md:aspect-[367/209]">
+            <SwiperSlide key={i} className="!w-auto">
+              <div className="aspect-[327/209] w-[var(--slide-w)] max-w-[85vw] flex-none rounded-3xl bg-white p-6 text-black md:aspect-[367/209]">
                 <p className="text-body-s-reg mb-6 text-center">{item.text}</p>
                 <p className="text-caption text-center">{item.author}</p>
               </div>
