@@ -1,0 +1,83 @@
+{
+  "slug": "coaching",
+  "title": "Coaching personnalisés",
+  "description": "Un accompagnement sur-mesure adapté à tes objectifs.",
+  "cover": "/seed/coaching_service_hero.png",
+  "plans": [
+    {
+      "type": "Coaching",
+      "title": "En ligne personnalisé",
+      "features": [
+        "1 appel visio mensuel",
+        "Hotline WhatsApp 24/7",
+        "Programme de running mensuel adapté à tes objectifs",
+        "Suivi hebdomadaire des progressions",
+        "Réadaptation du plan selon ton évolution et ton planning"
+      ],
+      "price": "109€/mois"
+    },
+    {
+      "type": "Coaching",
+      "title": "Hybrid personnalisé",
+      "features": [
+        "1 appel visio mensuel",
+        "Hotline WhatsApp 24/7",
+        "Programme de running mensuel + 2 à 3 séances de renforcement musculaire adaptées à tes objectifs",
+        "Suivi hebdomadaire des progressions",
+        "Réadaptation du plan selon ton évolution et ton planning"
+      ],
+      "price": "159€/mois"
+    },
+    {
+      "type": "Coaching",
+      "title": "Running",
+      "features": [
+        "Séance de course adaptée personnalisée et en relation avec vos objectifs",
+        "Accompagnement personnalisé pour atteindre les performances visées ",
+        "Pacing à l’allure cible pour progresser efficacement",
+        "Conseils clés pour optimiser la pratique et ta récupération"
+      ],
+      "price": "89€/heure"
+    }
+  ],
+  "meta": {
+    "title": "Coaching personnalisés — Jay Doesitall",
+    "description": "Un accompagnement sur-mesure adapté à tes objectifs, avec suivi précis et ajustements réguliers.",
+    "openGraph": {
+      "title": "Coaching personnalisés — Jay Doesitall",
+      "description": "Accompagnement sur-mesure, suivi précis, ajustements réguliers.",
+      "type": "product",
+      "locale": "fr_FR",
+      "images": [
+        {
+          "url": "/seed/coaching_service_hero.png",
+          "width": 1200,
+          "height": 630,
+          "alt": "Coaching personnalisés — Jay Doesitall"
+        }
+      ]
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Coaching personnalisés — Jay Doesitall",
+      "description": "Accompagnement sur-mesure, suivi précis, ajustements réguliers.",
+      "images": ["/seed/coaching_service_hero.png"]
+    }
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Coaching personnalisés",
+      "description": "Un accompagnement sur-mesure adapté à tes objectifs.",
+      "areaServed": "FR",
+      "provider": { "@type": "Person", "name": "Jay Doesitall" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Coaching — Jay Doesitall",
+      "url": "https://ton-domaine.fr/services/coaching"
+    }
+  ]
+}

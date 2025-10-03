@@ -1,0 +1,28 @@
+{
+  "menu": [
+    { "label": "ACCUEIL", "href": "/" },
+    { "label": "À PROPOS", "href": "/about" },
+    { "label": "PRESTATIONS", "href": "/services" },
+    { "label": "PRESSE", "href": "/press" },
+    { "label": "CONTACT", "href": "/contact" }
+  ],
+  "socials": [
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/jay_doesitall/",
+      "icon": "instagram"
+    },
+    {
+      "label": "YouTube",
+      "href": "https://youtube.com/@jaydoesitall",
+      "icon": "youtube"
+    },
+    {
+      "label": "TikTok",
+      "href": "https://tiktok.com/@jaydoesitall",
+      "icon": "tiktok"
+    }
+  ],
+  "followLabel": "SUIVEZ-MOI",
+  "copyright": "©Jay Doesitall 2025 – Tous droits réservés"
+}

@@ -1,0 +1,17 @@
+{
+  "lang": "fr",
+  "siteName": "Jay Doesitall",
+  "siteUrl": "https://jaydoesitall.com",
+  "navigation": [
+    { "label": "ACCUEIL", "href": "/" },
+    { "label": "À PROPOS", "href": "/about" },
+    { "label": "PRESTATIONS", "href": "/services" },
+    { "label": "PRESSE", "href": "#" },
+    { "label": "CONTACT", "href": "/contact" }
+  ],
+  "socials": [
+    { "platform": "instagram", "url": "https://instagram.com/jaydoesitall" },
+    { "platform": "youtube", "url": "https://youtube.com/@jaydoesitall" },
+    { "platform": "tiktok", "url": "https://tiktok.com/@jaydoesitall" }
+  ]
+}

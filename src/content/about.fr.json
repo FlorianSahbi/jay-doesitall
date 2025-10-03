@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "title": "À propos — Jay Doesitall",
+    "description": "Coach sportif & expert en running. Programmes personnalisés, progression durable et plaisir dans l’effort.",
+    "openGraph": {
+      "title": "À propos — Jay Doesitall",
+      "description": "Coach sportif & expert en running. Programmes personnalisés, progression durable et plaisir dans l’effort.",
+      "type": "website",
+      "locale": "fr_FR",
+      "images": [
+        {
+          "url": "/seed/about_hero.png",
+          "width": 1200,
+          "height": 630,
+          "alt": "Jay Doesitall"
+        }
+      ]
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "À propos — Jay Doesitall",
+      "description": "Coach sportif & expert en running. Programmes personnalisés, progression durable et plaisir dans l’effort.",
+      "images": ["/seed/about_hero.png"]
+    }
+  },
+
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "À propos — Jay Doesitall",
+      "description": "Coach sportif & expert en running.",
+      "url": "https://ton-domaine.fr/about"
+    }
+  ],
+
+  "hero": {
+    "cover": "/seed/about_hero.png",
+    "kicker": "À PROPOS",
+    "title": "COACH SPORTIF & EXPERT EN RUNNING",
+    "paragraphs": [
+      "Je m’appelle Jérémie Seck, aussi connu sous le nom de Jay Doesitall. Coach sportif diplômé, passionné de course à pied, de performance et de bien-être, j’aide les coureurs – du premier 5 km au marathon confirmé – à atteindre leurs objectifs et dépasser leurs limites.",
+      "Mon accompagnement repose sur trois piliers : progression durable, prévention des blessures et plaisir dans l’effort. C’est cette vision que j’intègre dans chacun de mes programmes, flexibles et adaptés à tous niveaux."
+    ],
+    "credo": {
+      "kicker": "MON CREDO",
+      "title": "“AVANCER AVEC EXIGENCES, ÉVOLUER AVEC PLAISIR”",
+      "text": "Sur mes réseaux (Instagram, TikTok et YouTube), je partage aussi conseils, expériences et inspiration pour transmettre une pratique du sport saine, exigeante et accessible à tous."
+    }
+  },
+
+  "reasons": {
+    "title": "POURQUOI SE FAIRE COACHER PAR MOI ?",
+    "items": [
+      "Avant d’être coach, je suis avant tout un passionné de sport et d’humain. J’aime rencontrer, échanger, me challenger, gagner et surtout transmettre.",
+      "Toujours actif en compétition (running, Hyrox, Spartan, etc.), je reste connecté à la réalité des sportifs que j’entraîne.",
+      "À plus de 40 ans, mon expérience me permet de montrer qu’on peut progresser à tout âge et de m’adapter à chaque profil, du débutant au confirmé.",
+      "Mon accompagnement ne se limite pas à tes performances sportives : je prends aussi en compte les contraintes personnelles, professionnelles et familiales, car elles font partie de la réalité de chacun.",
+      "Ensemble, nous construisons une feuille de route claire, motivante et adaptée, pour avancer avec confiance et résultats."
+    ],
+    "gallery": [
+      { "src": "/seed/about_1.png", "alt": "Course en montagne" },
+      { "src": "/seed/about_2.png", "alt": "Arrivée de course" },
+      { "src": "/seed/about_3.png", "alt": "Podium et médaille" },
+      { "src": "/seed/about_4.png", "alt": "Sprint sur piste" }
+    ],
+    "ctaLabel": "DÉCOUVRIR MES PRESTATIONS"
+  },
+
+  "locations": {
+    "wrapperTitle": "OÙ ME RETROUVER ?",
+    "places": [
+      {
+        "name": "LA MONTGOLFIÈRE",
+        "src": "/seed/about_place_1.png",
+        "sections": [
+          {
+            "title": "LA MONTGOLFIÈRE",
+            "subtitle": {
+              "text": "25 rue Yves Toudic, 75010 Paris",
+              "href": "https://maps.app.goo.gl/94etScnghbFJ5Sd18"
+            }
+          },
+          {
+            "title": "LA MONTGOLFIÈRE 18",
+            "subtitle": {
+              "text": "74 rue Joseph de Maistre, 75018 Paris",
+              "href": "https://maps.app.goo.gl/vz77YXxtN56FuerJ7"
+            }
+          }
+        ],
+        "siteUrl": "https://lamontgolfiereclub.com/"
+      },
+      {
+        "name": "CAPITAL 8",
+        "src": "/seed/about_place_2.png",
+        "sections": [
+          {
+            "title": "CAPITAL 8",
+            "subtitle": {
+              "text": "32 rue Monceau, 75008 Paris",
+              "href": "https://maps.app.goo.gl/Rp3R8g3m7EGsFUgB8"
+            }
+          }
+        ],
+        "siteUrl": "https://capital8.paris/"
+      },
+      {
+        "name": "ANNETTE K",
+        "src": "/seed/about_place_3.png",
+        "sections": [
+          {
+            "title": "ANNETTE K",
+            "subtitle": {
+              "text": "Port de Javel bas, 75015 Paris",
+              "href": "https://maps.app.goo.gl/w2KD1hv94QviZjKm9"
+            }
+          }
+        ],
+        "siteUrl": "https://www.annettek.fr/"
+      }
+    ]
+  },
+
+  "partners": {
+    "title": "MES PARTENAIRES",
+    "intro": "Exigeant sur la qualité et passionné par les produits bien conçus, je collabore depuis plusieurs années avec des marques qui partagent mes valeurs.",
+    "items": [
+      {
+        "imgSrc": "/seed/partners_1.png",
+        "alt": "Partenaire 1",
+        "description": "Je suis ambassadeur On depuis 4 ans et running coach pour la marque depuis 2 ans, convaincu par leur vision de la performance, leur design épuré et leur approche humaine."
+      },
+      {
+        "imgSrc": "/seed/partners_2.png",
+        "alt": "Partenaire 2",
+        "description": "Powerbar a été la première marque à me faire confiance, dès mes débuts, et me soutient depuis 5 ans dans ma nutrition sportive."
+      }
+    ]
+  }
+}

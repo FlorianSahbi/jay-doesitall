@@ -1,0 +1,67 @@
+// @path: src/components/home/HomeTestimonials.tsx
+'use client'
+
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/pagination'
+
+export default function HomeTestimonials({ data }: { data: any }) {
+  return (
+    <section className="bg-yellow grid-layout -5 col-span-full overflow-hidden py-10 lg:col-span-12 lg:col-start-2 lg:my-32 lg:rounded-2xl">
+      <h2 className="text-title-2 lg:text-display-s col-span-4 col-start-2 text-center md:col-span-full">
+        {data.title}
+      </h2>
+
+      <div className="col-span-full col-start-1">
+        <Swiper
+          modules={[Pagination]}
+          pagination={{ clickable: true, el: '.testimonials-pagination' }}
+          className="my-8"
+          slidesPerView={1.1}
+          spaceBetween={16}
+          slidesOffsetBefore={24}
+          slidesOffsetAfter={24}
+          breakpoints={{
+            768: {
+              slidesPerView: 2.1,
+              spaceBetween: 16,
+              slidesOffsetBefore: 64,
+              slidesOffsetAfter: 64,
+            },
+            1440: {
+              slidesPerView: 3.1,
+              spaceBetween: 32,
+              slidesOffsetBefore: 80,
+              slidesOffsetAfter: 80,
+            },
+          }}
+        >
+          {data.items.map((item: any, i: number) => (
+            <SwiperSlide key={i}>
+              <div className="aspect-[327/209] rounded-3xl bg-white p-6 text-black md:aspect-[367/209]">
+                <p className="text-body-s-reg mb-6 text-center">{item.text}</p>
+                <p className="text-caption text-center">{item.author}</p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+
+      <div
+        className="testimonials-pagination col-span-4 col-start-2 flex justify-center gap-2 md:col-span-full"
+        style={
+          {
+            '--swiper-pagination-bullet-size': '8px',
+            '--swiper-pagination-color': 'var(--color-black)',
+            '--swiper-pagination-bullet-inactive-color': 'var(--color-black)',
+            '--swiper-pagination-bullet-inactive-opacity': '0.2',
+            position: 'static',
+            display: 'flex',
+            justifyContent: 'center',
+          } as React.CSSProperties
+        }
+      />
+    </section>
+  )
+}

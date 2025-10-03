@@ -1,0 +1,5 @@
+@theme inline {
+  --font-sans: var(--font-poppins);
+  --font-heading: var(--font-mohave);
+  --font-display: var(--font-mohave);
+}

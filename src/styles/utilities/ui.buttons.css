@@ -1,0 +1,34 @@
+/* 🔘 Boutons */
+@utility btn {
+  @apply inline-flex cursor-pointer items-center justify-center font-sans font-bold transition select-none;
+}
+
+/* tailles */
+@utility btn-sm {
+  @apply text-caption rounded-[var(--radius-sm)] px-4 py-[14px];
+}
+@utility btn-lg {
+  @apply text-cta-l rounded-[var(--radius-md)] px-6 py-[18px];
+}
+
+/* fill */
+@utility btn-yellow-fill {
+  @apply bg-yellow text-black hover:opacity-90;
+}
+@utility btn-black-fill {
+  @apply bg-black text-white hover:opacity-90;
+}
+@utility btn-white-fill {
+  @apply bg-white text-black hover:opacity-90;
+}
+
+/* outline */
+@utility btn-yellow-outline {
+  @apply border-yellow text-yellow hover:bg-yellow border bg-transparent hover:text-black;
+}
+@utility btn-black-outline {
+  @apply border border-black bg-transparent text-black hover:bg-black hover:text-white;
+}
+@utility btn-white-outline {
+  @apply border border-white bg-transparent text-white hover:bg-white hover:text-black;
+}

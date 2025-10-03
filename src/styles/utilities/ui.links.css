@@ -1,0 +1,9 @@
+@utility btn-link {
+  @apply font-sans font-semibold underline underline-offset-4;
+}
+@utility link-black {
+  @apply font-sans font-semibold text-black underline underline-offset-4 hover:opacity-80;
+}
+@utility link-white {
+  @apply font-sans font-semibold text-white underline underline-offset-4 hover:opacity-80;
+}

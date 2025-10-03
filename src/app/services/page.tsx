@@ -1,0 +1,36 @@
+// @path: src/app/services/page.tsx
+
+import { loadPage } from '@/content/loader'
+import ServiceSquareCard from '@/components/shared/ServiceSquareCard'
+import StickyHeroSection from '@/components/shared/StickyHeroSection'
+
+export default function ServicesPage() {
+  const DATA = loadPage('services') as any
+
+  const { hero, kicker, title, intro, cards } = DATA
+
+  return (
+    <StickyHeroSection
+      cover={hero.cover}
+      alt={hero.alt}
+      overlay
+      kicker={kicker}
+      title={title}
+      intro={intro}
+    >
+      <div className="grid grid-cols-1 gap-4 gap-y-6 md:mt-16 md:grid-cols-2 lg:gap-8">
+        {cards.map((c: any) => (
+          <ServiceSquareCard
+            className="aspect-[311/420] lg:aspect-square"
+            key={c.href}
+            href={c.href}
+            title={c.title}
+            cover={c.cover}
+            sizes={c.sizes}
+            ctaLabel={c.ctaLabel}
+          />
+        ))}
+      </div>
+    </StickyHeroSection>
+  )
+}
