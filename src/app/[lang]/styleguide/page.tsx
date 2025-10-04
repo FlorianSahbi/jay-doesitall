@@ -1,4 +1,4 @@
-// @path: src/app/styleguide/page.tsx
+// @path: src/app/[lang]/styleguide/page.tsx
 export default function StyleguidePage() {
   return (
     <main className="space-y-10 p-10">

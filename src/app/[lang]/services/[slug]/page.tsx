@@ -1,12 +1,11 @@
 // @path: src/app/[lang]/services/[slug]/page.tsx
 import { notFound } from 'next/navigation'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import { getStaticParamsServices, loadService } from '@/content/loader'
 import ServicePlanCard from '@/components/shared/ServicePlanCard'
 import StickyHeroSection from '@/components/shared/StickyHeroSection'
 
 export async function generateStaticParams() {
-  // Génère toutes les combinaisons lang × slug
   const slugs = await getStaticParamsServices()
   const langs: Array<'fr' | 'en'> = ['fr', 'en']
   return langs.flatMap((lang) => slugs.map(({ slug }) => ({ lang, slug })))
@@ -15,14 +14,15 @@ export async function generateStaticParams() {
 export default async function ServiceSlugPage({
   params,
 }: {
-  params: Promise<{ lang: 'fr' | 'en'; slug: string }>
+  params: Promise<{ lang: string; slug: string }>
 }) {
-  const { lang, slug } = await params
+  const { lang: rawLang, slug } = await params
+  const lang = (rawLang === 'en' ? 'en' : 'fr') as 'fr' | 'en'
+
   const data = (await loadService(slug, lang)) as any
   if (!data) return notFound()
   const { service } = data
 
-  // Kicker minimal bilingue (si tu veux éviter le hardcode)
   const kicker = lang === 'fr' ? 'PRESTATIONS' : 'SERVICES'
 
   return (
@@ -48,13 +48,13 @@ export default async function ServiceSlugPage({
 
       <div className="mt-10 flex flex-col items-center gap-6 text-center">
         <Link
-          href={`/${lang}/contact`}
+          href="/contact"
           className="btn btn-sm lg:btn-lg text-cta-s lg:text-cta-l btn-yellow-fill"
         >
           {lang === 'fr' ? 'Réserver un coaching !' : 'Book coaching!'}
         </Link>
 
-        <Link href={`/${lang}/services`} className="link-black text-cta-l">
+        <Link href="/services" className="link-black text-cta-l">
           {lang === 'fr' ? 'Retour aux prestations' : 'Back to services'}
         </Link>
       </div>

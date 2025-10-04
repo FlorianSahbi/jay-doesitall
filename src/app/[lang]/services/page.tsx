@@ -4,10 +4,13 @@ import StickyHeroSection from '@/components/shared/StickyHeroSection'
 import ServiceCard from '@/components/shared/ServiceCard'
 
 export default async function ServicesPage({
-  params: { lang },
+  params,
 }: {
-  params: { lang: 'fr' | 'en' }
+  params: Promise<{ lang: string }>
 }) {
+  const { lang: rawLang } = await params
+  const lang = (rawLang === 'en' ? 'en' : 'fr') as 'fr' | 'en'
+
   const DATA = (await loadPage('services', lang)) as any
   const { hero, kicker, title, intro, cards } = DATA
 
@@ -25,7 +28,7 @@ export default async function ServicesPage({
           <ServiceCard
             className="aspect-[311/420] lg:aspect-square"
             key={c.href}
-            href={`/${lang}${c.href}`}
+            href={c.href}
             title={c.title}
             cover={c.cover}
             sizes={c.sizes}

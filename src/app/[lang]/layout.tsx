@@ -5,7 +5,8 @@ import Footer from '@/components/globals/Footer'
 import Navigation from '@/components/globals/Navigation'
 import type { Metadata } from 'next'
 import { loadGlobals } from '@/content/loader'
-import { Suspense } from 'react'
+import { NextIntlClientProvider } from 'next-intl'
+import React from 'react'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -20,37 +21,40 @@ const mohave = Mohave({
 
 export const metadata: Metadata = {
   title: 'Jay Doesitall - Coaching sportif & Préparation mentale',
-  description:
-    'Jay Doesitall vous accompagne dans votre transformation physique et mentale grâce à des programmes de coaching sportif et de préparation mentale personnalisés.',
+  description: 'Jay Doesitall vous accompagne…',
 }
 
 export async function generateStaticParams() {
   return [{ lang: 'fr' }, { lang: 'en' }]
 }
 
-export default async function RootLayout(props: LayoutProps<'/[lang]'>) {
-  const { lang } = await props.params
-  const locale = (lang === 'en' ? 'en' : 'fr') as 'fr' | 'en'
+export default async function RootLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode
+  params: Promise<{ lang: string }>
+}) {
+  const { lang: rawLang } = await params
+  const lang = (rawLang === 'en' ? 'en' : 'fr') as 'fr' | 'en'
 
-  const { menu, socials, followLabel, copyright } = await loadGlobals(locale)
+  const { menu, socials, followLabel, copyright } = await loadGlobals(lang)
 
   return (
-    <html lang={locale}>
+    <html lang={lang}>
       <body className={`${poppins.variable} ${mohave.variable} antialiased`}>
-        <div className="grid-layout min-h-screen">
-          <Suspense fallback={null}>
+        <NextIntlClientProvider locale={lang}>
+          <div className="grid-layout min-h-screen">
             <Navigation menu={menu} hideOnScroll={false} />
-          </Suspense>
-
-          <main className="contents">{props.children}</main>
-
-          <Footer
-            menu={menu}
-            socials={socials}
-            followLabel={followLabel}
-            copyright={copyright}
-          />
-        </div>
+            <main className="contents">{children}</main>
+            <Footer
+              menu={menu}
+              socials={socials}
+              followLabel={followLabel}
+              copyright={copyright}
+            />
+          </div>
+        </NextIntlClientProvider>
       </body>
     </html>
   )

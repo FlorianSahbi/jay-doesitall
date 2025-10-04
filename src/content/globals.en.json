@@ -1,17 +1,27 @@
 {
-  "lang": "en",
-  "siteName": "Jay Doesitall",
-  "siteUrl": "https://jaydoesitall.com",
-  "navigation": [
+  "menu": [
     { "label": "HOME", "href": "/" },
     { "label": "ABOUT", "href": "/about" },
     { "label": "SERVICES", "href": "/services" },
-    { "label": "PRESS", "href": "#" },
     { "label": "CONTACT", "href": "/contact" }
   ],
   "socials": [
-    { "platform": "instagram", "url": "https://instagram.com/jaydoesitall" },
-    { "platform": "youtube", "url": "https://youtube.com/@jaydoesitall" },
-    { "platform": "tiktok", "url": "https://tiktok.com/@jaydoesitall" }
-  ]
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/jay_doesitall/",
+      "icon": "instagram"
+    },
+    {
+      "label": "YouTube",
+      "href": "https://youtube.com/@jaydoesitall",
+      "icon": "youtube"
+    },
+    {
+      "label": "TikTok",
+      "href": "https://tiktok.com/@jaydoesitall",
+      "icon": "tiktok"
+    }
+  ],
+  "followLabel": "FOLLOW ME",
+  "copyright": "©Jay Doesitall 2025 – All rights reserved"
 }

@@ -1,33 +1,10 @@
 // @path: src/content/loader.ts
 import 'server-only'
 import type { Metadata } from 'next'
-
-export type Locale = 'fr' | 'en'
-const DEFAULT_LOCALE: Locale = 'fr'
+import type { Locale } from '@/i18n/locales'
+import { DEFAULT_LOCALE } from '@/i18n/locales'
 
 const toArray = (v?: any | any[]) => (Array.isArray(v) ? v : v ? [v] : [])
-
-type NavItem = { label: string; href: string }
-type SocialItem = {
-  label: string
-  href: string
-  icon: 'instagram' | 'youtube' | 'tiktok'
-}
-type Globals = {
-  menu: NavItem[]
-  socials: SocialItem[]
-  followLabel: string
-  copyright: string
-}
-
-function withLocalePrefix(locale: Locale, nav: Globals): Globals {
-  const menu = nav.menu.map((it) => {
-    if (!it.href?.startsWith('/')) return it
-    const href = it.href === '/' ? `/${locale}` : `/${locale}${it.href}`
-    return { ...it, href }
-  })
-  return { ...nav, menu }
-}
 
 async function importContent<T = any>(id: string, locale: Locale): Promise<T> {
   try {
@@ -39,39 +16,8 @@ async function importContent<T = any>(id: string, locale: Locale): Promise<T> {
 
 export async function loadGlobals(
   locale: Locale = DEFAULT_LOCALE,
-): Promise<Globals> {
-  try {
-    const nav = await importContent<Globals>('navigation', locale)
-    return withLocalePrefix(locale, nav)
-  } catch {
-    const g = await importContent<any>('globals', locale)
-    const fallbackFollow = locale === 'fr' ? 'SUIVEZ-MOI' : 'FOLLOW ME'
-    const year = new Date().getFullYear()
-    const fallbackCopy =
-      locale === 'fr'
-        ? `©${g?.siteName ?? 'Site'} ${year} – Tous droits réservés`
-        : `©${g?.siteName ?? 'Site'} ${year} – All rights reserved`
-
-    const menu: NavItem[] = (g?.navigation ?? []).map((n: any) => ({
-      label: n.label,
-      href: n.href,
-    }))
-
-    const socials: SocialItem[] = (g?.socials ?? []).map((s: any) => ({
-      label:
-        (s.platform ?? '').charAt(0).toUpperCase() +
-        (s.platform ?? '').slice(1),
-      href: s.url,
-      icon: s.platform,
-    }))
-
-    return withLocalePrefix(locale, {
-      menu,
-      socials,
-      followLabel: g?.followLabel ?? fallbackFollow,
-      copyright: g?.copyright ?? fallbackCopy,
-    })
-  }
+): Promise<any> {
+  return importContent<any>('globals', locale) // ⬅️ plus de prefix ici
 }
 
 export async function loadPage<T = any>(

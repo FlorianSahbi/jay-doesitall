@@ -3,10 +3,13 @@ import StickyHeroSection from '@/components/shared/StickyHeroSection'
 import { loadPage } from '@/content/loader'
 
 export default async function ContactPage({
-  params: { lang },
+  params,
 }: {
-  params: { lang: 'fr' | 'en' }
+  params: Promise<{ lang: string }>
 }) {
+  const { lang: rawLang } = await params
+  const lang = (rawLang === 'en' ? 'en' : 'fr') as 'fr' | 'en'
+
   const data = (await loadPage('contact', lang)) as any
   const { hero, kicker, title, intro, cta } = data
 

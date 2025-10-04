@@ -63,6 +63,7 @@ export default function PlaceCard({
           className="text-caption text-yellow inline-block"
           target="_blank"
           rel="noopener noreferrer"
+          // eslint-disable-next-line i18next/no-literal-string
         >
           SITE INTERNET
         </a>

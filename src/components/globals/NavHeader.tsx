@@ -1,7 +1,7 @@
 // @path: src/components/globals/NavHeader.tsx
 'use client'
 
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import LangSwitcher from './LangSwitcher'
 
 export default function NavHeader({
@@ -27,12 +27,13 @@ export default function NavHeader({
           <Link
             href="/"
             className="font-heading text-title-3 md:text-title-2 relative top-0.5 tracking-[0.08em] text-white uppercase"
+            // eslint-disable-next-line i18next/no-literal-string
           >
             JAY DOESITALL
           </Link>
 
           <div className="flex items-center gap-4">
-            <LangSwitcher appearance="pill" />
+            <LangSwitcher />
 
             {showMenuButton && (
               <button

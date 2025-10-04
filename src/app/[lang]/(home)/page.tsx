@@ -6,10 +6,13 @@ import HomeTestimonials from '@/components/home/HomeTestimonials'
 import HomeWhyMe from '@/components/home/HomeWhyMe'
 
 export default async function HomePage({
-  params: { lang },
+  params,
 }: {
-  params: { lang: 'fr' | 'en' }
+  params: Promise<{ lang: string }>
 }) {
+  const { lang: rawLang } = await params
+  const lang = (rawLang === 'en' ? 'en' : 'fr') as 'fr' | 'en'
+
   const DATA = (await loadPage('home', lang)) as any
   const { hero, services, testimonials, whyMe } = DATA
 

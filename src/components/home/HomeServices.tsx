@@ -1,7 +1,7 @@
 // @path: src/components/home/HomeServices.tsx
 'use client'
 
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import ServiceCard from '../shared/ServiceCard'
 
 export default function HomeServices({ data }: { data: any }) {

@@ -1,5 +1,5 @@
 // @path: src/components/globals/Footer.tsx
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import SocialBadge from '@/components/shared/SocialBadge'
 
 type NavItem = { label: string; href: string }
