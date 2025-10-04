@@ -32,9 +32,11 @@ const itemVariants: Variants = {
 
 export default function NavOverlay({
   menu,
+  closeLabel,
   onClose,
 }: {
   menu: NavItem[]
+  closeLabel: string
   onClose: () => void
 }) {
   const pathname = usePathname()
@@ -79,9 +81,9 @@ export default function NavOverlay({
         <div className="pointer-events-auto relative z-[2] flex h-full w-full items-center justify-center">
           <button
             onClick={onClose}
-            className="btn btn-sm text-cta-s lg:text-cta-l btn-black-fill pointer-events-auto fixed top-6 right-6 z-[10000]"
+            className="btn btn-sm text-cta-s lg:text-cta-l btn-black-fill pointer-events-auto fixed top-6 right-16 z-[10000]"
           >
-            FERMER
+            {closeLabel}
           </button>
 
           <nav aria-label="Navigation principale">

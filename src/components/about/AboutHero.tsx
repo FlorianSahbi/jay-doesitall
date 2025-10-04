@@ -37,6 +37,7 @@ export default function AboutHero({ data }: { data?: HeroData }) {
       if (!el) return
       const rect = el.getBoundingClientRect()
       const fadeDist = Math.max(1, window.innerHeight * 0.18)
+      // rect.top passe de 0 (en haut) à négatif quand on scrolle
       const progress = Math.min(Math.max(-rect.top / fadeDist, 0), 1)
       setImgOpacity(1 - progress)
     }
@@ -50,6 +51,7 @@ export default function AboutHero({ data }: { data?: HeroData }) {
       ref={sectionRef}
       className="grid-layout col-span-full bg-black text-white"
     >
+      {/* IMAGE HERO : ~90% viewport en desktop, un peu moins en mobile */}
       {cover ? (
         <div
           className="pointer-events-none relative sticky top-0 z-0 col-span-full transition-opacity duration-500"

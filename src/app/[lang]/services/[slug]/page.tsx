@@ -23,14 +23,12 @@ export default async function ServiceSlugPage({
   if (!data) return notFound()
   const { service } = data
 
-  const kicker = lang === 'fr' ? 'PRESTATIONS' : 'SERVICES'
-
   return (
     <StickyHeroSection
       cover={service.cover}
       alt={service.title}
       overlay
-      kicker={kicker}
+      kicker={service.kicker}
       title={service.title.toUpperCase()}
       intro={service.description}
     >

@@ -38,14 +38,28 @@ export default async function RootLayout({
   const { lang: rawLang } = await params
   const lang = (rawLang === 'en' ? 'en' : 'fr') as 'fr' | 'en'
 
-  const { menu, socials, followLabel, copyright } = await loadGlobals(lang)
+  const {
+    menu,
+    socials,
+    followLabel,
+    copyright,
+    openLabel,
+    closeLabel,
+    brand,
+  } = await loadGlobals(lang)
 
   return (
     <html lang={lang}>
       <body className={`${poppins.variable} ${mohave.variable} antialiased`}>
         <NextIntlClientProvider locale={lang}>
           <div className="grid-layout min-h-screen">
-            <Navigation menu={menu} hideOnScroll={false} />
+            <Navigation
+              menu={menu}
+              openLabel={openLabel}
+              closeLabel={closeLabel}
+              brand={brand}
+              hideOnScroll={false}
+            />
             <main className="contents">{children}</main>
             <Footer
               menu={menu}

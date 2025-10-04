@@ -7,10 +7,14 @@ import LangSwitcher from './LangSwitcher'
 export default function NavHeader({
   onOpen,
   showMenuButton,
+  openLabel,
+  brand,
   hidden,
 }: {
   onOpen: () => void
   showMenuButton: boolean
+  openLabel: string
+  brand: string
   hidden: boolean
   onHoldHeader?: () => void
 }) {
@@ -27,9 +31,8 @@ export default function NavHeader({
           <Link
             href="/"
             className="font-heading text-title-3 md:text-title-2 relative top-0.5 tracking-[0.08em] text-white uppercase"
-            // eslint-disable-next-line i18next/no-literal-string
           >
-            JAY DOESITALL
+            {brand}
           </Link>
 
           <div className="flex items-center gap-4">
@@ -44,7 +47,7 @@ export default function NavHeader({
                 onClick={onOpen}
                 className="btn btn-sm text-cta-s lg:text-cta-l btn-black-fill"
               >
-                MENU
+                {openLabel}
               </button>
             )}
           </div>

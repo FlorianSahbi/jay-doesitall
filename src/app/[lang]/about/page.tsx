@@ -4,6 +4,7 @@ import AboutHero from '@/components/about/AboutHero'
 import AboutLocations from '@/components/about/AboutLocations'
 import AboutPartners from '@/components/about/AboutPartners'
 import AboutReasons from '@/components/about/AboutReasons'
+import { PAGES } from '@/content/ids'
 
 export default async function AboutPage({
   params,
@@ -13,7 +14,7 @@ export default async function AboutPage({
   const { lang: rawLang } = await params
   const lang = (rawLang === 'en' ? 'en' : 'fr') as 'fr' | 'en'
 
-  const DATA = (await loadPage('about', lang)) as any
+  const DATA = (await loadPage(PAGES.ABOUT, lang)) as any
   const { hero, reasons, locations, partners } = DATA
 
   return (

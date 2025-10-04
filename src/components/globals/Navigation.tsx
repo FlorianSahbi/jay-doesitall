@@ -10,9 +10,15 @@ import { useScroll, useMotionValueEvent } from 'framer-motion'
 
 export default function Navigation({
   menu,
+  openLabel,
+  closeLabel,
+  brand,
   hideOnScroll = true,
 }: {
   menu: NavItem[]
+  openLabel: string
+  closeLabel: string
+  brand: string
   hideOnScroll?: boolean
 }) {
   const pathname = usePathname()
@@ -49,12 +55,18 @@ export default function Navigation({
     <div>
       <NavHeader
         onOpen={() => setOpen(true)}
+        brand={brand}
+        openLabel={openLabel}
         showMenuButton={!open}
         hidden={hidden}
       />
       {open && (
         <OverlayContainer>
-          <NavOverlay menu={menu} onClose={() => setOpen(false)} />
+          <NavOverlay
+            menu={menu}
+            closeLabel={closeLabel}
+            onClose={() => setOpen(false)}
+          />
         </OverlayContainer>
       )}
     </div>

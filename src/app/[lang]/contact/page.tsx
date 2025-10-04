@@ -1,5 +1,6 @@
 // @path: src/app/[lang]/contact/page.tsx
 import StickyHeroSection from '@/components/shared/StickyHeroSection'
+import { PAGES } from '@/content/ids'
 import { loadPage } from '@/content/loader'
 
 export default async function ContactPage({
@@ -10,7 +11,7 @@ export default async function ContactPage({
   const { lang: rawLang } = await params
   const lang = (rawLang === 'en' ? 'en' : 'fr') as 'fr' | 'en'
 
-  const data = (await loadPage('contact', lang)) as any
+  const data = (await loadPage(PAGES.CONTACT, lang)) as any
   const { hero, kicker, title, intro, cta } = data
 
   return (

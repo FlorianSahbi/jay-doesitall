@@ -2,6 +2,7 @@
 import { loadPage } from '@/content/loader'
 import StickyHeroSection from '@/components/shared/StickyHeroSection'
 import ServiceCard from '@/components/shared/ServiceCard'
+import { PAGES } from '@/content/ids'
 
 export default async function ServicesPage({
   params,
@@ -11,7 +12,7 @@ export default async function ServicesPage({
   const { lang: rawLang } = await params
   const lang = (rawLang === 'en' ? 'en' : 'fr') as 'fr' | 'en'
 
-  const DATA = (await loadPage('services', lang)) as any
+  const DATA = (await loadPage(PAGES.SERVICES, lang)) as any
   const { hero, kicker, title, intro, cards } = DATA
 
   return (
