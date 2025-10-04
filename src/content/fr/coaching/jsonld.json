@@ -1,0 +1,91 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://jaydoesitall.com/fr/services/coaching#webpage",
+    "url": "https://jaydoesitall.com/fr/services/coaching",
+    "name": "Coaching personnalisés — Jay Doesitall",
+    "inLanguage": "fr-FR",
+    "isPartOf": { "@id": "https://jaydoesitall.com/#website" },
+    "breadcrumb": {
+      "@id": "https://jaydoesitall.com/fr/services/coaching#breadcrumbs"
+    },
+    "mainEntity": { "@id": "https://jaydoesitall.com/#service-coaching" }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://jaydoesitall.com/#service-coaching",
+    "serviceType": "Coaching personnalisés",
+    "provider": { "@id": "https://jaydoesitall.com/#person" },
+    "areaServed": ["FR", "En ligne"],
+    "description": "Un accompagnement sur-mesure adapté à tes objectifs.",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Formules de coaching",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "name": "En ligne personnalisé",
+          "price": "109",
+          "priceCurrency": "EUR",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": 109,
+            "priceCurrency": "EUR",
+            "unitText": "par mois"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Hybrid personnalisé",
+          "price": "159",
+          "priceCurrency": "EUR",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": 159,
+            "priceCurrency": "EUR",
+            "unitText": "par mois"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Running (séance 1h)",
+          "price": "89",
+          "priceCurrency": "EUR",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": 89,
+            "priceCurrency": "EUR",
+            "unitText": "par heure"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://jaydoesitall.com/fr/services/coaching#breadcrumbs",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://jaydoesitall.com/fr"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Prestations",
+        "item": "https://jaydoesitall.com/fr/services"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Coaching personnalisés",
+        "item": "https://jaydoesitall.com/fr/services/coaching"
+      }
+    ]
+  }
+]

@@ -1,39 +1,4 @@
 {
-  "meta": {
-    "title": "À propos — Jay Doesitall",
-    "description": "Coach sportif & expert en running. Programmes personnalisés, progression durable et plaisir dans l’effort.",
-    "openGraph": {
-      "title": "À propos — Jay Doesitall",
-      "description": "Coach sportif & expert en running. Programmes personnalisés, progression durable et plaisir dans l’effort.",
-      "type": "website",
-      "locale": "fr_FR",
-      "images": [
-        {
-          "url": "/seed/about_hero.png",
-          "width": 1200,
-          "height": 630,
-          "alt": "Jay Doesitall"
-        }
-      ]
-    },
-    "twitter": {
-      "card": "summary_large_image",
-      "title": "À propos — Jay Doesitall",
-      "description": "Coach sportif & expert en running. Programmes personnalisés, progression durable et plaisir dans l’effort.",
-      "images": ["/seed/about_hero.png"]
-    }
-  },
-
-  "jsonLd": [
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "À propos — Jay Doesitall",
-      "description": "Coach sportif & expert en running.",
-      "url": "https://ton-domaine.fr/about"
-    }
-  ],
-
   "hero": {
     "cover": "/seed/about_hero.png",
     "kicker": "À PROPOS",
@@ -48,7 +13,6 @@
       "text": "Sur mes réseaux (Instagram, TikTok et YouTube), je partage aussi conseils, expériences et inspiration pour transmettre une pratique du sport saine, exigeante et accessible à tous."
     }
   },
-
   "reasons": {
     "title": "POURQUOI SE FAIRE COACHER PAR MOI ?",
     "items": [
@@ -74,7 +38,6 @@
     ],
     "ctaLabel": "DÉCOUVRIR MES PRESTATIONS"
   },
-
   "locations": {
     "wrapperTitle": "OÙ ME RETROUVER ?",
     "places": [
@@ -129,7 +92,6 @@
       }
     ]
   },
-
   "partners": {
     "title": "MES PARTENAIRES",
     "intro": "Exigeant sur la qualité et passionné par les produits bien conçus, je collabore depuis plusieurs années avec des marques qui partagent mes valeurs.",

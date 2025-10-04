@@ -40,45 +40,5 @@
       ],
       "price": "89€/heure"
     }
-  ],
-  "meta": {
-    "title": "Coaching personnalisés — Jay Doesitall",
-    "description": "Un accompagnement sur-mesure adapté à tes objectifs, avec suivi précis et ajustements réguliers.",
-    "openGraph": {
-      "title": "Coaching personnalisés — Jay Doesitall",
-      "description": "Accompagnement sur-mesure, suivi précis, ajustements réguliers.",
-      "type": "product",
-      "locale": "fr_FR",
-      "images": [
-        {
-          "url": "/seed/coaching_service_hero.png",
-          "width": 1200,
-          "height": 630,
-          "alt": "Coaching personnalisés — Jay Doesitall"
-        }
-      ]
-    },
-    "twitter": {
-      "card": "summary_large_image",
-      "title": "Coaching personnalisés — Jay Doesitall",
-      "description": "Accompagnement sur-mesure, suivi précis, ajustements réguliers.",
-      "images": ["/seed/coaching_service_hero.png"]
-    }
-  },
-  "jsonLd": [
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Coaching personnalisés",
-      "description": "Un accompagnement sur-mesure adapté à tes objectifs.",
-      "areaServed": "FR",
-      "provider": { "@type": "Person", "name": "Jay Doesitall" }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Coaching — Jay Doesitall",
-      "url": "https://ton-domaine.fr/services/coaching"
-    }
   ]
 }

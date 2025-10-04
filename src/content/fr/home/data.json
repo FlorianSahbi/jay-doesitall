@@ -1,64 +1,4 @@
 {
-  "meta": {
-    "title": "Jay Doesitall - Coach Sportif",
-    "description": "Site officiel de Jay Doesitall",
-    "alternates": {
-      "canonical": "https://jaydoesitall.com/"
-    },
-    "openGraph": {
-      "title": "Jay Doesitall - Coach Sportif",
-      "description": "Coach sportif et expert en running. Programmes personnalisés.",
-      "type": "website",
-      "siteName": "jaydoesitall.com",
-      "locale": "fr_FR",
-      "url": "https://jaydoesitall.com/",
-      "images": [
-        {
-          "url": "https://jaydoesitall.com/seed/home_hero_og.png",
-          "width": 1200,
-          "height": 630,
-          "alt": "Jay Doesitall"
-        }
-      ]
-    },
-    "twitter": {
-      "card": "summary_large_image",
-      "title": "Jay Doesitall - Coach Sportif",
-      "description": "Programmes personnalisés, prévention des blessures et performance.",
-      "images": ["https://jaydoesitall.com/seed/home_hero_og.png"]
-    }
-  },
-
-  "jsonLd": [
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Jérémie Seck",
-      "alternateName": "Jay Doesitall",
-      "url": "https://jaydoesitall.com/fr",
-      "image": "https://jaydoesitall.com/seed/jay_profile.jpg",
-      "jobTitle": "Coach sportif & expert running",
-      "worksFor": { "@type": "Organization", "name": "jaydoesitall.com" },
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Paris",
-        "addressCountry": "FR"
-      },
-      "sameAs": [
-        "https://www.instagram.com/jay_doesitall/",
-        "https://youtube.com/@jaydoesitall",
-        "https://tiktok.com/@jaydoesitall"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "url": "https://jaydoesitall.com/",
-      "name": "Jay Doesitall - Coach Sportif",
-      "description": "Site officiel de Jay Doesitall"
-    }
-  ],
-
   "hero": {
     "backgroundImage": "/seed/home_hero.png",
     "imageAlt": "Hero background",
@@ -71,7 +11,6 @@
       "ctaLabel": "EN SAVOIR PLUS SUR MOI"
     }
   },
-
   "services": {
     "title": "MES PRESTATIONS",
     "ctaLabel": "Voir le programme",
@@ -93,7 +32,6 @@
       }
     ]
   },
-
   "testimonials": {
     "title": "ILS M'ONT FAIT CONFIANCE",
     "items": [
@@ -115,7 +53,6 @@
       }
     ]
   },
-
   "whyMe": {
     "title": "POURQUOI ME FAIRE CONFIANCE ?",
     "backgroundImage": "/seed/why_me_cover.png",

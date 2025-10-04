@@ -1,0 +1,7 @@
+{
+  "hero": { "cover": "/seed/contact_hero.png" },
+  "kicker": "CONTACT",
+  "title": "GOT A SPECIFIC REQUEST?",
+  "intro": "Contact me directly at hello@jaydoesitall.com or fill out the form below.",
+  "cta": { "label": "FILL OUT THE FORM", "href": "https://www.typeform.com/fr" }
+}

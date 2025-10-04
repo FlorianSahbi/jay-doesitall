@@ -1,0 +1,45 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://jaydoesitall.com/#person",
+    "name": "Jérémie Seck",
+    "alternateName": "Jay Doesitall",
+    "url": "https://jaydoesitall.com/en",
+    "image": "https://jaydoesitall.com/seed/jay_profile.jpg",
+    "jobTitle": "Personal trainer & running coach",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "jaydoesitall.com",
+      "url": "https://jaydoesitall.com"
+    },
+    "sameAs": [
+      "https://www.instagram.com/jay_doesitall",
+      "https://www.tiktok.com/@jayallthewayup",
+      "https://www.linkedin.com/in/jeremiseck823807116"
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://jaydoesitall.com/en#webpage",
+    "url": "https://jaydoesitall.com/en",
+    "name": "Jay Doesitall - Personal Trainer",
+    "description": "Official website of Jay Doesitall",
+    "isPartOf": {
+      "@type": "WebSite",
+      "@id": "https://jaydoesitall.com/#website"
+    },
+    "inLanguage": "en-GB",
+    "about": { "@id": "https://jaydoesitall.com/#person" }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://jaydoesitall.com/#website",
+    "url": "https://jaydoesitall.com/",
+    "name": "Jay Doesitall",
+    "inLanguage": "en-GB",
+    "publisher": { "@id": "https://jaydoesitall.com/#person" }
+  }
+]

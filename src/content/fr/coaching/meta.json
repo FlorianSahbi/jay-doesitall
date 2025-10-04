@@ -1,0 +1,41 @@
+{
+  "title": "Coaching personnalisés — En ligne & Hybrid",
+  "description": "Coaching 1:1 selon tes objectifs. En ligne 109€/mois, Hybrid 159€/mois, séance running 89€/h. Paris & en ligne.",
+  "alternates": {
+    "canonical": "https://jaydoesitall.com/fr/services/coaching",
+    "languages": {
+      "fr": "https://jaydoesitall.com/fr/services/coaching",
+      "en": "https://jaydoesitall.com/en/services/coaching"
+    }
+  },
+  "keywords": [
+    "coaching personnalisé",
+    "coaching en ligne",
+    "coaching hybrid",
+    "séance running Paris",
+    "renforcement musculaire",
+    "suivi sportif"
+  ],
+  "openGraph": {
+    "title": "Coaching personnalisés — Jay Doesitall",
+    "description": "Formules sur-mesure : en ligne 109€/mois, hybrid 159€/mois, séance running 89€/h.",
+    "type": "product",
+    "locale": "fr_FR",
+    "url": "https://jaydoesitall.com/fr/services/coaching",
+    "images": [
+      {
+        "url": "https://jaydoesitall.com/seed/coaching_service_hero.png",
+        "width": 1200,
+        "height": 630,
+        "alt": "Coaching personnalisés — Jay Doesitall"
+      }
+    ]
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Coaching personnalisés — Jay Doesitall",
+    "description": "Suivi précis, ajustements réguliers. Paris & en ligne.",
+    "images": ["https://jaydoesitall.com/seed/coaching_service_hero.png"]
+  },
+  "robots": { "index": true, "follow": true, "max-image-preview": "large" }
+}

@@ -1,0 +1,41 @@
+{
+  "title": "Prestations — Coaching & Plans Running",
+  "description": "Découvre mes prestations : coaching personnalisé et plans de course 3 mois. Structure, prévention des blessures, objectifs clairs.",
+  "alternates": {
+    "canonical": "https://jaydoesitall.com/fr/services",
+    "languages": {
+      "fr": "https://jaydoesitall.com/fr/services",
+      "en": "https://jaydoesitall.com/en/services"
+    }
+  },
+  "keywords": [
+    "prestations coaching",
+    "plans d’entraînement running",
+    "coaching en ligne",
+    "renforcement musculaire",
+    "préparation marathon",
+    "prépa Hyrox"
+  ],
+  "openGraph": {
+    "title": "Prestations — Jay Doesitall",
+    "description": "Des programmes adaptés à vous : coaching et plans running.",
+    "type": "website",
+    "locale": "fr_FR",
+    "url": "https://jaydoesitall.com/fr/services",
+    "images": [
+      {
+        "url": "https://jaydoesitall.com/seed/services_hero.png",
+        "width": 1200,
+        "height": 630,
+        "alt": "Prestations — Jay Doesitall"
+      }
+    ]
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Prestations — Jay Doesitall",
+    "description": "Coaching personnalisé & plans running.",
+    "images": ["https://jaydoesitall.com/seed/services_hero.png"]
+  },
+  "robots": { "index": true, "follow": true, "max-image-preview": "large" }
+}

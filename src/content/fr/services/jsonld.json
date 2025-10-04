@@ -1,0 +1,50 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://jaydoesitall.com/fr/services#webpage",
+    "url": "https://jaydoesitall.com/fr/services",
+    "name": "Prestations — Jay Doesitall",
+    "description": "Des programmes adaptés à vous.",
+    "inLanguage": "fr-FR",
+    "isPartOf": { "@id": "https://jaydoesitall.com/#website" },
+    "about": { "@id": "https://jaydoesitall.com/#person" },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Coaching personnalisés",
+          "url": "https://jaydoesitall.com/fr/services/coaching"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Plans d’entraînement",
+          "url": "https://jaydoesitall.com/fr/services/running"
+        }
+      ]
+    },
+    "breadcrumb": { "@id": "https://jaydoesitall.com/fr/services#breadcrumbs" }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://jaydoesitall.com/fr/services#breadcrumbs",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://jaydoesitall.com/fr"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Prestations",
+        "item": "https://jaydoesitall.com/fr/services"
+      }
+    ]
+  }
+]

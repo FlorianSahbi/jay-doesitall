@@ -1,0 +1,50 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://jaydoesitall.com/en/services#webpage",
+    "url": "https://jaydoesitall.com/en/services",
+    "name": "Services — Jay Doesitall",
+    "description": "Programs tailored to you.",
+    "inLanguage": "en-GB",
+    "isPartOf": { "@id": "https://jaydoesitall.com/#website" },
+    "about": { "@id": "https://jaydoesitall.com/#person" },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Personalized Coaching",
+          "url": "https://jaydoesitall.com/en/services/coaching"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Training plans",
+          "url": "https://jaydoesitall.com/en/services/running"
+        }
+      ]
+    },
+    "breadcrumb": { "@id": "https://jaydoesitall.com/en/services#breadcrumbs" }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://jaydoesitall.com/en/services#breadcrumbs",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://jaydoesitall.com/en"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://jaydoesitall.com/en/services"
+      }
+    ]
+  }
+]

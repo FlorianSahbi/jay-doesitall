@@ -1,0 +1,32 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "@id": "https://jaydoesitall.com/en/contact#webpage",
+    "url": "https://jaydoesitall.com/en/contact",
+    "name": "Contact — Jay Doesitall",
+    "description": "Got a specific request? Contact me.",
+    "inLanguage": "en-GB",
+    "isPartOf": { "@id": "https://jaydoesitall.com/#website" },
+    "breadcrumb": { "@id": "https://jaydoesitall.com/en/contact#breadcrumbs" }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://jaydoesitall.com/en/contact#breadcrumbs",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://jaydoesitall.com/en"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Contact",
+        "item": "https://jaydoesitall.com/en/contact"
+      }
+    ]
+  }
+]

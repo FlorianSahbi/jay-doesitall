@@ -1,0 +1,52 @@
+{
+  "title": "Jay Doesitall – Coach Sportif & Running",
+  "description": "Coaching sportif et running à Paris & en ligne. Programmes personnalisés, prévention des blessures, progression durable.",
+  "alternates": {
+    "canonical": "https://jaydoesitall.com/",
+    "languages": {
+      "fr": "https://jaydoesitall.com/",
+      "en": "https://jaydoesitall.com/en"
+    }
+  },
+  "keywords": [
+    "coach sportif Paris",
+    "coach running",
+    "coaching en ligne",
+    "plan marathon",
+    "plan 10 km semi",
+    "renforcement musculaire",
+    "prévention des blessures",
+    "préparation physique",
+    "Hyrox",
+    "fitness"
+  ],
+  "openGraph": {
+    "title": "Jay Doesitall – Coach Sportif & Running",
+    "description": "Programmes personnalisés pour la performance et le bien-être.",
+    "type": "website",
+    "siteName": "jaydoesitall.com",
+    "locale": "fr_FR",
+    "url": "https://jaydoesitall.com/",
+    "images": [
+      {
+        "url": "https://jaydoesitall.com/seed/home_hero_og.png",
+        "width": 1200,
+        "height": 630,
+        "alt": "Jay Doesitall"
+      }
+    ]
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Jay Doesitall – Coach Sportif & Running",
+    "description": "Des programmes sur-mesure pour progresser durablement.",
+    "images": ["https://jaydoesitall.com/seed/home_hero_og.png"]
+  },
+  "robots": {
+    "index": true,
+    "follow": true,
+    "max-image-preview": "large",
+    "max-video-preview": -1,
+    "max-snippet": -1
+  }
+}

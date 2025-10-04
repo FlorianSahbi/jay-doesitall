@@ -1,0 +1,17 @@
+{
+  "slug": "running",
+  "kicker": "Services",
+  "title": "Training plans",
+  "description": "3-month programs tailored to your level and goals.",
+  "cover": "/seed/running_service_hero.png",
+  "plans": [
+    { "type": "Plan", "title": "10K", "features": [], "price": "€59" },
+    {
+      "type": "Plan",
+      "title": "Half Marathon",
+      "features": [],
+      "price": "€69"
+    },
+    { "type": "Plan", "title": "Marathon", "features": [], "price": "€89" }
+  ]
+}

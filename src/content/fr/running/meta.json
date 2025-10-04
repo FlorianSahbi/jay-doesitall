@@ -1,0 +1,41 @@
+{
+  "title": "Plans d’entraînement — 10 km, Semi, Marathon (3 mois)",
+  "description": "Plans de 3 mois selon ton niveau : 10 km 59€, semi 69€, marathon 89€. Orientés chrono visé.",
+  "alternates": {
+    "canonical": "https://jaydoesitall.com/fr/services/running",
+    "languages": {
+      "fr": "https://jaydoesitall.com/fr/services/running",
+      "en": "https://jaydoesitall.com/en/services/running"
+    }
+  },
+  "keywords": [
+    "plan 10 km",
+    "plan semi marathon",
+    "plan marathon 12 semaines",
+    "coach running Paris",
+    "allure cible",
+    "programme course personnalisé"
+  ],
+  "openGraph": {
+    "title": "Plans d’entraînement — Jay Doesitall",
+    "description": "Plans running 3 mois : 10 km, semi, marathon. Paris & en ligne.",
+    "type": "product",
+    "locale": "fr_FR",
+    "url": "https://jaydoesitall.com/fr/services/running",
+    "images": [
+      {
+        "url": "https://jaydoesitall.com/seed/running_service_hero.png",
+        "width": 1200,
+        "height": 630,
+        "alt": "Plans d’entraînement — Jay Doesitall"
+      }
+    ]
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Plans d’entraînement — Jay Doesitall",
+    "description": "Des plans orientés chrono sur 3 mois.",
+    "images": ["https://jaydoesitall.com/seed/running_service_hero.png"]
+  },
+  "robots": { "index": true, "follow": true, "max-image-preview": "large" }
+}

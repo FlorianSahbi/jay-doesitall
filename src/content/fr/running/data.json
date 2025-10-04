@@ -1,0 +1,17 @@
+{
+  "slug": "running",
+  "kicker": "Prestations",
+  "title": "Plans d’entraînement",
+  "description": "Programmes de 3 mois adaptés à ton niveau et tes objectifs.",
+  "cover": "/seed/running_service_hero.png",
+  "plans": [
+    { "type": "Plan", "title": "10 km", "features": [], "price": "59€" },
+    {
+      "type": "Plan",
+      "title": "Semi-marathon",
+      "features": [],
+      "price": "69€"
+    },
+    { "type": "Plan", "title": "Marathon", "features": [], "price": "89€" }
+  ]
+}

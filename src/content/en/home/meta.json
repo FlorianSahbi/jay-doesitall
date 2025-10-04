@@ -1,0 +1,52 @@
+{
+  "title": "Jay Doesitall – Personal Trainer & Running Coach",
+  "description": "Personal training and running coaching in Paris & online. Tailor-made programs, injury prevention and sustainable performance.",
+  "alternates": {
+    "canonical": "https://jaydoesitall.com/en",
+    "languages": {
+      "en": "https://jaydoesitall.com/en",
+      "fr": "https://jaydoesitall.com/"
+    }
+  },
+  "keywords": [
+    "personal trainer",
+    "running coach",
+    "Paris personal training",
+    "online coaching",
+    "marathon training",
+    "10k half marathon plans",
+    "strength training",
+    "injury prevention",
+    "Hyrox coach",
+    "fitness coach"
+  ],
+  "openGraph": {
+    "title": "Jay Doesitall – Personal Trainer & Running Coach",
+    "description": "Personalized programs for runners and fitness. Paris & online.",
+    "type": "website",
+    "siteName": "jaydoesitall.com",
+    "locale": "en_US",
+    "url": "https://jaydoesitall.com/en",
+    "images": [
+      {
+        "url": "https://jaydoesitall.com/seed/home_hero_og.png",
+        "width": 1200,
+        "height": 630,
+        "alt": "Jay Doesitall"
+      }
+    ]
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Jay Doesitall – Personal Trainer & Running Coach",
+    "description": "Tailor-made coaching for sustainable progress.",
+    "images": ["https://jaydoesitall.com/seed/home_hero_og.png"]
+  },
+  "robots": {
+    "index": true,
+    "follow": true,
+    "max-image-preview": "large",
+    "max-video-preview": -1,
+    "max-snippet": -1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "coaching",
+  "kicker": "Services",
+  "title": "Personalized Coaching",
+  "description": "Tailor-made support aligned with your goals.",
+  "cover": "/seed/coaching_service_hero.png",
+  "plans": [
+    {
+      "type": "Coaching",
+      "title": "Personalized online",
+      "features": [
+        "1 video call per month",
+        "WhatsApp hotline 24/7",
+        "Monthly running plan tailored to your goals",
+        "Weekly progress tracking",
+        "Plan readjustments based on your evolution and schedule"
+      ],
+      "price": "€109/month"
+    },
+    {
+      "type": "Coaching",
+      "title": "Personalized hybrid",
+      "features": [
+        "1 video call per month",
+        "WhatsApp hotline 24/7",
+        "Monthly running plan + 2–3 strength sessions tailored to your goals",
+        "Weekly progress tracking",
+        "Plan readjustments based on your evolution and schedule"
+      ],
+      "price": "€159/month"
+    },
+    {
+      "type": "Coaching",
+      "title": "Running",
+      "features": [
+        "Personalized running session aligned with your objectives",
+        "Tailored guidance to reach your target performance",
+        "Pacing at target speed to progress effectively",
+        "Key advice to optimize training and recovery"
+      ],
+      "price": "€89/hour"
+    }
+  ]
+}

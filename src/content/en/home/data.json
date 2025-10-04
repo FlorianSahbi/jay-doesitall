@@ -1,64 +1,4 @@
 {
-  "meta": {
-    "title": "Jay Doesitall - Personal Trainer",
-    "description": "Official website of Jay Doesitall",
-    "alternates": {
-      "canonical": "https://jaydoesitall.com/en"
-    },
-    "openGraph": {
-      "title": "Jay Doesitall - Personal Trainer",
-      "description": "Personal trainer and running coach. Personalized programs.",
-      "type": "website",
-      "siteName": "jaydoesitall.com",
-      "locale": "en_US",
-      "url": "https://jaydoesitall.com/en",
-      "images": [
-        {
-          "url": "https://jaydoesitall.com/seed/home_hero_og.png",
-          "width": 1200,
-          "height": 630,
-          "alt": "Jay Doesitall"
-        }
-      ]
-    },
-    "twitter": {
-      "card": "summary_large_image",
-      "title": "Jay Doesitall - Personal Trainer",
-      "description": "Personalized programs, injury prevention and performance.",
-      "images": ["https://jaydoesitall.com/seed/home_hero_og.png"]
-    }
-  },
-
-  "jsonLd": [
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Jérémie Seck",
-      "alternateName": "Jay Doesitall",
-      "url": "https://jaydoesitall.com/en",
-      "image": "https://jaydoesitall.com/seed/jay_profile.jpg",
-      "jobTitle": "Personal trainer & running coach",
-      "worksFor": { "@type": "Organization", "name": "jaydoesitall.com" },
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Paris",
-        "addressCountry": "FR"
-      },
-      "sameAs": [
-        "https://www.instagram.com/jay_doesitall/",
-        "https://youtube.com/@jaydoesitall",
-        "https://tiktok.com/@jaydoesitall"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "url": "https://jaydoesitall.com/en",
-      "name": "Jay Doesitall - Personal Trainer",
-      "description": "Official website of Jay Doesitall"
-    }
-  ],
-
   "hero": {
     "backgroundImage": "/seed/home_hero.png",
     "imageAlt": "Hero background",
@@ -71,7 +11,6 @@
       "ctaLabel": "LEARN MORE ABOUT ME"
     }
   },
-
   "services": {
     "title": "MY SERVICES",
     "ctaLabel": "View program",
@@ -93,7 +32,6 @@
       }
     ]
   },
-
   "testimonials": {
     "title": "TRUSTED BY",
     "items": [
@@ -115,7 +53,6 @@
       }
     ]
   },
-
   "whyMe": {
     "title": "WHY CHOOSE ME?",
     "backgroundImage": "/seed/why_me_cover.png",

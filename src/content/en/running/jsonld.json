@@ -1,0 +1,73 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://jaydoesitall.com/en/services/running#webpage",
+    "url": "https://jaydoesitall.com/en/services/running",
+    "name": "Training plans — Jay Doesitall",
+    "inLanguage": "en-GB",
+    "isPartOf": { "@id": "https://jaydoesitall.com/#website" },
+    "breadcrumb": {
+      "@id": "https://jaydoesitall.com/en/services/running#breadcrumbs"
+    },
+    "mainEntity": { "@id": "https://jaydoesitall.com/#service-running" }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://jaydoesitall.com/#service-running",
+    "serviceType": "Training plans (10K, Half, Marathon)",
+    "provider": { "@id": "https://jaydoesitall.com/#person" },
+    "areaServed": ["FR", "Online"],
+    "description": "3-month programs tailored to your level and target time.",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Running plans",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "name": "10K plan (3 months)",
+          "price": "59",
+          "priceCurrency": "EUR"
+        },
+        {
+          "@type": "Offer",
+          "name": "Half Marathon plan (3 months)",
+          "price": "69",
+          "priceCurrency": "EUR"
+        },
+        {
+          "@type": "Offer",
+          "name": "Marathon plan (3 months)",
+          "price": "89",
+          "priceCurrency": "EUR"
+        }
+      ]
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://jaydoesitall.com/en/services/running#breadcrumbs",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://jaydoesitall.com/en"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://jaydoesitall.com/en/services"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Training plans",
+        "item": "https://jaydoesitall.com/en/services/running"
+      }
+    ]
+  }
+]
