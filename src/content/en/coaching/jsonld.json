@@ -4,7 +4,7 @@
     "@type": "WebPage",
     "@id": "https://jaydoesitall.com/en/services/coaching#webpage",
     "url": "https://jaydoesitall.com/en/services/coaching",
-    "name": "Personalized Coaching — Jay Doesitall",
+    "name": "Personalized Coaching - Jay Doesitall",
     "inLanguage": "en-GB",
     "isPartOf": { "@id": "https://jaydoesitall.com/#website" },
     "breadcrumb": {

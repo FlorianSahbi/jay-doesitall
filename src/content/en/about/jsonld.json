@@ -4,7 +4,7 @@
     "@type": "AboutPage",
     "@id": "https://jaydoesitall.com/en/about#webpage",
     "url": "https://jaydoesitall.com/en/about",
-    "name": "About — Jay Doesitall",
+    "name": "About - Jay Doesitall",
     "description": "Personal trainer & running expert.",
     "inLanguage": "en-GB",
     "isPartOf": { "@id": "https://jaydoesitall.com/#website" },

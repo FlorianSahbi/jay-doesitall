@@ -1,5 +1,5 @@
 {
-  "title": "Contact — Jay Doesitall",
+  "title": "Contact - Jay Doesitall",
   "description": "Got a specific request? Reach out via the form or social networks.",
   "alternates": {
     "canonical": "https://jaydoesitall.com/en/contact",
@@ -15,7 +15,7 @@
     "Paris trainer contact"
   ],
   "openGraph": {
-    "title": "Contact — Jay Doesitall",
+    "title": "Contact - Jay Doesitall",
     "description": "Let’s talk about your goals.",
     "type": "website",
     "locale": "en_US",
@@ -25,13 +25,13 @@
         "url": "https://jaydoesitall.com/seed/contact_hero.png",
         "width": 1200,
         "height": 630,
-        "alt": "Contact — Jay Doesitall"
+        "alt": "Contact - Jay Doesitall"
       }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Contact — Jay Doesitall",
+    "title": "Contact - Jay Doesitall",
     "description": "Tell me about your goals.",
     "images": ["https://jaydoesitall.com/seed/contact_hero.png"]
   }

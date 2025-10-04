@@ -1,5 +1,5 @@
 {
-  "title": "À propos — Jay Doesitall",
+  "title": "À propos - Jay Doesitall",
   "description": "Découvrez Jérémie « Jay » Seck : coach sportif diplômé et expert running. Vision, valeurs et philosophie d’entraînement.",
   "alternates": {
     "canonical": "https://jaydoesitall.com/fr/about",
@@ -17,7 +17,7 @@
     "performance"
   ],
   "openGraph": {
-    "title": "À propos — Jay Doesitall",
+    "title": "À propos - Jay Doesitall",
     "description": "Coach sportif & expert en running. Progression durable et plaisir dans l’effort.",
     "type": "website",
     "locale": "fr_FR",
@@ -33,7 +33,7 @@
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "À propos — Jay Doesitall",
+    "title": "À propos - Jay Doesitall",
     "description": "Coach sportif & expert running à Paris et en ligne.",
     "images": ["https://jaydoesitall.com/seed/about_hero.png"]
   }

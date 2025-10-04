@@ -1,5 +1,5 @@
 {
-  "title": "Contact — Jay Doesitall",
+  "title": "Contact - Jay Doesitall",
   "description": "Une demande particulière ? Écris-moi via le formulaire ou les réseaux.",
   "alternates": {
     "canonical": "https://jaydoesitall.com/fr/contact",
@@ -15,7 +15,7 @@
     "coach Paris contact"
   ],
   "openGraph": {
-    "title": "Contact — Jay Doesitall",
+    "title": "Contact - Jay Doesitall",
     "description": "Parlons de tes objectifs.",
     "type": "website",
     "locale": "fr_FR",
@@ -25,13 +25,13 @@
         "url": "https://jaydoesitall.com/seed/contact_hero.png",
         "width": 1200,
         "height": 630,
-        "alt": "Contact — Jay Doesitall"
+        "alt": "Contact - Jay Doesitall"
       }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Contact — Jay Doesitall",
+    "title": "Contact - Jay Doesitall",
     "description": "Dis-moi tes objectifs.",
     "images": ["https://jaydoesitall.com/seed/contact_hero.png"]
   }

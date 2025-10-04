@@ -1,5 +1,5 @@
 {
-  "title": "Training Plans — 10K, Half, Marathon (3 months)",
+  "title": "Training Plans - 10K, Half, Marathon (3 months)",
   "description": "Level-based 3-month plans: 10K €59, Half Marathon €69, Marathon €89. Built for your target time.",
   "alternates": {
     "canonical": "https://jaydoesitall.com/en/services/running",
@@ -17,7 +17,7 @@
     "personalized running program"
   ],
   "openGraph": {
-    "title": "Training Plans — Jay Doesitall",
+    "title": "Training Plans - Jay Doesitall",
     "description": "3-month running plans: 10K, half, marathon. Paris & online.",
     "type": "website",
     "locale": "en_US",
@@ -27,13 +27,13 @@
         "url": "https://jaydoesitall.com/seed/running_service_hero.png",
         "width": 1200,
         "height": 630,
-        "alt": "Training Plans — Jay Doesitall"
+        "alt": "Training Plans - Jay Doesitall"
       }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Training Plans — Jay Doesitall",
+    "title": "Training Plans - Jay Doesitall",
     "description": "Target-time oriented plans over 3 months.",
     "images": ["https://jaydoesitall.com/seed/running_service_hero.png"]
   }

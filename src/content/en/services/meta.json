@@ -1,5 +1,5 @@
 {
-  "title": "Services — Coaching & Running Programs",
+  "title": "Services - Coaching & Running Programs",
   "description": "Explore tailored coaching and 3-month running plans. Progress with structure, injury prevention and clear goals.",
   "alternates": {
     "canonical": "https://jaydoesitall.com/en/services",
@@ -17,7 +17,7 @@
     "hyrox preparation"
   ],
   "openGraph": {
-    "title": "Services — Jay Doesitall",
+    "title": "Services - Jay Doesitall",
     "description": "Programs tailored to you: coaching and running plans.",
     "type": "website",
     "locale": "en_US",
@@ -27,13 +27,13 @@
         "url": "https://jaydoesitall.com/seed/services_hero.png",
         "width": 1200,
         "height": 630,
-        "alt": "Services — Jay Doesitall"
+        "alt": "Services - Jay Doesitall"
       }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Services — Jay Doesitall",
+    "title": "Services - Jay Doesitall",
     "description": "Tailored coaching & running plans.",
     "images": ["https://jaydoesitall.com/seed/services_hero.png"]
   }

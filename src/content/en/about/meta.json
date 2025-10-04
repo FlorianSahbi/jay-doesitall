@@ -1,5 +1,5 @@
 {
-  "title": "About Jay Doesitall — Personal Trainer & Running Expert",
+  "title": "About Jay Doesitall - Personal Trainer & Running Expert",
   "description": "Meet Jérémie “Jay” Seck: certified personal trainer and running coach. Vision, values and training philosophy.",
   "alternates": {
     "canonical": "https://jaydoesitall.com/en/about",
@@ -17,7 +17,7 @@
     "performance coaching"
   ],
   "openGraph": {
-    "title": "About — Jay Doesitall",
+    "title": "About - Jay Doesitall",
     "description": "Personal trainer & running expert. Sustainable progress and joy in the effort.",
     "type": "website",
     "locale": "en_US",
@@ -33,7 +33,7 @@
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "About — Jay Doesitall",
+    "title": "About - Jay Doesitall",
     "description": "Certified personal trainer & running coach in Paris and online.",
     "images": ["https://jaydoesitall.com/seed/about_hero.png"]
   }

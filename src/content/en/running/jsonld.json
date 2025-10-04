@@ -4,7 +4,7 @@
     "@type": "WebPage",
     "@id": "https://jaydoesitall.com/en/services/running#webpage",
     "url": "https://jaydoesitall.com/en/services/running",
-    "name": "Training plans — Jay Doesitall",
+    "name": "Training plans - Jay Doesitall",
     "description": "3-month programs for 10K, half and marathon.",
     "inLanguage": "en-GB",
     "isPartOf": { "@id": "https://jaydoesitall.com/#website" },

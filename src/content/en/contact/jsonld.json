@@ -4,7 +4,7 @@
     "@type": "ContactPage",
     "@id": "https://jaydoesitall.com/en/contact#webpage",
     "url": "https://jaydoesitall.com/en/contact",
-    "name": "Contact — Jay Doesitall",
+    "name": "Contact - Jay Doesitall",
     "description": "Got a specific request? Contact me.",
     "inLanguage": "en-GB",
     "isPartOf": { "@id": "https://jaydoesitall.com/#website" },

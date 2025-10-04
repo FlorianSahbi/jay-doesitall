@@ -1,5 +1,5 @@
 {
-  "title": "Personalized Coaching — Online & Hybrid Plans",
+  "title": "Personalized Coaching - Online & Hybrid Plans",
   "description": "1:1 coaching aligned with your goals. Online €109/mo, Hybrid €159/mo, Running session €89/h. Paris & online.",
   "alternates": {
     "canonical": "https://jaydoesitall.com/en/services/coaching",
@@ -17,7 +17,7 @@
     "goal based training"
   ],
   "openGraph": {
-    "title": "Personalized Coaching — Jay Doesitall",
+    "title": "Personalized Coaching - Jay Doesitall",
     "description": "Tailor-made coaching: online €109/mo, hybrid €159/mo, running session €89/h.",
     "type": "website",
     "locale": "en_US",
@@ -27,13 +27,13 @@
         "url": "https://jaydoesitall.com/seed/coaching_service_hero.png",
         "width": 1200,
         "height": 630,
-        "alt": "Personalized Coaching — Jay Doesitall"
+        "alt": "Personalized Coaching - Jay Doesitall"
       }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Personalized Coaching — Jay Doesitall",
+    "title": "Personalized Coaching - Jay Doesitall",
     "description": "Online & hybrid coaching with precise tracking and adjustments.",
     "images": ["https://jaydoesitall.com/seed/coaching_service_hero.png"]
   }

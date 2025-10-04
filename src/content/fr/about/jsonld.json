@@ -4,7 +4,7 @@
     "@type": "AboutPage",
     "@id": "https://jaydoesitall.com/fr/about#webpage",
     "url": "https://jaydoesitall.com/fr/about",
-    "name": "À propos — Jay Doesitall",
+    "name": "À propos - Jay Doesitall",
     "description": "Coach sportif & expert en running.",
     "inLanguage": "fr-FR",
     "isPartOf": { "@id": "https://jaydoesitall.com/#website" },
