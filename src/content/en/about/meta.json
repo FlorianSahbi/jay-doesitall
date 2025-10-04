@@ -36,6 +36,5 @@
     "title": "About — Jay Doesitall",
     "description": "Certified personal trainer & running coach in Paris and online.",
     "images": ["https://jaydoesitall.com/seed/about_hero.png"]
-  },
-  "robots": { "index": true, "follow": true, "max-image-preview": "large" }
+  }
 }

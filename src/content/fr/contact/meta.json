@@ -34,6 +34,5 @@
     "title": "Contact — Jay Doesitall",
     "description": "Dis-moi tes objectifs.",
     "images": ["https://jaydoesitall.com/seed/contact_hero.png"]
-  },
-  "robots": { "index": true, "follow": true, "max-image-preview": "large" }
+  }
 }

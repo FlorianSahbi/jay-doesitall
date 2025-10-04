@@ -36,6 +36,5 @@
     "title": "Personalized Coaching — Jay Doesitall",
     "description": "Online & hybrid coaching with precise tracking and adjustments.",
     "images": ["https://jaydoesitall.com/seed/coaching_service_hero.png"]
-  },
-  "robots": { "index": true, "follow": true, "max-image-preview": "large" }
+  }
 }

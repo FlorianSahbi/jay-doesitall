@@ -36,6 +36,5 @@
     "title": "Plans d’entraînement — Jay Doesitall",
     "description": "Des plans orientés chrono sur 3 mois.",
     "images": ["https://jaydoesitall.com/seed/running_service_hero.png"]
-  },
-  "robots": { "index": true, "follow": true, "max-image-preview": "large" }
+  }
 }

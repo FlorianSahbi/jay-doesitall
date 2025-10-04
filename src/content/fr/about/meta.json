@@ -36,6 +36,5 @@
     "title": "À propos — Jay Doesitall",
     "description": "Coach sportif & expert running à Paris et en ligne.",
     "images": ["https://jaydoesitall.com/seed/about_hero.png"]
-  },
-  "robots": { "index": true, "follow": true, "max-image-preview": "large" }
+  }
 }

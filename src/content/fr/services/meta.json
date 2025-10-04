@@ -36,6 +36,5 @@
     "title": "Prestations — Jay Doesitall",
     "description": "Coaching personnalisé & plans running.",
     "images": ["https://jaydoesitall.com/seed/services_hero.png"]
-  },
-  "robots": { "index": true, "follow": true, "max-image-preview": "large" }
+  }
 }

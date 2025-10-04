@@ -36,6 +36,5 @@
     "title": "Coaching personnalisés — Jay Doesitall",
     "description": "Suivi précis, ajustements réguliers. Paris & en ligne.",
     "images": ["https://jaydoesitall.com/seed/coaching_service_hero.png"]
-  },
-  "robots": { "index": true, "follow": true, "max-image-preview": "large" }
+  }
 }

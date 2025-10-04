@@ -36,6 +36,5 @@
     "title": "Training Plans — Jay Doesitall",
     "description": "Target-time oriented plans over 3 months.",
     "images": ["https://jaydoesitall.com/seed/running_service_hero.png"]
-  },
-  "robots": { "index": true, "follow": true, "max-image-preview": "large" }
+  }
 }

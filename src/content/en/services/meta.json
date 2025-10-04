@@ -36,6 +36,5 @@
     "title": "Services — Jay Doesitall",
     "description": "Tailored coaching & running plans.",
     "images": ["https://jaydoesitall.com/seed/services_hero.png"]
-  },
-  "robots": { "index": true, "follow": true, "max-image-preview": "large" }
+  }
 }
