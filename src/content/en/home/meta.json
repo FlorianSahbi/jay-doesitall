@@ -41,12 +41,5 @@
     "title": "Jay Doesitall – Personal Trainer & Running Coach",
     "description": "Tailor-made coaching for sustainable progress.",
     "images": ["https://jaydoesitall.com/seed/home_hero.png"]
-  },
-  "robots": {
-    "index": true,
-    "follow": true,
-    "max-image-preview": "large",
-    "max-video-preview": -1,
-    "max-snippet": -1
   }
 }

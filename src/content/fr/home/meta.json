@@ -41,12 +41,5 @@
     "title": "Jay Doesitall – Coach Sportif & Running",
     "description": "Des programmes sur-mesure pour progresser durablement.",
     "images": ["https://jaydoesitall.com/seed/home_hero.png"]
-  },
-  "robots": {
-    "index": true,
-    "follow": true,
-    "max-image-preview": "large",
-    "max-video-preview": -1,
-    "max-snippet": -1
   }
 }
