@@ -24,7 +24,7 @@ export default function Footer({
     <footer className="grid-layout col-span-full bg-black">
       <div className="col-span-4 col-start-2 md:col-span-12 md:col-start-2 lg:mb-16 lg:flex lg:items-end lg:justify-between">
         <nav className="text-title-3 lg:text-title-2 mt-16 flex flex-col gap-6 text-white uppercase md:gap-4">
-          {menu.map((item) => (
+          {menu?.map((item) => (
             <Link key={item.href} href={item.href}>
               {item.label}
             </Link>
@@ -38,7 +38,7 @@ export default function Footer({
             </span>
 
             <div className="flex items-center gap-3">
-              {socials.map((s) => (
+              {socials?.map((s) => (
                 <SocialBadge
                   key={s.label}
                   href={s.href}

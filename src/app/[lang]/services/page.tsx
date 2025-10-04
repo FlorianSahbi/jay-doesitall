@@ -1,12 +1,14 @@
-// @path: src/app/services/page.tsx
-
+// @path: src/app/[lang]/services/page.tsx
 import { loadPage } from '@/content/loader'
 import StickyHeroSection from '@/components/shared/StickyHeroSection'
 import ServiceCard from '@/components/shared/ServiceCard'
 
-export default function ServicesPage() {
-  const DATA = loadPage('services') as any
-
+export default async function ServicesPage({
+  params: { lang },
+}: {
+  params: { lang: 'fr' | 'en' }
+}) {
+  const DATA = (await loadPage('services', lang)) as any
   const { hero, kicker, title, intro, cards } = DATA
 
   return (
@@ -23,7 +25,7 @@ export default function ServicesPage() {
           <ServiceCard
             className="aspect-[311/420] lg:aspect-square"
             key={c.href}
-            href={c.href}
+            href={`/${lang}${c.href}`}
             title={c.title}
             cover={c.cover}
             sizes={c.sizes}

@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "About — Jay Doesitall",
+    "description": "Personal trainer & running expert. Personalized programs, sustainable progress and joy in the effort.",
+    "openGraph": {
+      "title": "About — Jay Doesitall",
+      "description": "Personal trainer & running expert. Personalized programs, sustainable progress and joy in the effort.",
+      "type": "website",
+      "locale": "en_US",
+      "images": [
+        {
+          "url": "/seed/about_hero.png",
+          "width": 1200,
+          "height": 630,
+          "alt": "Jay Doesitall"
+        }
+      ]
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "About — Jay Doesitall",
+      "description": "Personal trainer & running expert. Personalized programs, sustainable progress and joy in the effort.",
+      "images": ["/seed/about_hero.png"]
+    }
+  },
+
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "About — Jay Doesitall",
+      "description": "Personal trainer & running expert.",
+      "url": "https://ton-domaine.fr/en/about"
+    }
+  ],
+
+  "hero": {
+    "cover": "/seed/about_hero.png",
+    "kicker": "ABOUT",
+    "title": "PERSONAL TRAINER & RUNNING EXPERT",
+    "paragraphs": [
+      "My name is Jérémie Seck, also known as Jay Doesitall. I'm a certified personal trainer, passionate about running, performance and wellbeing. I help runners — from a first 5K to seasoned marathoners — reach their goals and push beyond their limits.",
+      "My coaching is built on three pillars: sustainable progress, injury prevention and joy in the effort. I bring this vision into each program, flexible and tailored to every level."
+    ],
+    "credo": {
+      "kicker": "MY CREDO",
+      "title": "“MOVE FORWARD WITH HIGH STANDARDS, EVOLVE WITH PLEASURE”",
+      "text": "On my social channels (Instagram, TikTok and YouTube), I also share tips, experiences and inspiration to promote a healthy, demanding and accessible approach to sport."
+    }
+  },
+
+  "reasons": {
+    "title": "WHY WORK WITH ME?",
+    "items": [
+      "Before being a coach, I'm first and foremost passionate about sport and people. I love to connect, exchange, challenge myself, win and above all, share.",
+      "Still active in competition (running, Hyrox, Spartan, etc.), I stay grounded in the reality my athletes face.",
+      "At 40+, my experience shows that you can progress at any age. I adapt to every profile, from beginner to advanced.",
+      "My support goes beyond performance: I also take into account your personal, professional and family constraints, because they are part of real life.",
+      "Together, we build a clear, motivating and tailored roadmap so you can move forward with confidence and results."
+    ],
+    "gallery": [
+      { "src": "/seed/about_1.png", "alt": "Mountain trail running" },
+      { "src": "/seed/about_2.png", "alt": "Race finish" },
+      { "src": "/seed/about_3.png", "alt": "Podium and medal" },
+      { "src": "/seed/about_4.png", "alt": "Track sprint" },
+      { "src": "/seed/about_1.png", "alt": "Mountain trail running" },
+      { "src": "/seed/about_2.png", "alt": "Race finish" },
+      { "src": "/seed/about_3.png", "alt": "Podium and medal" },
+      { "src": "/seed/about_4.png", "alt": "Track sprint" },
+      { "src": "/seed/about_1.png", "alt": "Mountain trail running" },
+      { "src": "/seed/about_2.png", "alt": "Race finish" },
+      { "src": "/seed/about_3.png", "alt": "Podium and medal" },
+      { "src": "/seed/about_4.png", "alt": "Track sprint" }
+    ],
+    "ctaLabel": "EXPLORE MY SERVICES"
+  },
+
+  "locations": {
+    "wrapperTitle": "WHERE TO FIND ME?",
+    "places": [
+      {
+        "name": "LA MONTGOLFIÈRE",
+        "src": "/seed/about_place_1.png",
+        "sections": [
+          {
+            "title": "LA MONTGOLFIÈRE",
+            "subtitle": {
+              "text": "25 rue Yves Toudic, 75010 Paris",
+              "href": "https://maps.app.goo.gl/94etScnghbFJ5Sd18"
+            }
+          },
+          {
+            "title": "LA MONTGOLFIÈRE 18",
+            "subtitle": {
+              "text": "74 rue Joseph de Maistre, 75018 Paris",
+              "href": "https://maps.app.goo.gl/vz77YXxtN56FuerJ7"
+            }
+          }
+        ],
+        "siteUrl": "https://lamontgolfiereclub.com/"
+      },
+      {
+        "name": "CAPITAL 8",
+        "src": "/seed/about_place_2.png",
+        "sections": [
+          {
+            "title": "CAPITAL 8",
+            "subtitle": {
+              "text": "32 rue Monceau, 75008 Paris",
+              "href": "https://maps.app.goo.gl/Rp3R8g3m7EGsFUgB8"
+            }
+          }
+        ],
+        "siteUrl": "https://capital8.paris/"
+      },
+      {
+        "name": "ANNETTE K",
+        "src": "/seed/about_place_3.png",
+        "sections": [
+          {
+            "title": "ANNETTE K",
+            "subtitle": {
+              "text": "Port de Javel bas, 75015 Paris",
+              "href": "https://maps.app.goo.gl/w2KD1hv94QviZjKm9"
+            }
+          }
+        ],
+        "siteUrl": "https://www.annettek.fr/"
+      }
+    ]
+  },
+
+  "partners": {
+    "title": "MY PARTNERS",
+    "intro": "Demanding about quality and passionate about well-designed products, I’ve been collaborating for years with brands that share my values.",
+    "items": [
+      {
+        "imgSrc": "/seed/partners_1.png",
+        "alt": "Partner 1",
+        "description": "I’ve been an On ambassador for 4 years and a running coach for the brand for 2 years, convinced by their performance vision, clean design and human approach."
+      },
+      {
+        "imgSrc": "/seed/partners_2.png",
+        "alt": "Partner 2",
+        "description": "Powerbar was the first brand to trust me at the very beginning and has supported my sports nutrition for 5 years."
+      }
+    ]
+  }
+}

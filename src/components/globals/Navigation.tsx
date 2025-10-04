@@ -8,7 +8,13 @@ import NavOverlay, { type NavItem } from './NavOverlay'
 import { OverlayContainer } from 'react-aria'
 import { useScroll, useMotionValueEvent } from 'framer-motion'
 
-export default function Navigation({ menu }: { menu: NavItem[] }) {
+export default function Navigation({
+  menu,
+  hideOnScroll = true,
+}: {
+  menu: NavItem[]
+  hideOnScroll?: boolean
+}) {
   const pathname = usePathname()
   const [open, setOpen] = useState(false)
   const [hidden, setHidden] = useState(false)
@@ -22,23 +28,20 @@ export default function Navigation({ menu }: { menu: NavItem[] }) {
   }, [scrollY])
 
   useMotionValueEvent(scrollY, 'change', (y) => {
-    if (open) {
+    if (!hideOnScroll || open) {
       if (hidden) setHidden(false)
       lastY.current = y
       return
     }
-    if (y <= 24) {
-      setHidden(false)
-    } else if (y - lastY.current > THRESH) {
-      setHidden(true)
-    } else if (lastY.current - y > THRESH) {
-      setHidden(false)
-    }
+    if (y <= 24) setHidden(false)
+    else if (y - lastY.current > THRESH) setHidden(true)
+    else if (lastY.current - y > THRESH) setHidden(false)
     lastY.current = y
   })
 
   useEffect(() => {
     if (open) setOpen(false)
+    setHidden(false)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname])
 
@@ -49,7 +52,6 @@ export default function Navigation({ menu }: { menu: NavItem[] }) {
         showMenuButton={!open}
         hidden={hidden}
       />
-
       {open && (
         <OverlayContainer>
           <NavOverlay menu={menu} onClose={() => setOpen(false)} />

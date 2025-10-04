@@ -2,6 +2,7 @@
 'use client'
 
 import Link from 'next/link'
+import LangSwitcher from './LangSwitcher'
 
 export default function NavHeader({
   onOpen,
@@ -11,6 +12,7 @@ export default function NavHeader({
   onOpen: () => void
   showMenuButton: boolean
   hidden: boolean
+  onHoldHeader?: () => void
 }) {
   return (
     <header
@@ -29,18 +31,22 @@ export default function NavHeader({
             JAY DOESITALL
           </Link>
 
-          {showMenuButton && (
-            <button
-              type="button"
-              aria-haspopup="dialog"
-              aria-expanded={false}
-              aria-controls="site-menu"
-              onClick={onOpen}
-              className="btn btn-sm text-cta-s lg:text-cta-l btn-black-fill"
-            >
-              MENU
-            </button>
-          )}
+          <div className="flex items-center gap-4">
+            <LangSwitcher appearance="pill" />
+
+            {showMenuButton && (
+              <button
+                type="button"
+                aria-haspopup="dialog"
+                aria-expanded={false}
+                aria-controls="site-menu"
+                onClick={onOpen}
+                className="btn btn-sm text-cta-s lg:text-cta-l btn-black-fill"
+              >
+                MENU
+              </button>
+            )}
+          </div>
         </div>
       </div>
     </header>

@@ -1,5 +1,4 @@
-// @path: src/app/services/[slug]/page.tsx
-
+// @path: src/app/[lang]/services/[slug]/page.tsx
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { getStaticParamsServices, loadService } from '@/content/loader'
@@ -7,25 +6,31 @@ import ServicePlanCard from '@/components/shared/ServicePlanCard'
 import StickyHeroSection from '@/components/shared/StickyHeroSection'
 
 export async function generateStaticParams() {
-  return getStaticParamsServices()
+  // Génère toutes les combinaisons lang × slug
+  const slugs = await getStaticParamsServices()
+  const langs: Array<'fr' | 'en'> = ['fr', 'en']
+  return langs.flatMap((lang) => slugs.map(({ slug }) => ({ lang, slug })))
 }
 
 export default async function ServiceSlugPage({
   params,
 }: {
-  params: Promise<{ slug: string }>
+  params: Promise<{ lang: 'fr' | 'en'; slug: string }>
 }) {
-  const { slug } = await params
-  const data = (await loadService(slug)) as any
+  const { lang, slug } = await params
+  const data = (await loadService(slug, lang)) as any
   if (!data) return notFound()
   const { service } = data
+
+  // Kicker minimal bilingue (si tu veux éviter le hardcode)
+  const kicker = lang === 'fr' ? 'PRESTATIONS' : 'SERVICES'
 
   return (
     <StickyHeroSection
       cover={service.cover}
       alt={service.title}
       overlay
-      kicker="PRESTATIONS"
+      kicker={kicker}
       title={service.title.toUpperCase()}
       intro={service.description}
     >
@@ -43,14 +48,14 @@ export default async function ServiceSlugPage({
 
       <div className="mt-10 flex flex-col items-center gap-6 text-center">
         <Link
-          href="/contact"
+          href={`/${lang}/contact`}
           className="btn btn-sm lg:btn-lg text-cta-s lg:text-cta-l btn-yellow-fill"
         >
-          Réserver un coaching !
+          {lang === 'fr' ? 'Réserver un coaching !' : 'Book coaching!'}
         </Link>
 
-        <Link href="/services" className="link-black text-cta-l">
-          Retour aux prestations
+        <Link href={`/${lang}/services`} className="link-black text-cta-l">
+          {lang === 'fr' ? 'Retour aux prestations' : 'Back to services'}
         </Link>
       </div>
     </StickyHeroSection>

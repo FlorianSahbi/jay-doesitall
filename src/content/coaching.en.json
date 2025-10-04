@@ -1,0 +1,83 @@
+{
+  "slug": "coaching",
+  "title": "Personalized Coaching",
+  "description": "Tailor-made support aligned with your goals.",
+  "cover": "/seed/coaching_service_hero.png",
+  "plans": [
+    {
+      "type": "Coaching",
+      "title": "Personalized online",
+      "features": [
+        "1 video call per month",
+        "WhatsApp hotline 24/7",
+        "Monthly running plan tailored to your goals",
+        "Weekly progress tracking",
+        "Plan readjustments based on your evolution and schedule"
+      ],
+      "price": "€109/month"
+    },
+    {
+      "type": "Coaching",
+      "title": "Personalized hybrid",
+      "features": [
+        "1 video call per month",
+        "WhatsApp hotline 24/7",
+        "Monthly running plan + 2–3 strength sessions tailored to your goals",
+        "Weekly progress tracking",
+        "Plan readjustments based on your evolution and schedule"
+      ],
+      "price": "€159/month"
+    },
+    {
+      "type": "Coaching",
+      "title": "Running",
+      "features": [
+        "Personalized running session aligned with your objectives",
+        "Tailored guidance to reach your target performance",
+        "Pacing at target speed to progress effectively",
+        "Key advice to optimize training and recovery"
+      ],
+      "price": "€89/hour"
+    }
+  ],
+  "meta": {
+    "title": "Personalized Coaching — Jay Doesitall",
+    "description": "Tailor-made support aligned with your goals, with precise follow-up and regular adjustments.",
+    "openGraph": {
+      "title": "Personalized Coaching — Jay Doesitall",
+      "description": "Tailor-made support, precise tracking, regular adjustments.",
+      "type": "product",
+      "locale": "en_US",
+      "images": [
+        {
+          "url": "/seed/coaching_service_hero.png",
+          "width": 1200,
+          "height": 630,
+          "alt": "Personalized Coaching — Jay Doesitall"
+        }
+      ]
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Personalized Coaching — Jay Doesitall",
+      "description": "Tailor-made support, precise tracking, regular adjustments.",
+      "images": ["/seed/coaching_service_hero.png"]
+    }
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Personalized Coaching",
+      "description": "Tailor-made support aligned with your goals.",
+      "areaServed": "FR",
+      "provider": { "@type": "Person", "name": "Jay Doesitall" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Coaching — Jay Doesitall",
+      "url": "https://ton-domaine.fr/en/services/coaching"
+    }
+  ]
+}
