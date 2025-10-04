@@ -5,20 +5,29 @@
     "@id": "https://jaydoesitall.com/en/services/running#webpage",
     "url": "https://jaydoesitall.com/en/services/running",
     "name": "Training plans — Jay Doesitall",
+    "description": "3-month programs for 10K, half and marathon.",
     "inLanguage": "en-GB",
     "isPartOf": { "@id": "https://jaydoesitall.com/#website" },
     "breadcrumb": {
       "@id": "https://jaydoesitall.com/en/services/running#breadcrumbs"
     },
-    "mainEntity": { "@id": "https://jaydoesitall.com/#service-running" }
+    "about": { "@id": "https://jaydoesitall.com/#person" },
+    "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://jaydoesitall.com/seed/running_service_hero.png",
+      "width": 1200,
+      "height": 630
+    },
+    "mainEntity": { "@id": "https://jaydoesitall.com/#service-running-en" }
   },
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "@id": "https://jaydoesitall.com/#service-running",
+    "@id": "https://jaydoesitall.com/#service-running-en",
     "serviceType": "Training plans (10K, Half, Marathon)",
     "provider": { "@id": "https://jaydoesitall.com/#person" },
     "areaServed": ["FR", "Online"],
+    "inLanguage": "en-GB",
     "description": "3-month programs tailored to your level and target time.",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
@@ -28,19 +37,22 @@
           "@type": "Offer",
           "name": "10K plan (3 months)",
           "price": "59",
-          "priceCurrency": "EUR"
+          "priceCurrency": "EUR",
+          "url": "https://jaydoesitall.com/en/services/running"
         },
         {
           "@type": "Offer",
-          "name": "Half Marathon plan (3 months)",
+          "name": "Half marathon plan (3 months)",
           "price": "69",
-          "priceCurrency": "EUR"
+          "priceCurrency": "EUR",
+          "url": "https://jaydoesitall.com/en/services/running"
         },
         {
           "@type": "Offer",
           "name": "Marathon plan (3 months)",
           "price": "89",
-          "priceCurrency": "EUR"
+          "priceCurrency": "EUR",
+          "url": "https://jaydoesitall.com/en/services/running"
         }
       ]
     }
@@ -67,6 +79,115 @@
         "position": 3,
         "name": "Training plans",
         "item": "https://jaydoesitall.com/en/services/running"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "@id": "https://jaydoesitall.com/en/services/running#courses",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://jaydoesitall.com/en/services/running#course-10k"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@id": "https://jaydoesitall.com/en/services/running#course-half"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https://jaydoesitall.com/en/services/running#course-marathon"
+        }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "@id": "https://jaydoesitall.com/en/services/running#course-10k",
+    "name": "10K training plan (3 months)",
+    "description": "Structured 12-week plan to run a 10K according to your level and target time.",
+    "inLanguage": "en-GB",
+    "provider": {
+      "@type": "Person",
+      "name": "Jérémie Seck",
+      "url": "https://jaydoesitall.com/"
+    },
+    "hasCourseInstance": [
+      {
+        "@type": "CourseInstance",
+        "courseMode": "online",
+        "location": "Online",
+        "offers": {
+          "@type": "Offer",
+          "price": "59",
+          "priceCurrency": "EUR",
+          "availability": "https://schema.org/InStock",
+          "url": "https://jaydoesitall.com/en/services/running"
+        }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "@id": "https://jaydoesitall.com/en/services/running#course-half",
+    "name": "Half marathon training plan (3 months)",
+    "description": "12-week program to progress towards a half marathon with structured sessions and recovery.",
+    "inLanguage": "en-GB",
+    "provider": {
+      "@type": "Person",
+      "name": "Jérémie Seck",
+      "url": "https://jaydoesitall.com/"
+    },
+    "hasCourseInstance": [
+      {
+        "@type": "CourseInstance",
+        "courseMode": "online",
+        "location": "Online",
+        "offers": {
+          "@type": "Offer",
+          "price": "69",
+          "priceCurrency": "EUR",
+          "availability": "https://schema.org/InStock",
+          "url": "https://jaydoesitall.com/en/services/running"
+        }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "@id": "https://jaydoesitall.com/en/services/running#course-marathon",
+    "name": "Marathon training plan (3 months)",
+    "description": "12-week program to prepare a marathon with progressive volume and key workouts.",
+    "inLanguage": "en-GB",
+    "provider": {
+      "@type": "Person",
+      "name": "Jérémie Seck",
+      "url": "https://jaydoesitall.com/"
+    },
+    "hasCourseInstance": [
+      {
+        "@type": "CourseInstance",
+        "courseMode": "online",
+        "location": "Online",
+        "offers": {
+          "@type": "Offer",
+          "price": "89",
+          "priceCurrency": "EUR",
+          "availability": "https://schema.org/InStock",
+          "url": "https://jaydoesitall.com/en/services/running"
+        }
       }
     ]
   }
