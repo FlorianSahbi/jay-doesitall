@@ -18,6 +18,12 @@ const mohave = Mohave({
   variable: '--font-mohave',
 })
 
+export const metadata = {
+  verification: {
+    google: 'f1cAwSj1MGMn5rJoMf_cylnu3-3kKGfiNvegCYh4H8Y',
+  },
+}
+
 export async function generateStaticParams() {
   return [{ lang: 'fr' }, { lang: 'en' }]
 }
