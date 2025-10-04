@@ -3,7 +3,6 @@ import { Poppins, Mohave } from 'next/font/google'
 import './globals.css'
 import Footer from '@/components/globals/Footer'
 import Navigation from '@/components/globals/Navigation'
-import type { Metadata } from 'next'
 import { loadGlobals } from '@/content/loader'
 import { NextIntlClientProvider } from 'next-intl'
 import React from 'react'
@@ -18,11 +17,6 @@ const mohave = Mohave({
   weight: ['600', '700'],
   variable: '--font-mohave',
 })
-
-export const metadata: Metadata = {
-  title: 'Jay Doesitall - Coaching sportif & Préparation mentale',
-  description: 'Jay Doesitall vous accompagne…',
-}
 
 export async function generateStaticParams() {
   return [{ lang: 'fr' }, { lang: 'en' }]
