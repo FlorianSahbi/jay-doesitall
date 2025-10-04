@@ -29,7 +29,7 @@
     "url": "https://jaydoesitall.com/en",
     "images": [
       {
-        "url": "https://jaydoesitall.com/seed/home_hero_og.png",
+        "url": "https://jaydoesitall.com/seed/home_hero.png",
         "width": 1200,
         "height": 630,
         "alt": "Jay Doesitall"
@@ -40,7 +40,7 @@
     "card": "summary_large_image",
     "title": "Jay Doesitall – Personal Trainer & Running Coach",
     "description": "Tailor-made coaching for sustainable progress.",
-    "images": ["https://jaydoesitall.com/seed/home_hero_og.png"]
+    "images": ["https://jaydoesitall.com/seed/home_hero.png"]
   },
   "robots": {
     "index": true,
