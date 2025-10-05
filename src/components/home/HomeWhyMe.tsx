@@ -45,9 +45,7 @@ export default function HomeWhyMe({ data }: { data: any }) {
           </div>
 
           <div className="col-span-4 col-start-2 justify-self-center md:col-span-12 md:col-start-2">
-            <button className="btn btn-yellow-fill btn-sm lg:btn-lg text-cta-s lg:text-cta-l">
-              {data.ctaLabel}
-            </button>
+            <button className="btn-yellow-fill">{data.ctaLabel}</button>
           </div>
         </div>
       </div>

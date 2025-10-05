@@ -1,34 +1,39 @@
-/* 🔘 Boutons */
+/* Même rendu visuel, composition simplifiée */
+
 @utility btn {
-  @apply inline-flex cursor-pointer items-center justify-center font-sans font-bold transition select-none;
+  @apply text-cta-s lg:text-cta-l inline-flex cursor-pointer items-center justify-center rounded-[var(--radius-sm)] px-4 py-[14px] font-sans font-bold transition select-none lg:rounded-[var(--radius-md)] lg:px-6 lg:py-[16px];
 }
 
-/* tailles */
-@utility btn-sm {
-  @apply text-caption rounded-[var(--radius-sm)] px-4 py-[14px];
-}
-@utility btn-lg {
-  @apply text-cta-l rounded-[var(--radius-md)] px-6 py-[16px];
-}
-
-/* fill */
+/* FILL */
 @utility btn-yellow-fill {
-  @apply bg-yellow text-black hover:opacity-90;
-}
-@utility btn-black-fill {
-  @apply bg-black text-white hover:opacity-90;
-}
-@utility btn-white-fill {
-  @apply bg-white text-black hover:opacity-90;
+  @apply btn bg-yellow text-black hover:opacity-90;
 }
 
-/* outline */
+@utility btn-black-fill {
+  @apply btn bg-black text-white hover:opacity-90;
+}
+
+@utility btn-white-fill {
+  @apply btn bg-white text-black hover:opacity-90;
+}
+
+/* OUTLINE */
 @utility btn-yellow-outline {
-  @apply border-yellow text-yellow hover:bg-yellow border bg-transparent hover:text-black;
+  @apply btn border-yellow text-yellow hover:bg-yellow border bg-transparent hover:text-black;
 }
+
 @utility btn-black-outline {
-  @apply border border-black bg-transparent text-black hover:bg-black hover:text-white;
+  @apply btn border border-black bg-transparent text-black hover:bg-black hover:text-white;
 }
+
 @utility btn-white-outline {
-  @apply border border-white bg-transparent text-white hover:bg-white hover:text-black;
+  @apply btn border border-white bg-transparent text-white hover:bg-white hover:text-black;
+}
+
+@utility btn-disabled {
+  @apply cursor-not-allowed opacity-60;
+}
+
+@utility btn-full {
+  @apply w-full;
 }

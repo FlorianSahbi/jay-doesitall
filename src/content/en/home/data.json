@@ -13,12 +13,13 @@
   },
   "services": {
     "title": "MY SERVICES",
-    "ctaLabel": "View program",
+    "ctaLabel": "Discover",
     "ctaHref": "/services",
     "cards": [
       {
         "href": "/services/coaching",
         "title": "PERSONALIZED COACHING",
+        "ctaLabel": "View program",
         "cover": "/seed/home_coaching.png",
         "aspectClass": "aspect-[311/420] md:aspect-[304/420] lg:aspect-[515/420]",
         "sizes": "(min-width:1440px) 36vw, (min-width:768px) 48vw, 92vw"
@@ -26,6 +27,7 @@
       {
         "href": "/services/running",
         "title": "RUNNING PROGRAMS",
+        "ctaLabel": "View program",
         "cover": "/seed/home_running.png",
         "aspectClass": "aspect-[311/420] md:aspect-[304/420] lg:aspect-[515/420]",
         "sizes": "(min-width:1440px) 36vw, (min-width:768px) 48vw, 92vw"

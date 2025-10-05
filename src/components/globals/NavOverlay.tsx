@@ -82,7 +82,7 @@ export default function NavOverlay({
           <div className="grid-layout absolute top-0 w-full py-6">
             <button
               onClick={onClose}
-              className="btn btn-sm text-cta-s lg:text-cta-l btn-black-fill pointer-events-auto z-[10000] col-start-5 md:col-start-13"
+              className="btn-black-fill pointer-events-auto z-[10000] col-start-5 md:col-start-13"
             >
               {closeLabel}
             </button>

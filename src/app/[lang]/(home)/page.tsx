@@ -1,3 +1,4 @@
+// @path: src/app/[lang]/(home)/page.tsx
 import type { Metadata } from 'next'
 import Script from 'next/script'
 import { loadPage, getPageMeta, getPageJsonLd } from '@/content/loader'

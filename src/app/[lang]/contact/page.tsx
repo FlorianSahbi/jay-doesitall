@@ -1,3 +1,4 @@
+// @path: src/app/[lang]/contact/page.tsx
 import type { Metadata } from 'next'
 import Script from 'next/script'
 import StickyHeroSection from '@/components/shared/StickyHeroSection'
@@ -47,10 +48,7 @@ export default async function ContactPage({
         title={title}
         intro={intro}
       >
-        <a
-          href={cta.href}
-          className="btn btn-sm lg:btn-lg btn-yellow-fill text-cta-s lg:text-cta-l"
-        >
+        <a href={cta.href} className="btn-yellow-fill">
           {cta.label}
         </a>
       </StickyHeroSection>

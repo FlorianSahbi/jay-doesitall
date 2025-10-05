@@ -37,9 +37,7 @@ export default function ServiceCard({
           {title}
         </h3>
 
-        <span className="btn btn-yellow-fill btn-sm text-cta-s">
-          {ctaLabel}
-        </span>
+        <span className="btn-yellow-fill uppercase">{ctaLabel}</span>
       </div>
     </Link>
   )

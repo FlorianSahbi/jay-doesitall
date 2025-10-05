@@ -1,3 +1,4 @@
+// @path: src/app/[lang]/services/[slug]/page.tsx
 import type { Metadata } from 'next'
 import Script from 'next/script'
 import { notFound } from 'next/navigation'
@@ -75,10 +76,7 @@ export default async function ServiceSlugPage({
         </div>
 
         <div className="mt-10 flex flex-col items-center gap-6 text-center">
-          <Link
-            href="/contact"
-            className="btn btn-sm lg:btn-lg text-cta-s lg:text-cta-l btn-yellow-fill"
-          >
+          <Link href="/contact" className="btn-yellow-fill">
             {lang === 'fr' ? 'Réserver un coaching !' : 'Book coaching!'}
           </Link>
 

@@ -45,7 +45,7 @@ export default function NavHeader({
                 aria-expanded={false}
                 aria-controls="site-menu"
                 onClick={onOpen}
-                className="btn btn-sm text-cta-s lg:text-cta-l btn-black-fill"
+                className="btn-black-fill"
               >
                 {openLabel}
               </button>

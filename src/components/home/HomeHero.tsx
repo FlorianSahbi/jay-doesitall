@@ -51,9 +51,7 @@ export default function HomeHero({ data }: { data: HomeHeroData }) {
               {data.title}
             </h1>
             <p className="text-title-4 md:text-title-2 mb-6">{data.subtitle}</p>
-            <button className="btn btn-sm lg:btn-lg lg:text-cta-l btn-yellow-fill text-cta-s">
-              {data.ctaLabel}
-            </button>
+            <button className="btn-yellow-fill">{data.ctaLabel}</button>
           </div>
         </div>
       </div>
@@ -70,7 +68,7 @@ export default function HomeHero({ data }: { data: HomeHeroData }) {
           {data.about.text}
         </p>
 
-        <button className="btn btn-sm lg:btn-lg btn-yellow-outline text-cta-s lg:text-cta-l col-span-4 col-start-2 max-w-max text-black">
+        <button className="btn-yellow-outline col-span-4 col-start-2 max-w-max text-black">
           {data.about.ctaLabel}
         </button>
       </motion.div>

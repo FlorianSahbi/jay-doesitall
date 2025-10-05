@@ -71,7 +71,7 @@ export default function AboutReasons({ data }: { data?: ReasonsData }) {
       </div>
 
       <div className="col-span-5 col-start-2 md:col-span-12 md:col-start-2 lg:col-span-8 lg:col-start-4 xl:col-span-4 xl:col-start-6">
-        <button className="btn btn-yellow-fill btn-lg">{ctaLabel}</button>
+        <button className="btn-yellow-fill">{ctaLabel}</button>
       </div>
     </section>
   )

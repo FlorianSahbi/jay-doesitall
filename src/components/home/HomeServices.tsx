@@ -22,7 +22,7 @@ export default function HomeServices({ data }: { data: any }) {
                   title={c.title}
                   cover={c.cover}
                   sizes={c.sizes}
-                  ctaLabel={data.ctaLabel}
+                  ctaLabel={c.ctaLabel}
                 />
               </div>
             ))}
@@ -32,7 +32,7 @@ export default function HomeServices({ data }: { data: any }) {
         <div className="text-center">
           <Link
             href={data.ctaHref}
-            className="btn btn-yellow-outline btn-sm lg:btn-lg text-cta-s lg:text-cta-l text-white"
+            className="btn-yellow-outline text-white uppercase"
           >
             {data.ctaLabel}
           </Link>
