@@ -22,11 +22,11 @@ export default function AboutReasons({ data }: { data?: ReasonsData }) {
 
   return (
     <section className="grid-layout col-span-full bg-white py-20 lg:py-32">
-      <div className="col-span-4 col-start-2 mb-6 md:col-span-12 md:col-start-2 lg:col-span-8 lg:col-start-4">
+      <div className="col-span-4 col-start-2 mb-6 md:col-span-12 md:col-start-2 lg:col-span-8 lg:col-start-4 xl:col-span-4 xl:col-start-6">
         <h3 className="text-title-2">{title}</h3>
       </div>
 
-      <div className="col-span-4 col-start-2 mb-10 md:col-span-12 md:col-start-2 lg:col-span-8 lg:col-start-4 lg:mb-16">
+      <div className="col-span-4 col-start-2 mb-10 md:col-span-12 md:col-start-2 lg:col-span-8 lg:col-start-4 lg:mb-16 xl:col-span-4 xl:col-start-6">
         <ul className="space-y-6">
           {items.map((t, i) => (
             <FeatureLine key={i} className="text-body-l-reg">
@@ -36,7 +36,7 @@ export default function AboutReasons({ data }: { data?: ReasonsData }) {
         </ul>
       </div>
 
-      <div className="col-span-5 col-start-2 mb-10 md:col-span-13 md:col-start-2 lg:col-start-4 lg:mb-16">
+      <div className="col-span-5 col-start-2 mb-10 md:col-span-13 md:col-start-2 lg:col-start-4 lg:mb-16 xl:col-span-9 xl:col-start-6">
         <Swiper
           modules={[Autoplay]}
           loop
@@ -70,7 +70,7 @@ export default function AboutReasons({ data }: { data?: ReasonsData }) {
         </Swiper>
       </div>
 
-      <div className="col-span-5 col-start-2 md:col-span-12 md:col-start-2 lg:col-span-8 lg:col-start-4">
+      <div className="col-span-5 col-start-2 md:col-span-12 md:col-start-2 lg:col-span-8 lg:col-start-4 xl:col-span-4 xl:col-start-6">
         <button className="btn btn-yellow-fill btn-lg">{ctaLabel}</button>
       </div>
     </section>

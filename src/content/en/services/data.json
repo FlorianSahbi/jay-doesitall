@@ -8,17 +8,13 @@
       "href": "/services/coaching",
       "title": "PERSONALIZED COACHING",
       "ctaLabel": "View program",
-      "cover": "/seed/home_coaching.png",
-      "aspect": { "base": "aspect-[311/420]", "lg": "aspect-square" },
-      "sizes": "(min-width:1440px) 36vw, (min-width:768px) 50vw, 100vw"
+      "cover": "/seed/home_coaching.png"
     },
     {
       "href": "/services/running",
       "title": "RUNNING PROGRAMS",
       "ctaLabel": "View program",
-      "cover": "/seed/home_running.png",
-      "aspect": { "base": "aspect-[311/420]", "lg": "aspect-square" },
-      "sizes": "(min-width:1440px) 36vw, (min-width:768px) 50vw, 100vw"
+      "cover": "/seed/home_running.png"
     }
   ]
 }

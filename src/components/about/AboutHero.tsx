@@ -71,14 +71,14 @@ export default function AboutHero({ data }: { data?: HeroData }) {
         </div>
       ) : null}
 
-      <div className="col-span-4 col-start-2 md:col-span-8 md:col-start-4 lg:col-span-6 lg:col-start-5">
+      <div className="col-span-4 col-start-2 md:col-span-12 md:col-start-2 lg:col-span-8 lg:col-start-4 xl:col-span-4 xl:col-start-6">
         <div
-          className="relative z-10 pb-10"
+          className="relative z-10 pb-20 lg:pb-32"
           style={{ marginTop: `calc(-1 * ${overlap})` }}
         >
           <p className="text-caption text-yellow mb-2">{kicker}</p>
 
-          <h1 className="text-title-1 md:text-display-s lg:text-display-xl leading-tight">
+          <h1 className="text-title-1 md:text-display-s lg:text-display-xl mb-6 leading-tight">
             {title}
           </h1>
 
@@ -93,10 +93,10 @@ export default function AboutHero({ data }: { data?: HeroData }) {
             ))}
           </div>
 
-          <div className="mt-16 text-center">
+          <div className="mt-16 text-center lg:mt-20">
             <p className="text-caption mb-2 text-white">{credo?.kicker}</p>
 
-            <h2 className="text-display-s lg:text-display-xl text-yellow mb-4 justify-self-center text-center lg:max-w-9/12">
+            <h2 className="text-display-s lg:text-display-xl text-yellow mb-16 justify-self-center text-center lg:mb-20 lg:max-w-9/12">
               {credo?.title}
             </h2>
 

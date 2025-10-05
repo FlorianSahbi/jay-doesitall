@@ -51,7 +51,7 @@ export default function HomeHero({ data }: { data: HomeHeroData }) {
               {data.title}
             </h1>
             <p className="text-title-4 md:text-title-2 mb-6">{data.subtitle}</p>
-            <button className="btn btn-sm btn-yellow-fill text-cta-s">
+            <button className="btn btn-sm lg:btn-lg lg:text-cta-l btn-yellow-fill text-cta-s">
               {data.ctaLabel}
             </button>
           </div>

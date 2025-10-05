@@ -8,7 +8,7 @@
   @apply text-caption rounded-[var(--radius-sm)] px-4 py-[14px];
 }
 @utility btn-lg {
-  @apply text-cta-l rounded-[var(--radius-md)] px-6 py-[18px];
+  @apply text-cta-l rounded-[var(--radius-md)] px-6 py-[16px];
 }
 
 /* fill */

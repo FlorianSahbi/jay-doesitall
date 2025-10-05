@@ -79,12 +79,14 @@ export default function NavOverlay({
 
       <FocusScope contain restoreFocus autoFocus>
         <div className="pointer-events-auto relative z-[2] flex h-full w-full items-center justify-center">
-          <button
-            onClick={onClose}
-            className="btn btn-sm text-cta-s lg:text-cta-l btn-black-fill pointer-events-auto fixed top-6 right-16 z-[10000]"
-          >
-            {closeLabel}
-          </button>
+          <div className="grid-layout absolute top-0 w-full py-6">
+            <button
+              onClick={onClose}
+              className="btn btn-sm text-cta-s lg:text-cta-l btn-black-fill pointer-events-auto z-[10000] col-start-5 md:col-start-13"
+            >
+              {closeLabel}
+            </button>
+          </div>
 
           <nav aria-label="Navigation principale">
             <motion.ul
