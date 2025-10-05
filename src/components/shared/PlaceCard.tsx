@@ -1,24 +1,27 @@
 // @path: src/components/shared/PlaceCard.tsx
 'use client'
 import Image from 'next/image'
+import type { AboutPlace } from '@/content/types/about'
+
+type PlaceCardProps = {
+  name: AboutPlace['name']
+  imgSrc: AboutPlace['src']
+  sections: AboutPlace['sections']
+  siteUrl?: AboutPlace['siteUrl']
+  priority?: boolean
+  sizes?: string
+  className?: string
+}
 
 export default function PlaceCard({
   name,
   imgSrc,
   sections,
   siteUrl,
-  className,
+  className = '',
   priority = false,
   sizes = '100vw',
-}: {
-  name: string
-  imgSrc: string
-  sections: any
-  siteUrl?: string
-  priority?: boolean
-  sizes?: string
-  className?: string
-}) {
+}: PlaceCardProps) {
   return (
     <article className={`rounded-2xl ${className}`}>
       <div className="relative aspect-square w-full overflow-hidden rounded-2xl">
@@ -33,7 +36,7 @@ export default function PlaceCard({
       </div>
 
       <div className="mt-6 space-y-6">
-        {sections.map((s: any, i: number) => (
+        {sections.map((s, i) => (
           <div key={i}>
             <h4 className="text-title-3 uppercase">{s.title}</h4>
             {s.subtitle ? (
@@ -53,15 +56,17 @@ export default function PlaceCard({
           </div>
         ))}
 
-        <a
-          href={siteUrl}
-          className="text-caption text-yellow inline-block"
-          target="_blank"
-          rel="noopener noreferrer"
-          // eslint-disable-next-line i18next/no-literal-string
-        >
-          SITE INTERNET
-        </a>
+        {siteUrl && (
+          <a
+            href={siteUrl}
+            className="text-caption text-yellow inline-block"
+            target="_blank"
+            rel="noopener noreferrer"
+            // eslint-disable-next-line i18next/no-literal-string
+          >
+            SITE INTERNET
+          </a>
+        )}
       </div>
     </article>
   )

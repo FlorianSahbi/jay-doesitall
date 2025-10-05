@@ -2,6 +2,18 @@
 'use client'
 
 import Image from 'next/image'
+import type { ReactNode } from 'react'
+
+type StickyHeroSectionProps = {
+  cover: string
+  alt?: string
+  topOverlapClass?: string
+  kicker: string
+  title: string
+  intro: string
+  children?: ReactNode
+  overlay?: boolean
+}
 
 export default function StickyHeroSection({
   cover,
@@ -11,7 +23,7 @@ export default function StickyHeroSection({
   title,
   intro,
   children,
-}: any) {
+}: StickyHeroSectionProps) {
   return (
     <section className="lg:grid-layout col-span-full">
       <div className="sticky top-0 h-screen lg:col-span-full">

@@ -5,15 +5,19 @@ import { notFound } from 'next/navigation'
 import { Link } from '@/i18n/navigation'
 import {
   getStaticParamsServices,
-  loadService,
   getPageMeta,
   getPageJsonLd,
 } from '@/content/loader'
+import ServicePlanCard from '@/components/shared/ServicePlanCard'
+import StickyHeroSection from '@/components/shared/StickyHeroSection'
+import { getServiceContent } from '@/content/mappers/services'
+import { Locale, LOCALES, normalizeLocale } from '@/i18n/locales'
 
 export async function generateStaticParams() {
   const slugs = await getStaticParamsServices()
-  const langs: Array<'fr' | 'en'> = ['fr', 'en']
-  return langs.flatMap((lang) => slugs.map(({ slug }) => ({ lang, slug })))
+  return LOCALES.flatMap((lang: Locale) =>
+    slugs.map(({ slug }) => ({ lang, slug })),
+  )
 }
 
 export async function generateMetadata({
@@ -22,12 +26,9 @@ export async function generateMetadata({
   params: Promise<{ lang: string; slug: string }>
 }): Promise<Metadata> {
   const { lang: rawLang, slug } = await params
-  const lang = (rawLang === 'en' ? 'en' : 'fr') as 'fr' | 'en'
-  return await getPageMeta(slug as any, lang)
+  const lang = normalizeLocale(rawLang)
+  return await getPageMeta(slug, lang)
 }
-
-import ServicePlanCard from '@/components/shared/ServicePlanCard'
-import StickyHeroSection from '@/components/shared/StickyHeroSection'
 
 export default async function ServiceSlugPage({
   params,
@@ -35,13 +36,12 @@ export default async function ServiceSlugPage({
   params: Promise<{ lang: string; slug: string }>
 }) {
   const { lang: rawLang, slug } = await params
-  const lang = (rawLang === 'en' ? 'en' : 'fr') as 'fr' | 'en'
+  const lang = normalizeLocale(rawLang)
 
-  const data = (await loadService(slug, lang)) as any
-  if (!data) return notFound()
-  const { service } = data
+  const service = await getServiceContent(slug, lang)
+  if (!service) return notFound()
 
-  const jsonLd = await getPageJsonLd(slug as any, lang)
+  const jsonLd = await getPageJsonLd(slug, lang)
 
   return (
     <>
@@ -64,7 +64,7 @@ export default async function ServiceSlugPage({
         intro={service.description}
       >
         <div className="grid grid-cols-1 gap-4 gap-y-6 lg:grid-cols-3 lg:gap-8">
-          {service.plans.map((p: any) => (
+          {service.plans.map((p) => (
             <ServicePlanCard
               key={p.title}
               title={p.title}

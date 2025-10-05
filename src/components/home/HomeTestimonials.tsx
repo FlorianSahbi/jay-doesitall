@@ -5,8 +5,14 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
+import type { HomeTestimonialsContent } from '@/content/types/home'
+import type React from 'react'
 
-export default function HomeTestimonials({ data }: any) {
+type HomeTestimonialsProps = {
+  data: HomeTestimonialsContent
+}
+
+export default function HomeTestimonials({ data }: HomeTestimonialsProps) {
   return (
     <section className="grid-layout col-span-full bg-white lg:py-20">
       <div className="bg-yellow col-span-full py-10 md:py-20 lg:col-span-12 lg:col-start-2 lg:rounded-2xl">
@@ -37,7 +43,7 @@ export default function HomeTestimonials({ data }: any) {
             },
           }}
         >
-          {data.items.map((item: any, i: number) => (
+          {data.items.map((item, i) => (
             <SwiperSlide key={i} className="!w-auto">
               <div className="aspect-[327/209] w-[var(--slide-w)] max-w-[85vw] flex-none rounded-3xl bg-white p-6 text-black md:aspect-[367/209]">
                 <p className="text-body-s-reg mb-6 text-center">{item.text}</p>

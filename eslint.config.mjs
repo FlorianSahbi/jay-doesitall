@@ -14,8 +14,7 @@ const eslintConfig = [
   {
     plugins: { i18next },
     rules: {
-      '@typescript-eslint/no-explicit-any': 'off',
-
+      // '@typescript-eslint/no-explicit-any': 'off',
       'i18next/no-literal-string': [
         'error',
         {

@@ -3,19 +3,15 @@
 
 import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
+import type { AboutHeroContent } from '@/content/types/about'
 
-export default function AboutHero({ data }: any) {
-  const cover = data?.cover
-  const kicker = data?.kicker ?? 'À PROPOS'
-  const title = data?.title ?? 'COACH SPORTIF & EXPERT EN RUNNING'
-  const paragraphs = data?.paragraphs ?? []
-  const credo = data?.credo
-  const overlapInput = data?.overlap ?? '12vh'
-  const overlap =
-    typeof overlapInput === 'number' ? `${overlapInput}px` : overlapInput
+type Props = { data: AboutHeroContent }
 
+export default function AboutHero({ data }: Props) {
   const sectionRef = useRef<HTMLDivElement | null>(null)
   const [imgOpacity, setImgOpacity] = useState(1)
+  const overlap =
+    typeof data.overlap === 'number' ? `${data.overlap}px` : data.overlap
 
   useEffect(() => {
     const onScroll = () => {
@@ -23,7 +19,6 @@ export default function AboutHero({ data }: any) {
       if (!el) return
       const rect = el.getBoundingClientRect()
       const fadeDist = Math.max(1, window.innerHeight * 0.18)
-      // rect.top passe de 0 (en haut) à négatif quand on scrolle
       const progress = Math.min(Math.max(-rect.top / fadeDist, 0), 1)
       setImgOpacity(1 - progress)
     }
@@ -37,39 +32,36 @@ export default function AboutHero({ data }: any) {
       ref={sectionRef}
       className="grid-layout col-span-full bg-black text-white"
     >
-      {/* IMAGE HERO : ~90% viewport en desktop, un peu moins en mobile */}
-      {cover ? (
-        <div
-          className="pointer-events-none top-0 z-0 col-span-full transition-opacity duration-500"
-          style={{ opacity: imgOpacity }}
-        >
-          <div className="relative h-[78vh] max-h-[1080px] w-full md:h-[84vh] lg:h-[90vh]">
-            <Image
-              src={cover}
-              alt={title}
-              fill
-              priority
-              sizes="100vw"
-              className="object-cover object-top"
-            />
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-b from-transparent via-black/40 to-black" />
-          </div>
+      <div
+        className="pointer-events-none top-0 z-0 col-span-full transition-opacity duration-500"
+        style={{ opacity: imgOpacity }}
+      >
+        <div className="relative h-[78vh] max-h-[1080px] w-full md:h-[84vh] lg:h-[90vh]">
+          <Image
+            src={data.cover}
+            alt={data.title}
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-top"
+          />
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-b from-transparent via-black/40 to-black" />
         </div>
-      ) : null}
+      </div>
 
       <div className="col-span-4 col-start-2 md:col-span-12 md:col-start-2 lg:col-span-8 lg:col-start-4 xl:col-span-4 xl:col-start-6">
         <div
           className="relative z-10 pb-20 lg:pb-32"
           style={{ marginTop: `calc(-1 * ${overlap})` }}
         >
-          <p className="text-caption text-yellow mb-2">{kicker}</p>
+          <p className="text-caption text-yellow mb-2">{data.kicker}</p>
 
           <h1 className="text-title-1 md:text-display-s lg:text-display-xl mb-6 leading-tight">
-            {title}
+            {data.title}
           </h1>
 
-          <div className="">
-            {paragraphs.map((p: any, i: number) => (
+          <div>
+            {data.paragraphs.map((p, i) => (
               <p
                 key={i}
                 className="text-body-s-reg lg:text-body-l-reg mt-4 leading-relaxed"
@@ -80,13 +72,13 @@ export default function AboutHero({ data }: any) {
           </div>
 
           <div className="mt-16 text-center lg:mt-20">
-            <p className="text-caption mb-2 text-white">{credo?.kicker}</p>
+            <p className="text-caption mb-2 text-white">{data.credo.kicker}</p>
 
             <h2 className="text-display-s lg:text-display-xl text-yellow mb-16 justify-self-center text-center lg:mb-20 lg:max-w-9/12">
-              {credo?.title}
+              {data.credo.title}
             </h2>
 
-            <p className="text-body-l-reg text-white">{credo?.text}</p>
+            <p className="text-body-l-reg text-white">{data.credo.text}</p>
           </div>
         </div>
       </div>

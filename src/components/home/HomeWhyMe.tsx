@@ -2,8 +2,13 @@
 'use client'
 
 import Image from 'next/image'
+import type { HomeWhyMeContent } from '@/content/types/home'
 
-export default function HomeWhyMe({ data }: any) {
+type HomeWhyMeProps = {
+  data: HomeWhyMeContent
+}
+
+export default function HomeWhyMe({ data }: HomeWhyMeProps) {
   return (
     <section className="relative col-span-full overflow-hidden py-20 lg:aspect-video">
       <Image
@@ -26,7 +31,7 @@ export default function HomeWhyMe({ data }: any) {
           <div className="col-span-4 col-start-2 md:col-span-12 md:col-start-2">
             <div className="mx-auto max-w-80 md:max-w-2xl lg:max-w-5xl">
               <div className="mt-8 mb-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
-                {data.items.map((item: any) => (
+                {data.items.map((item) => (
                   <div
                     key={item.num}
                     className="aspect-[312/175] rounded-3xl bg-white p-6 md:aspect-[312/204] lg:aspect-square"

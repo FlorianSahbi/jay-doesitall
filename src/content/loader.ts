@@ -4,11 +4,11 @@ import type { Metadata } from 'next'
 import type { Locale } from '@/i18n/locales'
 import { DEFAULT_LOCALE } from '@/i18n/locales'
 
-const toArray = (v?: any | any[]) => (Array.isArray(v) ? v : v ? [v] : [])
+const toArray = <T>(v?: T | T[]): T[] => (Array.isArray(v) ? v : v ? [v] : [])
 
 const norm = (id: string) => id.replace(/^\/+|\/+$/g, '')
 
-async function importFromLocale<T = any>(
+async function importFromLocale<T = unknown>(
   locale: Locale,
   path: string,
 ): Promise<T> {
@@ -24,36 +24,55 @@ async function importFromLocale<T = any>(
 
 export async function loadGlobals(
   locale: Locale = DEFAULT_LOCALE,
-): Promise<any> {
-  return importFromLocale<any>(locale, 'globals/data.json')
+): Promise<unknown> {
+  return importFromLocale<unknown>(locale, 'globals/data.json')
 }
 
-export async function loadPage<T = any>(
-  id: string, // ex: 'about'
+export type PageData<T> = (T extends object ? T : Record<string, never>) & {
+  meta: unknown
+  jsonLd: unknown[]
+}
+
+export async function loadPage<T = unknown>(
+  id: string,
   locale: Locale = DEFAULT_LOCALE,
-): Promise<T> {
+): Promise<PageData<T>> {
   const safeId = norm(id)
   const [data, meta, jsonLd] = await Promise.all([
-    importFromLocale<any>(locale, `${safeId}/data.json`).catch(() => ({})),
-    importFromLocale<any>(locale, `${safeId}/meta.json`).catch(() => ({})),
-    importFromLocale<any>(locale, `${safeId}/jsonld.json`).catch(() => []),
+    importFromLocale<T>(locale, `${safeId}/data.json`).catch(() => ({}) as T),
+    importFromLocale<unknown>(locale, `${safeId}/meta.json`).catch(() => ({})),
+    importFromLocale<unknown | unknown[]>(
+      locale,
+      `${safeId}/jsonld.json`,
+    ).catch(() => []),
   ])
+
+  const dataObj =
+    typeof data === 'object' && data !== null
+      ? data
+      : ({} as Record<string, unknown>)
+
   if (
-    (process.env.NODE_ENV !== 'production' && !data) ||
-    Object.keys(data).length === 0
+    (process.env.NODE_ENV !== 'production' && !dataObj) ||
+    Object.keys(dataObj).length === 0
   ) {
     console.warn(
       `[content] Missing data for ${locale}/${safeId}/data.json (fallback may have been used)`,
     )
   }
-  return { ...(data ?? {}), meta: meta ?? {}, jsonLd: toArray(jsonLd) } as T
+
+  return {
+    ...(dataObj as object),
+    meta,
+    jsonLd: toArray(jsonLd),
+  } as PageData<T>
 }
 
 export async function getPageMeta(
   id: string,
   locale: Locale = DEFAULT_LOCALE,
 ): Promise<Metadata> {
-  const page = await loadPage<any>(id, locale)
+  const page = await loadPage<unknown>(id, locale)
   return (page?.meta ?? {}) as Metadata
 }
 
@@ -61,7 +80,7 @@ export async function getPageJsonLd(
   id: string,
   locale: Locale = DEFAULT_LOCALE,
 ) {
-  const page = await loadPage<any>(id, locale)
+  const page = await loadPage<unknown>(id, locale)
   return toArray(page?.jsonLd)
 }
 
@@ -69,7 +88,7 @@ export async function listServiceSlugs() {
   return ['coaching', 'running']
 }
 
-export async function loadService<T = any>(
+export async function loadService<T = unknown>(
   slug: string,
   locale: Locale = DEFAULT_LOCALE,
 ) {

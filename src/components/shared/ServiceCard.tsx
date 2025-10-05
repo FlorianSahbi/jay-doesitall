@@ -3,6 +3,15 @@
 
 import { Link } from '@/i18n/navigation'
 import Image from 'next/image'
+import type { ServicesIndexCard } from '@/content/types/services'
+
+type ServiceCardProps = Pick<
+  ServicesIndexCard,
+  'href' | 'title' | 'cover' | 'ctaLabel'
+> & {
+  className?: string
+  sizes?: string
+}
 
 export default function ServiceCard({
   href,
@@ -11,14 +20,7 @@ export default function ServiceCard({
   sizes = '100vw',
   ctaLabel,
   className = '',
-}: {
-  href: string
-  title: string
-  cover: string
-  sizes?: string
-  ctaLabel: string
-  className?: string
-}) {
+}: ServiceCardProps) {
   return (
     <Link
       href={href}

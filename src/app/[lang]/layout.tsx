@@ -1,11 +1,13 @@
 // @path: src/app/[lang]/layout.tsx
+// src/app/[lang]/layout.tsx
 import { Poppins, Mohave } from 'next/font/google'
 import './globals.css'
 import Footer from '@/components/globals/Footer'
 import Navigation from '@/components/globals/Navigation'
-import { loadGlobals } from '@/content/loader'
 import { NextIntlClientProvider } from 'next-intl'
 import React from 'react'
+import { getGlobalsContent } from '@/content/mappers/globals'
+import { normalizeLocale, type Locale, LOCALES } from '@/i18n/locales'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -25,7 +27,7 @@ export const metadata = {
 }
 
 export async function generateStaticParams() {
-  return [{ lang: 'fr' }, { lang: 'en' }]
+  return LOCALES.map((lang) => ({ lang }))
 }
 
 export default async function RootLayout({
@@ -36,7 +38,7 @@ export default async function RootLayout({
   params: Promise<{ lang: string }>
 }) {
   const { lang: rawLang } = await params
-  const lang = (rawLang === 'en' ? 'en' : 'fr') as 'fr' | 'en'
+  const lang: Locale = normalizeLocale(rawLang)
 
   const {
     menu,
@@ -46,7 +48,7 @@ export default async function RootLayout({
     openLabel,
     closeLabel,
     brand,
-  } = await loadGlobals(lang)
+  } = await getGlobalsContent(lang)
 
   return (
     <html lang={lang}>

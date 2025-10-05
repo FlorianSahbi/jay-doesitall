@@ -2,7 +2,16 @@
 'use client'
 
 import Image from 'next/image'
-import { Link } from '@/i18n/navigation' // ✅ ton Link localisé (next-intl)
+import { Link } from '@/i18n/navigation'
+
+type NotFoundHeroProps = {
+  backgroundImage: string
+  imageAlt: string
+  title: string
+  subtitle: string
+  ctaLabel: string
+  ctaHref: string
+}
 
 export default function NotFoundHero({
   backgroundImage,
@@ -11,7 +20,7 @@ export default function NotFoundHero({
   subtitle,
   ctaLabel,
   ctaHref,
-}: any) {
+}: NotFoundHeroProps) {
   return (
     <section className="grid-layout col-span-full bg-black">
       <div className="grid-layout relative col-span-full h-screen">

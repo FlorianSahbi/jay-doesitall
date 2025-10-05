@@ -3,7 +3,9 @@ import type { Metadata } from 'next'
 import Script from 'next/script'
 import StickyHeroSection from '@/components/shared/StickyHeroSection'
 import { PAGES } from '@/content/ids'
-import { loadPage, getPageMeta, getPageJsonLd } from '@/content/loader'
+import { getPageMeta, getPageJsonLd } from '@/content/loader'
+import { getContactPageContent } from '@/content/mappers/contact'
+import { normalizeLocale } from '@/i18n/locales'
 
 export async function generateMetadata({
   params,
@@ -11,7 +13,7 @@ export async function generateMetadata({
   params: Promise<{ lang: string }>
 }): Promise<Metadata> {
   const { lang: rawLang } = await params
-  const lang = (rawLang === 'en' ? 'en' : 'fr') as 'fr' | 'en'
+  const lang = normalizeLocale(rawLang)
   return await getPageMeta(PAGES.CONTACT, lang)
 }
 
@@ -21,9 +23,9 @@ export default async function ContactPage({
   params: Promise<{ lang: string }>
 }) {
   const { lang: rawLang } = await params
-  const lang = (rawLang === 'en' ? 'en' : 'fr') as 'fr' | 'en'
+  const lang = normalizeLocale(rawLang)
 
-  const data = (await loadPage(PAGES.CONTACT, lang)) as any
+  const data = await getContactPageContent(lang)
   const { hero, kicker, title, intro, cta } = data
 
   const jsonLd = await getPageJsonLd(PAGES.CONTACT, lang)

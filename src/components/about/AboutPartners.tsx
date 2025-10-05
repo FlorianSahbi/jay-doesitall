@@ -3,8 +3,11 @@
 
 import { useRef } from 'react'
 import PartnerCard from '@/components/shared/PartnerCard'
+import type { AboutPartnersContent } from '@/content/types/about'
 
-export default function AboutPartners({ data }: any) {
+type Props = { data: AboutPartnersContent }
+
+export default function AboutPartners({ data }: Props) {
   const sectionRef = useRef<HTMLDivElement | null>(null)
 
   return (
@@ -20,7 +23,7 @@ export default function AboutPartners({ data }: any) {
         </p>
 
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-8">
-          {data.items.map((p: any, idx: number) => (
+          {data.items.map((p, idx) => (
             <div
               key={p.alt + idx}
               className={idx % 2 === 1 ? 'mt-10 md:mt-20' : ''}

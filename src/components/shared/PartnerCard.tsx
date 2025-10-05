@@ -1,6 +1,17 @@
 // @path: src/components/shared/PartnerCard.tsx
 import Image from 'next/image'
 import type { ReactNode } from 'react'
+import type { AboutPartnerItem } from '@/content/types/about'
+
+type PartnerCardProps = {
+  imgSrc: AboutPartnerItem['imgSrc']
+  alt: AboutPartnerItem['alt']
+  description: ReactNode
+  sizes?: string
+  className?: string
+  cardClassName?: string
+  priority?: boolean
+}
 
 export default function PartnerCard({
   imgSrc,
@@ -10,15 +21,7 @@ export default function PartnerCard({
   className = '',
   cardClassName = '',
   priority = false,
-}: {
-  imgSrc: string
-  alt: string
-  description: ReactNode
-  sizes?: string
-  className?: string
-  cardClassName?: string
-  priority?: boolean
-}) {
+}: PartnerCardProps) {
   return (
     <article className={className}>
       <div

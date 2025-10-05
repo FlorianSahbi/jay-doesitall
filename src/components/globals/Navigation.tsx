@@ -1,4 +1,5 @@
 // @path: src/components/globals/Navigation.tsx
+// src/components/globals/Navigation.tsx
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
@@ -7,6 +8,15 @@ import NavHeader from './NavHeader'
 import NavOverlay from './NavOverlay'
 import { OverlayContainer } from 'react-aria'
 import { useScroll, useMotionValueEvent } from 'framer-motion'
+import type { NavMenuItem } from '@/content/types/globals'
+
+type NavigationProps = {
+  menu: NavMenuItem[]
+  openLabel: string
+  closeLabel: string
+  brand: string
+  hideOnScroll?: boolean
+}
 
 export default function Navigation({
   menu,
@@ -14,13 +24,7 @@ export default function Navigation({
   closeLabel,
   brand,
   hideOnScroll = true,
-}: {
-  menu: any
-  openLabel: string
-  closeLabel: string
-  brand: string
-  hideOnScroll?: boolean
-}) {
+}: NavigationProps) {
   const pathname = usePathname()
   const [open, setOpen] = useState(false)
   const [hidden, setHidden] = useState(false)

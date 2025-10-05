@@ -4,8 +4,13 @@
 import { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import Image from 'next/image'
+import type { HomeHeroContent } from '@/content/types/home'
 
-export default function HomeHero({ data }: any) {
+type HomeHeroProps = {
+  data: HomeHeroContent
+}
+
+export default function HomeHero({ data }: HomeHeroProps) {
   const ref = useRef<HTMLDivElement | null>(null)
 
   const { scrollYProgress } = useScroll({

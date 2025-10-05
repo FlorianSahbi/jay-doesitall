@@ -1,4 +1,5 @@
 // @path: src/components/globals/NavOverlay.tsx
+// src/components/globals/NavOverlay.tsx
 'use client'
 
 import { Link, usePathname } from '@/i18n/navigation'
@@ -11,6 +12,7 @@ import {
 } from 'react-aria'
 import { motion, type Variants } from 'framer-motion'
 import { useRef } from 'react'
+import type { NavMenuItem } from '@/content/types/globals'
 
 const backdropVariants: Variants = {
   hidden: { opacity: 0 },
@@ -28,31 +30,27 @@ const itemVariants: Variants = {
   },
 }
 
+type NavOverlayProps = {
+  menu: NavMenuItem[]
+  closeLabel: string
+  onClose: () => void
+}
+
 export default function NavOverlay({
   menu,
   closeLabel,
   onClose,
-}: {
-  menu: any
-  closeLabel: string
-  onClose: () => void
-}) {
+}: NavOverlayProps) {
   const pathname = usePathname()
   const ref = useRef<HTMLDivElement>(null)
 
   usePreventScroll()
-  const { overlayProps, underlayProps } = useOverlay(
+  const { overlayProps } = useOverlay(
     { isOpen: true, onClose, isDismissable: true },
     ref,
   )
   const { modalProps } = useModal()
   const { dialogProps } = useDialog({ 'aria-label': 'Site menu' }, ref)
-
-  const underlayMotionSafe = { ...(underlayProps as any) }
-  delete (underlayMotionSafe as any).onAnimationStart
-  delete (underlayMotionSafe as any).onAnimationEnd
-  delete (underlayMotionSafe as any).onAnimationStartCapture
-  delete (underlayMotionSafe as any).onAnimationEndCapture
 
   return (
     <div
@@ -66,7 +64,6 @@ export default function NavOverlay({
       className="pointer-events-none fixed inset-0 z-[9999] overflow-hidden"
     >
       <motion.div
-        {...underlayMotionSafe}
         initial="hidden"
         animate="visible"
         variants={backdropVariants}
@@ -93,7 +90,7 @@ export default function NavOverlay({
               animate="visible"
               variants={listVariants}
             >
-              {menu.map((l: any) => {
+              {menu.map((l) => {
                 const active = pathname === l.href
                 return (
                   <motion.li key={l.href} variants={itemVariants}>

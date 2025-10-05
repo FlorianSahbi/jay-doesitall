@@ -1,12 +1,14 @@
 // @path: src/app/[lang]/about/page.tsx
 import type { Metadata } from 'next'
 import Script from 'next/script'
-import { loadPage, getPageMeta, getPageJsonLd } from '@/content/loader'
+import { getPageMeta, getPageJsonLd } from '@/content/loader'
+import { PAGES } from '@/content/ids'
+import { getAboutPageContent } from '@/content/mappers/about'
 import AboutHero from '@/components/about/AboutHero'
 import AboutLocations from '@/components/about/AboutLocations'
 import AboutPartners from '@/components/about/AboutPartners'
 import AboutReasons from '@/components/about/AboutReasons'
-import { PAGES } from '@/content/ids'
+import { normalizeLocale } from '@/i18n/locales'
 
 export async function generateMetadata({
   params,
@@ -14,7 +16,7 @@ export async function generateMetadata({
   params: Promise<{ lang: string }>
 }): Promise<Metadata> {
   const { lang: rawLang } = await params
-  const lang = (rawLang === 'en' ? 'en' : 'fr') as 'fr' | 'en'
+  const lang = normalizeLocale(rawLang)
   return await getPageMeta(PAGES.ABOUT, lang)
 }
 
@@ -24,9 +26,9 @@ export default async function AboutPage({
   params: Promise<{ lang: string }>
 }) {
   const { lang: rawLang } = await params
-  const lang = (rawLang === 'en' ? 'en' : 'fr') as 'fr' | 'en'
+  const lang = normalizeLocale(rawLang)
 
-  const DATA = (await loadPage(PAGES.ABOUT, lang)) as any
+  const DATA = await getAboutPageContent(lang)
   const { hero, reasons, locations, partners } = DATA
 
   const jsonLd = await getPageJsonLd(PAGES.ABOUT, lang)
