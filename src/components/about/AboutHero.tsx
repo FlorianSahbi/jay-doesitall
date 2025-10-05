@@ -4,21 +4,7 @@
 import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
 
-type HeroData = {
-  cover?: string
-  kicker?: string
-  title?: string
-  paragraphs?: string[]
-  credo?: {
-    kicker?: string
-    title?: string
-    text?: string
-    links?: { label: string; href: string }[]
-  }
-  overlap?: string | number
-}
-
-export default function AboutHero({ data }: { data?: HeroData }) {
+export default function AboutHero({ data }: any) {
   const cover = data?.cover
   const kicker = data?.kicker ?? 'À PROPOS'
   const title = data?.title ?? 'COACH SPORTIF & EXPERT EN RUNNING'
@@ -54,7 +40,7 @@ export default function AboutHero({ data }: { data?: HeroData }) {
       {/* IMAGE HERO : ~90% viewport en desktop, un peu moins en mobile */}
       {cover ? (
         <div
-          className="pointer-events-none relative sticky top-0 z-0 col-span-full transition-opacity duration-500"
+          className="pointer-events-none top-0 z-0 col-span-full transition-opacity duration-500"
           style={{ opacity: imgOpacity }}
         >
           <div className="relative h-[78vh] max-h-[1080px] w-full md:h-[84vh] lg:h-[90vh]">
@@ -83,7 +69,7 @@ export default function AboutHero({ data }: { data?: HeroData }) {
           </h1>
 
           <div className="">
-            {paragraphs.map((p, i) => (
+            {paragraphs.map((p: any, i: number) => (
               <p
                 key={i}
                 className="text-body-s-reg lg:text-body-l-reg mt-4 leading-relaxed"

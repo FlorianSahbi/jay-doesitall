@@ -3,13 +3,6 @@
 
 import { Instagram, Youtube } from 'lucide-react'
 
-type Props = {
-  href: string
-  label: string
-  icon: 'instagram' | 'youtube' | 'tiktok'
-  className?: string
-}
-
 function TikTokIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
@@ -26,7 +19,7 @@ export default function SocialBadge({
   label,
   icon,
   className = '',
-}: Props) {
+}: any) {
   const base =
     'inline-flex h-9 w-9 items-center justify-center rounded-[12px] bg-yellow text-black hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow/70'
 

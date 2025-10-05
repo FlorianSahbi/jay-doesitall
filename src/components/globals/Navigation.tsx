@@ -4,7 +4,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { usePathname } from 'next/navigation'
 import NavHeader from './NavHeader'
-import NavOverlay, { type NavItem } from './NavOverlay'
+import NavOverlay from './NavOverlay'
 import { OverlayContainer } from 'react-aria'
 import { useScroll, useMotionValueEvent } from 'framer-motion'
 
@@ -15,7 +15,7 @@ export default function Navigation({
   brand,
   hideOnScroll = true,
 }: {
-  menu: NavItem[]
+  menu: any
   openLabel: string
   closeLabel: string
   brand: string

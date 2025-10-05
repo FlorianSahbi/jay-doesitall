@@ -7,14 +7,7 @@ import 'swiper/css'
 import Image from 'next/image'
 import FeatureLine from '@/components/shared/FeatureLine'
 
-type ReasonsData = {
-  title?: string
-  items?: string[]
-  gallery?: { src: string; alt?: string }[]
-  ctaLabel?: string
-}
-
-export default function AboutReasons({ data }: { data?: ReasonsData }) {
+export default function AboutReasons({ data }: any) {
   const title = data?.title ?? 'POURQUOI SE FAIRE COACHER PAR MOI ?'
   const items = data?.items ?? []
   const gallery = data?.gallery ?? []
@@ -28,7 +21,7 @@ export default function AboutReasons({ data }: { data?: ReasonsData }) {
 
       <div className="col-span-4 col-start-2 mb-10 md:col-span-12 md:col-start-2 lg:col-span-8 lg:col-start-4 lg:mb-16 xl:col-span-4 xl:col-start-6">
         <ul className="space-y-6">
-          {items.map((t, i) => (
+          {items.map((t: any, i: number) => (
             <FeatureLine key={i} className="text-body-l-reg">
               {t}
             </FeatureLine>
@@ -53,7 +46,7 @@ export default function AboutReasons({ data }: { data?: ReasonsData }) {
             1440: { slidesPerView: 3.6, spaceBetween: 32 },
           }}
         >
-          {gallery.map((img, i) => (
+          {gallery.map((img: any, i: number) => (
             <SwiperSlide key={i}>
               <div className="relative aspect-[293/440] w-full overflow-hidden rounded-2xl">
                 <Image

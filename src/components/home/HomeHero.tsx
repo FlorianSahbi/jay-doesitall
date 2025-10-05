@@ -5,20 +5,7 @@ import { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import Image from 'next/image'
 
-type HomeHeroData = {
-  backgroundImage: string
-  imageAlt: string
-  title: string
-  subtitle: string
-  ctaLabel: string
-  about: {
-    kicker: string
-    text: string
-    ctaLabel: string
-  }
-}
-
-export default function HomeHero({ data }: { data: HomeHeroData }) {
+export default function HomeHero({ data }: any) {
   const ref = useRef<HTMLDivElement | null>(null)
 
   const { scrollYProgress } = useScroll({

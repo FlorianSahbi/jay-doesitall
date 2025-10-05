@@ -1,21 +1,13 @@
 // @path: src/components/shared/ServicePlanCard.tsx
 import FeatureLine from './FeatureLine'
 
-type Props = {
-  title: string
-  price: string
-  features: string[]
-  type?: string
-  className?: string
-}
-
 export default function ServicePlanCard({
   title,
   price,
   features,
   type,
   className = '',
-}: Props) {
+}: any) {
   return (
     <article
       className={[
@@ -29,7 +21,7 @@ export default function ServicePlanCard({
 
       {features && features.length > 0 && (
         <ul className="mb-10 space-y-4">
-          {features.map((f) => (
+          {features.map((f: any) => (
             <FeatureLine key={f}>{f}</FeatureLine>
           ))}
         </ul>

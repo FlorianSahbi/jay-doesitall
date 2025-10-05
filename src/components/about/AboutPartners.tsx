@@ -4,17 +4,7 @@
 import { useRef } from 'react'
 import PartnerCard from '@/components/shared/PartnerCard'
 
-type PartnersData = {
-  title?: string
-  intro?: string
-  items: Array<{
-    imgSrc: string
-    alt: string
-    description: string
-  }>
-}
-
-export default function AboutPartners({ data }: { data: PartnersData }) {
+export default function AboutPartners({ data }: any) {
   const sectionRef = useRef<HTMLDivElement | null>(null)
 
   return (
@@ -30,7 +20,7 @@ export default function AboutPartners({ data }: { data: PartnersData }) {
         </p>
 
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-8">
-          {data.items.map((p, idx) => (
+          {data.items.map((p: any, idx: number) => (
             <div
               key={p.alt + idx}
               className={idx % 2 === 1 ? 'mt-10 md:mt-20' : ''}

@@ -6,7 +6,7 @@ import { Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
 
-export default function HomeTestimonials({ data }: { data: any }) {
+export default function HomeTestimonials({ data }: any) {
   return (
     <section className="grid-layout col-span-full bg-white lg:py-20">
       <div className="bg-yellow col-span-full py-10 md:py-20 lg:col-span-12 lg:col-start-2 lg:rounded-2xl">

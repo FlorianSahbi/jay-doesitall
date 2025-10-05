@@ -12,8 +12,6 @@ import {
 import { motion, type Variants } from 'framer-motion'
 import { useRef } from 'react'
 
-export type NavItem = { label: string; href: string }
-
 const backdropVariants: Variants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 },
@@ -35,7 +33,7 @@ export default function NavOverlay({
   closeLabel,
   onClose,
 }: {
-  menu: NavItem[]
+  menu: any
   closeLabel: string
   onClose: () => void
 }) {
@@ -95,7 +93,7 @@ export default function NavOverlay({
               animate="visible"
               variants={listVariants}
             >
-              {menu.map((l) => {
+              {menu.map((l: any) => {
                 const active = pathname === l.href
                 return (
                   <motion.li key={l.href} variants={itemVariants}>

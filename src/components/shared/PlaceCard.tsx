@@ -2,11 +2,6 @@
 'use client'
 import Image from 'next/image'
 
-type Section = {
-  title: string
-  subtitle?: { text: string; href?: string }
-}
-
 export default function PlaceCard({
   name,
   imgSrc,
@@ -18,7 +13,7 @@ export default function PlaceCard({
 }: {
   name: string
   imgSrc: string
-  sections: Section[]
+  sections: any
   siteUrl?: string
   priority?: boolean
   sizes?: string
@@ -38,7 +33,7 @@ export default function PlaceCard({
       </div>
 
       <div className="mt-6 space-y-6">
-        {sections.map((s, i) => (
+        {sections.map((s: any, i: number) => (
           <div key={i}>
             <h4 className="text-title-3 uppercase">{s.title}</h4>
             {s.subtitle ? (

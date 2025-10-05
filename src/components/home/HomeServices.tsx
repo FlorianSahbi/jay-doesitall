@@ -4,7 +4,7 @@
 import { Link } from '@/i18n/navigation'
 import ServiceCard from '../shared/ServiceCard'
 
-export default function HomeServices({ data }: { data: any }) {
+export default function HomeServices({ data }: any) {
   return (
     <section className="grid-layout col-span-full bg-black py-20 text-white lg:py-32">
       <div className="col-span-4 col-start-2 md:col-span-12 md:col-start-2 lg:col-span-10 lg:col-start-3">

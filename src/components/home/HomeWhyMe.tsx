@@ -3,7 +3,7 @@
 
 import Image from 'next/image'
 
-export default function HomeWhyMe({ data }: { data: any }) {
+export default function HomeWhyMe({ data }: any) {
   return (
     <section className="relative col-span-full overflow-hidden py-20 lg:aspect-video">
       <Image
