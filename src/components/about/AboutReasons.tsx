@@ -27,7 +27,11 @@ export default function AboutReasons({ data }: Props) {
         </ul>
       </div>
 
-      <div className="col-span-5 col-start-2 mb-10 md:col-span-13 md:col-start-2 lg:col-start-4 lg:mb-16 xl:col-span-9 xl:col-start-6">
+      <div className="col-span-5 col-start-2 mb-16 md:col-span-12 md:col-start-2 lg:col-span-8 lg:col-start-4 xl:col-span-4 xl:col-start-6">
+        <button className="btn-yellow-fill">{data.ctaLabel}</button>
+      </div>
+
+      <div className="col-span-23 col-start-1 mb-10">
         <Swiper
           modules={[Autoplay]}
           loop
@@ -38,10 +42,12 @@ export default function AboutReasons({ data }: Props) {
             pauseOnMouseEnter: true,
           }}
           spaceBetween={12}
+          slidesOffsetBefore={24}
+          slidesOffsetAfter={24}
           slidesPerView={1.2}
           breakpoints={{
             768: { slidesPerView: 2.4, spaceBetween: 16 },
-            1440: { slidesPerView: 3.6, spaceBetween: 32 },
+            1440: { slidesPerView: 4.1, spaceBetween: 32 },
           }}
         >
           {data.gallery.map((img, i) => (
@@ -59,10 +65,6 @@ export default function AboutReasons({ data }: Props) {
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
-
-      <div className="col-span-5 col-start-2 md:col-span-12 md:col-start-2 lg:col-span-8 lg:col-start-4 xl:col-span-4 xl:col-start-6">
-        <button className="btn-yellow-fill">{data.ctaLabel}</button>
       </div>
     </section>
   )
