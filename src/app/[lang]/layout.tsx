@@ -1,5 +1,5 @@
 // @path: src/app/[lang]/layout.tsx
-// src/app/[lang]/layout.tsx
+
 import { Poppins, Mohave } from 'next/font/google'
 import './globals.css'
 import Footer from '@/components/globals/Footer'

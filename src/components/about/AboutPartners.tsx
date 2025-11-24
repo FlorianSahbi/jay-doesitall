@@ -4,6 +4,7 @@
 import { useRef } from 'react'
 import PartnerCard from '@/components/shared/PartnerCard'
 import type { AboutPartnersContent } from '@/content/types/about'
+import { linkifyKeywords } from '@/lib/linkifyKeywords'
 
 type Props = { data: AboutPartnersContent }
 
@@ -32,7 +33,7 @@ export default function AboutPartners({ data }: Props) {
                 cardClassName="aspect-[311/384]"
                 imgSrc={p.imgSrc}
                 alt={p.alt}
-                description={<p>{p.description}</p>}
+                description={<p>{linkifyKeywords(p.description)}</p>}
                 priority={idx === 0}
               />
             </div>

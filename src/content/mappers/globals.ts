@@ -1,5 +1,5 @@
 // @path: src/content/mappers/globals.ts
-// src/content/mappers/globals.ts
+
 import { loadGlobals } from '@/content/loader'
 import { GlobalsContentSchema } from '@/content/schemas/globals'
 import { Locale } from '@/i18n/locales'

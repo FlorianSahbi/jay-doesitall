@@ -1,6 +1,6 @@
 {
   "hero": {
-    "backgroundImage": "/seed/home_hero.png",
+    "backgroundImage": "/seed/home/home_hero.png",
     "imageAlt": "Hero background",
     "title": "JAY DOESITALL",
     "subtitle": "COACH SPORTIF",
@@ -20,13 +20,13 @@
         "href": "/services/coaching",
         "title": "COACHING PERSONNALISÉS",
         "ctaLabel": "Voir le programme",
-        "cover": "/seed/home_coaching.png"
+        "cover": "/seed/home/home_coaching.png"
       },
       {
         "href": "/services/running",
         "title": "PROGRAMMES RUNNING",
         "ctaLabel": "Voir le programme",
-        "cover": "/seed/home_running.png"
+        "cover": "/seed/home/home_running.png"
       }
     ]
   },
@@ -69,7 +69,7 @@
   },
   "whyMe": {
     "title": "POURQUOI ME FAIRE CONFIANCE ?",
-    "backgroundImage": "/seed/why_me_cover.png",
+    "backgroundImage": "/seed/home/home_why_me_cover.png",
     "backgroundAlt": "Fond section Pourquoi",
     "ctaLabel": "RÉSERVEZ UN COACHING !",
     "items": [

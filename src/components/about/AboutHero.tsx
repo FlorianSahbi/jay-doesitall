@@ -4,6 +4,7 @@
 import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
 import type { AboutHeroContent } from '@/content/types/about'
+import { linkifyKeywords } from '@/lib/linkifyKeywords'
 
 type Props = { data: AboutHeroContent }
 
@@ -78,7 +79,9 @@ export default function AboutHero({ data }: Props) {
               {data.credo.title}
             </h2>
 
-            <p className="text-body-l-reg text-white">{data.credo.text}</p>
+            <p className="text-body-l-reg text-white">
+              {linkifyKeywords(data.credo.text)}
+            </p>
           </div>
         </div>
       </div>

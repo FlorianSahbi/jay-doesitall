@@ -5,6 +5,7 @@ import { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import Image from 'next/image'
 import type { HomeHeroContent } from '@/content/types/home'
+import Link from 'next/link'
 
 type HomeHeroProps = {
   data: HomeHeroContent
@@ -60,9 +61,12 @@ export default function HomeHero({ data }: HomeHeroProps) {
           {data.about.text}
         </p>
 
-        <button className="btn-yellow-outline col-span-4 col-start-2 max-w-max text-black">
+        <Link
+          href="/about"
+          className="btn-yellow-outline col-span-4 col-start-2 max-w-max text-black"
+        >
           {data.about.ctaLabel}
-        </button>
+        </Link>
       </motion.div>
     </section>
   )

@@ -1,5 +1,5 @@
 // @path: src/content/schemas/globals.ts
-// src/content/schemas/globals.ts
+
 import { z } from 'zod'
 
 export const SocialIconSchema = z.enum(['instagram', 'youtube', 'tiktok'])

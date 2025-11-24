@@ -1,6 +1,6 @@
 {
   "hero": {
-    "backgroundImage": "/seed/home_hero.png",
+    "backgroundImage": "/seed/home/home_hero.png",
     "imageAlt": "Hero background",
     "title": "JAY DOESITALL",
     "subtitle": "PERSONAL TRAINER",
@@ -20,13 +20,13 @@
         "href": "/services/coaching",
         "title": "PERSONALIZED COACHING",
         "ctaLabel": "View program",
-        "cover": "/seed/home_coaching.png"
+        "cover": "/seed/home/home_coaching.png"
       },
       {
         "href": "/services/running",
         "title": "RUNNING PROGRAMS",
         "ctaLabel": "View program",
-        "cover": "/seed/home_running.png"
+        "cover": "/seed/home/home_running.png"
       }
     ]
   },
@@ -69,7 +69,7 @@
   },
   "whyMe": {
     "title": "WHY CHOOSE ME?",
-    "backgroundImage": "/seed/why_me_cover.png",
+    "backgroundImage": "/seed/home/home_why_me_cover.png",
     "backgroundAlt": "Why section background",
     "ctaLabel": "BOOK COACHING!",
     "items": [

@@ -1,5 +1,4 @@
 // @path: src/components/globals/Navigation.tsx
-// src/components/globals/Navigation.tsx
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
@@ -28,16 +27,22 @@ export default function Navigation({
   const pathname = usePathname()
   const [open, setOpen] = useState(false)
   const [hidden, setHidden] = useState(false)
+  const [scrolled, setScrolled] = useState(false) // 👈 nouvel état
 
   const { scrollY } = useScroll()
   const lastY = useRef(0)
   const THRESH = 8
 
   useEffect(() => {
-    lastY.current = scrollY.get()
+    const y = scrollY.get()
+    lastY.current = y
+    setScrolled(y > 0) // si on arrive sur la page déjà scrollé (ancre)
   }, [scrollY])
 
   useMotionValueEvent(scrollY, 'change', (y) => {
+    // 👇 fond blanc dès qu'on a un peu scroll
+    setScrolled(y > 8)
+
     if (!hideOnScroll || open) {
       if (hidden) setHidden(false)
       lastY.current = y
@@ -63,6 +68,7 @@ export default function Navigation({
         openLabel={openLabel}
         showMenuButton={!open}
         hidden={hidden}
+        scrolled={scrolled}
       />
       {open && (
         <OverlayContainer>

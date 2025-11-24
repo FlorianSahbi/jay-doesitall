@@ -1,5 +1,5 @@
 // @path: src/components/globals/NavOverlay.tsx
-// src/components/globals/NavOverlay.tsx
+
 'use client'
 
 import { Link, usePathname } from '@/i18n/navigation'

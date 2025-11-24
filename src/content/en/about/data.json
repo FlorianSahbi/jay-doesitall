@@ -1,6 +1,6 @@
 {
   "hero": {
-    "cover": "/seed/about_hero.png",
+    "cover": "/seed/about/about_hero.png",
     "kicker": "ABOUT",
     "title": "PERSONAL TRAINER & RUNNING EXPERT",
     "paragraphs": [
@@ -23,18 +23,18 @@
       "Together, we build a clear, motivating and tailored roadmap so you can move forward with confidence and results."
     ],
     "gallery": [
-      { "src": "/seed/about_1.png", "alt": "Mountain trail running" },
-      { "src": "/seed/about_2.png", "alt": "Race finish" },
-      { "src": "/seed/about_3.png", "alt": "Podium and medal" },
-      { "src": "/seed/about_4.png", "alt": "Track sprint" },
-      { "src": "/seed/about_1.png", "alt": "Mountain trail running" },
-      { "src": "/seed/about_2.png", "alt": "Race finish" },
-      { "src": "/seed/about_3.png", "alt": "Podium and medal" },
-      { "src": "/seed/about_4.png", "alt": "Track sprint" },
-      { "src": "/seed/about_1.png", "alt": "Mountain trail running" },
-      { "src": "/seed/about_2.png", "alt": "Race finish" },
-      { "src": "/seed/about_3.png", "alt": "Podium and medal" },
-      { "src": "/seed/about_4.png", "alt": "Track sprint" }
+      { "src": "/seed/about/about_1.png", "alt": "Mountain trail running" },
+      { "src": "/seed/about/about_2.png", "alt": "Race finish" },
+      { "src": "/seed/about/about_3.png", "alt": "Podium and medal" },
+      { "src": "/seed/about/about_4.png", "alt": "Track sprint" },
+      { "src": "/seed/about/about_1.png", "alt": "Mountain trail running" },
+      { "src": "/seed/about/about_2.png", "alt": "Race finish" },
+      { "src": "/seed/about/about_3.png", "alt": "Podium and medal" },
+      { "src": "/seed/about/about_4.png", "alt": "Track sprint" },
+      { "src": "/seed/about/about_1.png", "alt": "Mountain trail running" },
+      { "src": "/seed/about/about_2.png", "alt": "Race finish" },
+      { "src": "/seed/about/about_3.png", "alt": "Podium and medal" },
+      { "src": "/seed/about/about_4.png", "alt": "Track sprint" }
     ],
     "ctaLabel": "EXPLORE MY SERVICES"
   },
@@ -43,7 +43,7 @@
     "places": [
       {
         "name": "LA MONTGOLFIÈRE",
-        "src": "/seed/about_place_1.png",
+        "src": "/seed/about/about_place_1.png",
         "sections": [
           {
             "title": "LA MONTGOLFIÈRE",
@@ -64,7 +64,7 @@
       },
       {
         "name": "CAPITAL 8",
-        "src": "/seed/about_place_2.png",
+        "src": "/seed/about/about_place_2.png",
         "sections": [
           {
             "title": "CAPITAL 8",
@@ -78,7 +78,7 @@
       },
       {
         "name": "ANNETTE K",
-        "src": "/seed/about_place_3.png",
+        "src": "/seed/about/about_place_3.png",
         "sections": [
           {
             "title": "ANNETTE K",
@@ -97,12 +97,12 @@
     "intro": "Demanding about quality and passionate about well-designed products, I’ve been collaborating for years with brands that share my values.",
     "items": [
       {
-        "imgSrc": "/seed/partners_1.png",
+        "imgSrc": "/seed/about/about_partners_1.png",
         "alt": "Partner 1",
         "description": "I’ve been an On ambassador for 4 years and a running coach for the brand for 2 years, convinced by their performance vision, clean design and human approach."
       },
       {
-        "imgSrc": "/seed/partners_2.png",
+        "imgSrc": "/seed/about/about_partners_2.png",
         "alt": "Partner 2",
         "description": "Powerbar was the first brand to trust me at the very beginning and has supported my sports nutrition for 5 years."
       }

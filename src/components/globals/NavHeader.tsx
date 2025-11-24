@@ -10,27 +10,32 @@ export default function NavHeader({
   openLabel,
   brand,
   hidden,
+  scrolled,
 }: {
   onOpen: () => void
   showMenuButton: boolean
   openLabel: string
   brand: string
   hidden: boolean
-  onHoldHeader?: () => void
+  scrolled: boolean
 }) {
   return (
     <header
       className={[
         'fixed inset-x-0 top-0 z-[1000]',
-        'transition-transform duration-300 will-change-transform',
+        'transition-all duration-300 will-change-transform',
         hidden ? '-translate-y-full' : 'translate-y-0',
+        scrolled ? 'bg-white shadow-sm' : 'bg-transparent',
       ].join(' ')}
     >
-      <div className="grid-layout grid items-center py-6">
+      <div className="grid-layout grid items-center py-6 transition-colors duration-300">
         <div className="col-span-4 col-start-2 flex items-center justify-between md:col-span-12 md:col-start-2">
           <Link
             href="/"
-            className="font-heading text-title-3 md:text-title-2 relative top-0.5 tracking-[0.08em] text-white uppercase"
+            className={[
+              'font-heading text-title-3 md:text-title-2 relative top-0.5 tracking-[0.08em] uppercase transition-colors duration-300',
+              scrolled ? 'text-black' : 'text-white',
+            ].join(' ')}
           >
             {brand}
           </Link>

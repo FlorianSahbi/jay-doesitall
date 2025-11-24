@@ -1,6 +1,6 @@
 {
   "hero": {
-    "cover": "/seed/about_hero.png",
+    "cover": "/seed/about/about_hero.png",
     "kicker": "À PROPOS",
     "title": "COACH SPORTIF & EXPERT EN RUNNING",
     "paragraphs": [
@@ -23,18 +23,18 @@
       "Ensemble, nous construisons une feuille de route claire, motivante et adaptée, pour avancer avec confiance et résultats."
     ],
     "gallery": [
-      { "src": "/seed/about_1.png", "alt": "Course en montagne" },
-      { "src": "/seed/about_2.png", "alt": "Arrivée de course" },
-      { "src": "/seed/about_3.png", "alt": "Podium et médaille" },
-      { "src": "/seed/about_4.png", "alt": "Sprint sur piste" },
-      { "src": "/seed/about_1.png", "alt": "Course en montagne" },
-      { "src": "/seed/about_2.png", "alt": "Arrivée de course" },
-      { "src": "/seed/about_3.png", "alt": "Podium et médaille" },
-      { "src": "/seed/about_4.png", "alt": "Sprint sur piste" },
-      { "src": "/seed/about_1.png", "alt": "Course en montagne" },
-      { "src": "/seed/about_2.png", "alt": "Arrivée de course" },
-      { "src": "/seed/about_3.png", "alt": "Podium et médaille" },
-      { "src": "/seed/about_4.png", "alt": "Sprint sur piste" }
+      { "src": "/seed/about/about_1.png", "alt": "Course en montagne" },
+      { "src": "/seed/about/about_2.png", "alt": "Arrivée de course" },
+      { "src": "/seed/about/about_3.png", "alt": "Podium et médaille" },
+      { "src": "/seed/about/about_4.png", "alt": "Sprint sur piste" },
+      { "src": "/seed/about/about_1.png", "alt": "Course en montagne" },
+      { "src": "/seed/about/about_2.png", "alt": "Arrivée de course" },
+      { "src": "/seed/about/about_3.png", "alt": "Podium et médaille" },
+      { "src": "/seed/about/about_4.png", "alt": "Sprint sur piste" },
+      { "src": "/seed/about/about_1.png", "alt": "Course en montagne" },
+      { "src": "/seed/about/about_2.png", "alt": "Arrivée de course" },
+      { "src": "/seed/about/about_3.png", "alt": "Podium et médaille" },
+      { "src": "/seed/about/about_4.png", "alt": "Sprint sur piste" }
     ],
     "ctaLabel": "DÉCOUVRIR MES PRESTATIONS"
   },
@@ -43,7 +43,7 @@
     "places": [
       {
         "name": "LA MONTGOLFIÈRE",
-        "src": "/seed/about_place_1.png",
+        "src": "/seed/about/about_place_1.png",
         "sections": [
           {
             "title": "LA MONTGOLFIÈRE",
@@ -64,7 +64,7 @@
       },
       {
         "name": "CAPITAL 8",
-        "src": "/seed/about_place_2.png",
+        "src": "/seed/about/about_place_2.png",
         "sections": [
           {
             "title": "CAPITAL 8",
@@ -78,7 +78,7 @@
       },
       {
         "name": "ANNETTE K",
-        "src": "/seed/about_place_3.png",
+        "src": "/seed/about/about_place_3.png",
         "sections": [
           {
             "title": "ANNETTE K",
@@ -97,12 +97,12 @@
     "intro": "Exigeant sur la qualité et passionné par les produits bien conçus, je collabore depuis plusieurs années avec des marques qui partagent mes valeurs.",
     "items": [
       {
-        "imgSrc": "/seed/partners_1.png",
+        "imgSrc": "/seed/about/about_partners_1.png",
         "alt": "Partenaire 1",
         "description": "Je suis ambassadeur On depuis 4 ans et running coach pour la marque depuis 2 ans, convaincu par leur vision de la performance, leur design épuré et leur approche humaine."
       },
       {
-        "imgSrc": "/seed/partners_2.png",
+        "imgSrc": "/seed/about/about_partners_2.png",
         "alt": "Partenaire 2",
         "description": "Powerbar a été la première marque à me faire confiance, dès mes débuts, et me soutient depuis 5 ans dans ma nutrition sportive."
       }

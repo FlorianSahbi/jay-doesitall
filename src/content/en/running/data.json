@@ -3,7 +3,7 @@
   "kicker": "Services",
   "title": "Training plans",
   "description": "3-month programs tailored to your level and goals.",
-  "cover": "/seed/running_service_hero.png",
+  "cover": "/seed/services/running/running_service_hero.png",
   "plans": [
     { "type": "Plan", "title": "10K", "features": [], "price": "€59" },
     {

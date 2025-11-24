@@ -3,7 +3,7 @@
   "kicker": "Prestations",
   "title": "Coaching personnalisés",
   "description": "Un accompagnement sur-mesure adapté à tes objectifs.",
-  "cover": "/seed/coaching_service_hero.png",
+  "cover": "/seed/services/coaching/coaching_service_hero.png",
   "plans": [
     {
       "type": "Coaching",

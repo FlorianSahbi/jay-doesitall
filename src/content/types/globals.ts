@@ -1,5 +1,5 @@
 // @path: src/content/types/globals.ts
-// src/content/types/globals.ts
+
 export type SocialIcon = 'instagram' | 'youtube' | 'tiktok'
 
 export type NavMenuItem = {

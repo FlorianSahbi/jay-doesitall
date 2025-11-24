@@ -7,6 +7,7 @@ import 'swiper/css'
 import Image from 'next/image'
 import FeatureLine from '@/components/shared/FeatureLine'
 import type { AboutReasonsContent } from '@/content/types/about'
+import Link from 'next/link'
 
 type Props = { data: AboutReasonsContent }
 
@@ -28,7 +29,9 @@ export default function AboutReasons({ data }: Props) {
       </div>
 
       <div className="col-span-5 col-start-2 mb-16 md:col-span-12 md:col-start-2 lg:col-span-8 lg:col-start-4 xl:col-span-4 xl:col-start-6">
-        <button className="btn-yellow-fill">{data.ctaLabel}</button>
+        <Link href="/services" className="btn-yellow-fill">
+          {data.ctaLabel}
+        </Link>
       </div>
 
       <div className="col-span-23 col-start-1 mb-10">

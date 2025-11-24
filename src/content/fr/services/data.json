@@ -1,5 +1,5 @@
 {
-  "hero": { "cover": "/seed/services_hero.png" },
+  "hero": { "cover": "/seed/services/services_hero.png" },
   "kicker": "PRESTATIONS",
   "title": "DES PROGRAMMES ADAPTÉS À VOUS",
   "intro": "Mes programmes sont entièrement personnalisés, axés sur la progression durable, la prévention des blessures et l’amélioration globale de la condition physique.",
@@ -8,13 +8,13 @@
       "href": "/services/coaching",
       "title": "COACHING PERSONNALISÉS",
       "ctaLabel": "Voir le programme",
-      "cover": "/seed/home_coaching.png"
+      "cover": "/seed/services/services_coaching_card.png"
     },
     {
       "href": "/services/running",
       "title": "PROGRAMMES RUNNING",
       "ctaLabel": "Voir le programme",
-      "cover": "/seed/home_running.png"
+      "cover": "/seed/services/services_running_card.png"
     }
   ]
 }

@@ -1,5 +1,5 @@
 // @path: src/components/globals/Footer.tsx
-// src/components/globals/Footer.tsx
+
 import { Link } from '@/i18n/navigation'
 import SocialBadge from '@/components/shared/SocialBadge'
 import type { NavMenuItem, SocialLink } from '@/content/types/globals'

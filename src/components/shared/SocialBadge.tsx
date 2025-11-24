@@ -1,5 +1,5 @@
 // @path: src/components/shared/SocialBadge.tsx
-// src/components/shared/SocialBadge.tsx
+
 'use client'
 
 import { Instagram, Youtube } from 'lucide-react'
