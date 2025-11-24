@@ -23,18 +23,21 @@
       "Ensemble, nous construisons une feuille de route claire, motivante et adaptée, pour avancer avec confiance et résultats."
     ],
     "gallery": [
-      { "src": "/seed/about/about_1.png", "alt": "Course en montagne" },
-      { "src": "/seed/about/about_2.png", "alt": "Arrivée de course" },
-      { "src": "/seed/about/about_3.png", "alt": "Podium et médaille" },
-      { "src": "/seed/about/about_4.png", "alt": "Sprint sur piste" },
-      { "src": "/seed/about/about_1.png", "alt": "Course en montagne" },
-      { "src": "/seed/about/about_2.png", "alt": "Arrivée de course" },
-      { "src": "/seed/about/about_3.png", "alt": "Podium et médaille" },
-      { "src": "/seed/about/about_4.png", "alt": "Sprint sur piste" },
-      { "src": "/seed/about/about_1.png", "alt": "Course en montagne" },
-      { "src": "/seed/about/about_2.png", "alt": "Arrivée de course" },
-      { "src": "/seed/about/about_3.png", "alt": "Podium et médaille" },
-      { "src": "/seed/about/about_4.png", "alt": "Sprint sur piste" }
+      { "src": "/seed/about/about_1.jpg", "alt": "TBD" },
+      { "src": "/seed/about/about_2.jpg", "alt": "TBD" },
+      { "src": "/seed/about/about_3.jpg", "alt": "TBD" },
+      { "src": "/seed/about/about_4.jpg", "alt": "TBD" },
+      { "src": "/seed/about/about_5.jpg", "alt": "TBD" },
+      { "src": "/seed/about/about_6.jpg", "alt": "TBD" },
+      { "src": "/seed/about/about_7.jpg", "alt": "TBD" },
+      { "src": "/seed/about/about_8.jpg", "alt": "TBD" },
+      { "src": "/seed/about/about_9.jpg", "alt": "TBD" },
+      { "src": "/seed/about/about_10.jpg", "alt": "TBD" },
+      { "src": "/seed/about/about_11.jpg", "alt": "TBD" },
+      { "src": "/seed/about/about_12.jpg", "alt": "TBD" },
+      { "src": "/seed/about/about_13.jpg", "alt": "TBD" },
+      { "src": "/seed/about/about_14.jpg", "alt": "TBD" },
+      { "src": "/seed/about/about_15.jpg", "alt": "TBD" }
     ],
     "ctaLabel": "DÉCOUVRIR MES PRESTATIONS"
   },

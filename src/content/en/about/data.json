@@ -23,18 +23,21 @@
       "Together, we build a clear, motivating and tailored roadmap so you can move forward with confidence and results."
     ],
     "gallery": [
-      { "src": "/seed/about/about_1.png", "alt": "Mountain trail running" },
-      { "src": "/seed/about/about_2.png", "alt": "Race finish" },
-      { "src": "/seed/about/about_3.png", "alt": "Podium and medal" },
-      { "src": "/seed/about/about_4.png", "alt": "Track sprint" },
-      { "src": "/seed/about/about_1.png", "alt": "Mountain trail running" },
-      { "src": "/seed/about/about_2.png", "alt": "Race finish" },
-      { "src": "/seed/about/about_3.png", "alt": "Podium and medal" },
-      { "src": "/seed/about/about_4.png", "alt": "Track sprint" },
-      { "src": "/seed/about/about_1.png", "alt": "Mountain trail running" },
-      { "src": "/seed/about/about_2.png", "alt": "Race finish" },
-      { "src": "/seed/about/about_3.png", "alt": "Podium and medal" },
-      { "src": "/seed/about/about_4.png", "alt": "Track sprint" }
+      { "src": "/seed/about/about_1.jpg", "alt": "TBD" },
+      { "src": "/seed/about/about_2.jpg", "alt": "TBD" },
+      { "src": "/seed/about/about_3.jpg", "alt": "TBD" },
+      { "src": "/seed/about/about_4.jpg", "alt": "TBD" },
+      { "src": "/seed/about/about_5.jpg", "alt": "TBD" },
+      { "src": "/seed/about/about_6.jpg", "alt": "TBD" },
+      { "src": "/seed/about/about_7.jpg", "alt": "TBD" },
+      { "src": "/seed/about/about_8.jpg", "alt": "TBD" },
+      { "src": "/seed/about/about_9.jpg", "alt": "TBD" },
+      { "src": "/seed/about/about_10.jpg", "alt": "TBD" },
+      { "src": "/seed/about/about_11.jpg", "alt": "TBD" },
+      { "src": "/seed/about/about_12.jpg", "alt": "TBD" },
+      { "src": "/seed/about/about_13.jpg", "alt": "TBD" },
+      { "src": "/seed/about/about_14.jpg", "alt": "TBD" },
+      { "src": "/seed/about/about_15.jpg", "alt": "TBD" }
     ],
     "ctaLabel": "EXPLORE MY SERVICES"
   },
