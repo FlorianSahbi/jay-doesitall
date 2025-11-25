@@ -1,8 +1,13 @@
 // @path: src/content/types/services.ts
 export type ImageSrc = string
 
+export type HeroCover = {
+  desktop: ImageSrc
+  mobile: ImageSrc
+}
+
 export type ServicesIndexHero = {
-  cover: ImageSrc
+  cover: HeroCover
   alt: string
 }
 
@@ -28,11 +33,16 @@ export type ServicePlan = {
   price: string
 }
 
+export type ServiceHero = {
+  cover: HeroCover
+  alt: string
+}
+
 export type ServiceContent = {
   slug: string
   kicker: string
   title: string
   description: string
-  cover: ImageSrc
+  hero: ServiceHero
   plans: ServicePlan[]
 }

@@ -3,7 +3,12 @@
   "kicker": "Prestations",
   "title": "Plans d’entraînement",
   "description": "Programmes de 3 mois adaptés à ton niveau et tes objectifs.",
-  "cover": "/seed/services/running/running_service_hero.png",
+  "hero": {
+    "cover": {
+      "desktop": "/seed/services/running/running_service_hero.png",
+      "mobile": "/seed/services/running/running_service_hero.png"
+    }
+  },
   "plans": [
     { "type": "Plan", "title": "10 km", "features": [], "price": "59€" },
     {

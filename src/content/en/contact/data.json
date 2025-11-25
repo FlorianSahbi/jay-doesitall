@@ -1,5 +1,10 @@
 {
-  "hero": { "cover": "/seed/contact/contact_hero.png" },
+  "hero": {
+    "cover": {
+      "desktop": "/seed/contact/contact_hero.png",
+      "mobile": "/seed/contact/contact_hero_mobile.png"
+    }
+  },
   "kicker": "CONTACT",
   "title": "GOT A SPECIFIC REQUEST?",
   "intro": "Contact me directly at hello@jaydoesitall.com or fill out the form below.",

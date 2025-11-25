@@ -56,9 +56,10 @@ export default async function ServiceSlugPage({
       )}
 
       <StickyHeroSection
-        cover={service.cover}
+        coverDesktop={service.hero.cover.desktop}
+        coverMobile={service.hero.cover.mobile}
         alt={service.title}
-        overlay
+        overlay={false}
         kicker={service.kicker}
         title={service.title.toUpperCase()}
         intro={service.description}

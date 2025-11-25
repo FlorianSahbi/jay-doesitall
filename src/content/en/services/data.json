@@ -1,5 +1,10 @@
 {
-  "hero": { "cover": "/seed/services_hero.png" },
+  "hero": {
+    "cover": {
+      "desktop": "/seed/services/services_hero.png",
+      "mobile": "/seed/services/services_hero_mobile.png"
+    }
+  },
   "kicker": "SERVICES",
   "title": "PROGRAMS TAILORED TO YOU",
   "intro": "My programs are fully personalized, focused on sustainable progress, injury prevention and improving overall fitness.",

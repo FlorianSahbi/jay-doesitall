@@ -3,8 +3,13 @@ import { z } from 'zod'
 
 const ImageSrc = z.string().min(1)
 
+const HeroCoverSchema = z.object({
+  desktop: ImageSrc,
+  mobile: ImageSrc,
+})
+
 export const ServicesIndexHeroSchema = z.object({
-  cover: ImageSrc,
+  cover: HeroCoverSchema,
   alt: z.string().min(1),
 })
 
@@ -30,12 +35,17 @@ export const ServicePlanSchema = z.object({
   price: z.string().min(1),
 })
 
+export const ServiceHeroSchema = z.object({
+  cover: HeroCoverSchema,
+  alt: z.string().min(1),
+})
+
 export const ServiceContentSchema = z.object({
   slug: z.string().min(1),
   kicker: z.string().min(1),
   title: z.string().min(1),
   description: z.string().min(1),
-  cover: ImageSrc,
+  hero: ServiceHeroSchema,
   plans: z.array(ServicePlanSchema).min(1),
 })
 

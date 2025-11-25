@@ -44,9 +44,10 @@ export default async function ServicesPage({
       )}
 
       <StickyHeroSection
-        cover={hero.cover}
+        coverDesktop={hero.cover.desktop}
+        coverMobile={hero.cover.mobile}
         alt={hero.alt}
-        overlay
+        overlay={false}
         kicker={kicker}
         title={title}
         intro={intro}

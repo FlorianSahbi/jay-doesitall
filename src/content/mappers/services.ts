@@ -12,8 +12,19 @@ type RawServicesIndexCard = {
   cover?: string
   ctaLabel?: string
 }
+
+type RawHeroCover = {
+  desktop?: string
+  mobile?: string
+}
+
+type RawServicesIndexHero = {
+  cover?: RawHeroCover
+  alt?: string
+}
+
 type RawServicesIndex = {
-  hero?: { cover?: string; alt?: string }
+  hero?: RawServicesIndexHero
   kicker?: string
   title?: string
   intro?: string
@@ -22,10 +33,18 @@ type RawServicesIndex = {
 
 export async function getServicesPageContent(locale?: Locale) {
   const raw = await loadPage<RawServicesIndex>('services', locale)
+
+  const rawCover = raw?.hero?.cover
+
+  const heroCover = {
+    desktop: rawCover?.desktop ?? rawCover?.mobile ?? '',
+    mobile: rawCover?.mobile ?? rawCover?.desktop ?? '',
+  }
+
   const shaped = {
     hero: {
-      cover: raw?.hero?.cover,
-      alt: raw?.hero?.alt ?? raw?.title,
+      cover: heroCover,
+      alt: raw?.hero?.alt ?? raw?.title ?? 'Services',
     },
     kicker: raw?.kicker,
     title: raw?.title,
@@ -37,6 +56,7 @@ export async function getServicesPageContent(locale?: Locale) {
       ctaLabel: c?.ctaLabel,
     })),
   }
+
   return ServicesIndexContentSchema.parse(shaped)
 }
 
@@ -46,25 +66,42 @@ type RawServicePlan = {
   features?: string[]
   price?: string
 }
+
+type RawServiceHero = {
+  cover?: RawHeroCover
+  alt?: string
+}
+
 type RawService = {
   slug?: string
   kicker?: string
   title?: string
   description?: string
-  cover?: string
+  hero?: RawServiceHero
   plans?: RawServicePlan[]
 }
 
 export async function getServiceContent(slug: string, locale?: Locale) {
   const data = await loadService<RawService>(slug, locale)
   if (!data) return null
+
   const s = data.service
+  const rawCover = s?.hero?.cover
+
+  const heroCover = {
+    desktop: rawCover?.desktop ?? rawCover?.mobile ?? '',
+    mobile: rawCover?.mobile ?? rawCover?.desktop ?? '',
+  }
+
   const shaped = {
     slug: s?.slug ?? slug,
     kicker: s?.kicker,
     title: s?.title,
     description: s?.description,
-    cover: s?.cover,
+    hero: {
+      cover: heroCover,
+      alt: s?.hero?.alt ?? s?.title ?? s?.slug ?? slug,
+    },
     plans: (s?.plans ?? []).map((p) => ({
       type: p?.type,
       title: p?.title,
@@ -72,5 +109,6 @@ export async function getServiceContent(slug: string, locale?: Locale) {
       price: p?.price,
     })),
   }
+
   return ServiceContentSchema.parse(shaped)
 }

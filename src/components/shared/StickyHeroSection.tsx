@@ -5,7 +5,8 @@ import Image from 'next/image'
 import type { ReactNode } from 'react'
 
 type StickyHeroSectionProps = {
-  cover: string
+  coverDesktop: string
+  coverMobile: string
   alt?: string
   topOverlapClass?: string
   kicker: string
@@ -16,25 +17,42 @@ type StickyHeroSectionProps = {
 }
 
 export default function StickyHeroSection({
-  cover,
+  coverDesktop,
+  coverMobile,
   alt = '',
   topOverlapClass = '-mt-[20vh]',
   kicker,
   title,
   intro,
   children,
+  overlay = false,
 }: StickyHeroSectionProps) {
   return (
     <section className="lg:grid-layout col-span-full">
       <div className="sticky top-0 h-screen lg:col-span-full">
-        <Image
-          src={cover}
-          alt={alt}
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-        />
+        <div className="relative h-full">
+          {/* Mobile */}
+          <Image
+            src={coverMobile}
+            alt={alt}
+            fill
+            priority
+            sizes="100vw"
+            className="block object-cover md:hidden"
+          />
+
+          {/* Desktop */}
+          <Image
+            src={coverDesktop}
+            alt={alt}
+            fill
+            priority
+            sizes="100vw"
+            className="hidden object-cover md:block"
+          />
+
+          {overlay && <div className="absolute inset-0 bg-black/40" />}
+        </div>
       </div>
 
       <div

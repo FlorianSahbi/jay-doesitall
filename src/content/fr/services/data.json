@@ -1,5 +1,10 @@
 {
-  "hero": { "cover": "/seed/services/services_hero.png" },
+  "hero": {
+    "cover": {
+      "desktop": "/seed/services/services_hero.png",
+      "mobile": "/seed/services/services_hero_mobile.png"
+    }
+  },
   "kicker": "PRESTATIONS",
   "title": "DES PROGRAMMES ADAPTÉS À VOUS",
   "intro": "Mes programmes sont entièrement personnalisés, axés sur la progression durable, la prévention des blessures et l’amélioration globale de la condition physique.",

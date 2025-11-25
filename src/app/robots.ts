@@ -1,5 +1,5 @@
 // @path: src/app/robots.ts
-// app/robots.ts
+
 export default function robots() {
   return {
     rules: {

@@ -43,7 +43,8 @@ export default async function ContactPage({
       )}
 
       <StickyHeroSection
-        cover={hero.cover}
+        coverDesktop={hero.cover.desktop}
+        coverMobile={hero.cover.mobile}
         alt={hero.alt}
         overlay={false}
         kicker={kicker}
