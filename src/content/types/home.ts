@@ -3,6 +3,7 @@ export type ImageSrc = string
 
 export type HomeHeroContent = {
   backgroundImage: ImageSrc
+  backgroundVideo: string
   imageAlt: string
   title: string
   subtitle: string

@@ -7,9 +7,9 @@
   },
   "kicker": "CONTACT",
   "title": "UNE DEMANDE PARTICULIÈRE ?",
-  "intro": "Contactez-moi directement par mail hello@jaydoesitall.com ou en remplissant le formulaire ci-dessous.",
+  "intro": "Contactez-moi directement par mail <a href=\"mailto:jaydoesitall95@gmail.com\">jaydoesitall95@gmail.com</a> ou en remplissant le formulaire ci-dessous.",
   "cta": {
     "label": "REMPLIR LE FORMULAIRE",
-    "href": "https://www.typeform.com/fr"
+    "href": "https://form.typeform.com/to/HxbP3pwi"
   }
 }

@@ -1,6 +1,7 @@
 {
   "hero": {
     "backgroundImage": "/seed/home/home_hero.png",
+    "backgroundVideo": "/seed/home/home_hero_video.mp4",
     "imageAlt": "Hero background",
     "title": "JAY DOESITALL",
     "subtitle": "PERSONAL TRAINER",

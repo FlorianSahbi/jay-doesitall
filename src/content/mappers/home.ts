@@ -15,6 +15,7 @@ type RawWhyMeItem = { num?: string; title?: string; desc?: string }
 type RawHomePage = {
   hero?: {
     backgroundImage?: string
+    backgroundVideo?: string
     imageAlt?: string
     title?: string
     subtitle?: string
@@ -46,6 +47,7 @@ export async function getHomePageContent(locale?: Locale) {
   const shaped = {
     hero: {
       backgroundImage: raw?.hero?.backgroundImage,
+      backgroundVideo: raw?.hero?.backgroundVideo,
       imageAlt: raw?.hero?.imageAlt,
       title: raw?.hero?.title,
       subtitle: raw?.hero?.subtitle,

@@ -51,7 +51,7 @@ export default async function ContactPage({
         title={title}
         intro={intro}
       >
-        <a href={cta.href} className="btn-yellow-fill">
+        <a href={cta.href} className="btn-yellow-fill" target="_blank">
           {cta.label}
         </a>
       </StickyHeroSection>

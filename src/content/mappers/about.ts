@@ -19,6 +19,7 @@ type RawPartnerItem = { imgSrc?: string; alt?: string; description?: string }
 type RawAbout = {
   hero?: {
     cover?: string
+    coverMobile?: string
     kicker?: string
     title?: string
     paragraphs?: string[]
@@ -50,6 +51,7 @@ export async function getAboutPageContent(locale?: Locale) {
   const shaped = {
     hero: {
       cover: raw?.hero?.cover,
+      coverMobile: raw?.hero?.coverMobile,
       kicker: raw?.hero?.kicker,
       title: raw?.hero?.title,
       paragraphs: raw?.hero?.paragraphs,

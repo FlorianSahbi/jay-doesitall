@@ -5,6 +5,7 @@ const ImageSrc = z.string().min(1)
 
 export const AboutHeroSchema = z.object({
   cover: ImageSrc,
+  coverMobile: ImageSrc,
   kicker: z.string().min(1),
   title: z.string().min(1),
   paragraphs: z.array(z.string().min(1)).min(1),

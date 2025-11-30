@@ -3,6 +3,7 @@ export type ImageSrc = string
 
 export type AboutHeroContent = {
   cover: ImageSrc
+  coverMobile: ImageSrc
   kicker: string
   title: string
   paragraphs: string[]

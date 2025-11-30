@@ -3,8 +3,8 @@ import type { ReactNode } from 'react'
 
 const KEYWORD_LINKS: Record<string, string> = {
   Instagram: 'https://www.instagram.com/jay_doesitall',
-  TikTok: 'https://tiktok.com/@jaydoesitall',
-  YouTube: 'https://youtube.com/@jaydoesitall',
+  TikTok: 'https://www.tiktok.com/@jayallthewayup',
+  YouTube: 'https://www.youtube.com/@jay_doesitall',
   On: 'https://www.on.com',
   Powerbar: 'https://www.powerbar.com',
 }

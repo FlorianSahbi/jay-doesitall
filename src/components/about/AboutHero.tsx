@@ -15,38 +15,48 @@ export default function AboutHero({ data }: Props) {
     typeof data.overlap === 'number' ? `${data.overlap}px` : data.overlap
 
   useEffect(() => {
-    const onScroll = () => {
-      const el = sectionRef.current
-      if (!el) return
-      const rect = el.getBoundingClientRect()
-      const fadeDist = Math.max(1, window.innerHeight * 0.18)
-      const progress = Math.min(Math.max(-rect.top / fadeDist, 0), 1)
-      setImgOpacity(1 - progress)
-    }
-    onScroll()
-    window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
+    // const onScroll = () => {
+    //   const el = sectionRef.current
+    //   if (!el) return
+    //   const rect = el.getBoundingClientRect()
+    //   const fadeDist = Math.max(1, window.innerHeight * 0.18)
+    //   const progress = Math.min(Math.max(-rect.top / fadeDist, 0), 1)
+    //   setImgOpacity(1 - progress)
+    // }
+    // onScroll()
+    // window.addEventListener('scroll', onScroll, { passive: true })
+    // return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
   return (
     <section
       ref={sectionRef}
-      className="grid-layout col-span-full bg-black text-white"
+      className="grid-layout relative col-span-full bg-black text-white"
     >
+      <div className="absolute h-[600px] w-full md:h-[100%]">
+        <Image
+          src={data.coverMobile}
+          alt={data.title}
+          fill
+          priority
+          sizes="100vw"
+          className="block object-cover md:hidden"
+        />
+        <Image
+          src={data.cover}
+          alt={data.title}
+          fill
+          priority
+          sizes="100vw"
+          className="m-[auto] hidden max-w-370 object-cover object-top md:block"
+        />
+      </div>
       <div
         className="pointer-events-none top-0 z-0 col-span-full transition-opacity duration-500"
         style={{ opacity: imgOpacity }}
       >
-        <div className="relative h-[78vh] max-h-[1080px] w-full md:h-[84vh] lg:h-[90vh]">
-          <Image
-            src={data.cover}
-            alt={data.title}
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover object-top"
-          />
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-b from-transparent via-black/40 to-black" />
+        <div className="relative h-[400px] max-h-[1080px] w-full md:h-[84vh] lg:h-[800px]">
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3" />
         </div>
       </div>
 

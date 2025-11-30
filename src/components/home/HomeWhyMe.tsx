@@ -3,6 +3,7 @@
 
 import Image from 'next/image'
 import type { HomeWhyMeContent } from '@/content/types/home'
+import Link from 'next/link'
 
 type HomeWhyMeProps = {
   data: HomeWhyMeContent
@@ -50,7 +51,9 @@ export default function HomeWhyMe({ data }: HomeWhyMeProps) {
           </div>
 
           <div className="col-span-4 col-start-2 justify-self-center md:col-span-12 md:col-start-2">
-            <button className="btn-yellow-fill">{data.ctaLabel}</button>
+            <Link href="/contact" className="btn-yellow-fill">
+              {data.ctaLabel}
+            </Link>
           </div>
         </div>
       </div>

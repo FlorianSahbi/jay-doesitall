@@ -1,6 +1,7 @@
 {
   "hero": {
     "cover": "/seed/about/about_hero.png",
+    "coverMobile": "/seed/about/about_hero_mobile.png",
     "kicker": "ABOUT",
     "title": "PERSONAL TRAINER & RUNNING EXPERT",
     "paragraphs": [

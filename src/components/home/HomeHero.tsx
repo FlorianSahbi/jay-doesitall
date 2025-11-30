@@ -35,8 +35,20 @@ export default function HomeHero({ data }: HomeHeroProps) {
           fill
           priority
           sizes="100vw"
-          className="object-cover"
+          className="block object-cover md:hidden"
         />
+        <video
+          width="1440"
+          height="900"
+          controls={false}
+          preload="none"
+          className="absolute hidden object-cover md:block"
+          autoPlay
+          muted
+          loop
+        >
+          <source src={data.backgroundVideo} type="video/mp4" />
+        </video>
 
         <div className="relative z-10 col-span-4 col-start-2 flex h-full items-center justify-center text-center text-white md:col-span-12 md:col-start-2 lg:col-span-12 lg:col-start-2">
           <div>
@@ -44,7 +56,9 @@ export default function HomeHero({ data }: HomeHeroProps) {
               {data.title}
             </h1>
             <p className="text-title-4 md:text-title-2 mb-6">{data.subtitle}</p>
-            <button className="btn-yellow-fill">{data.ctaLabel}</button>
+            <Link href="/contact" className="btn-yellow-fill">
+              {data.ctaLabel}
+            </Link>
           </div>
         </div>
       </div>

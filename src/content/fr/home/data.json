@@ -1,10 +1,11 @@
 {
   "hero": {
     "backgroundImage": "/seed/home/home_hero.png",
+    "backgroundVideo": "/seed/home/home_hero_video.mp4",
     "imageAlt": "Hero background",
     "title": "JAY DOESITALL",
     "subtitle": "COACH SPORTIF",
-    "ctaLabel": "RÉSERVEZ UN COACHING",
+    "ctaLabel": "RÉSERVER UN COACHING",
     "about": {
       "kicker": "À PROPOS",
       "text": "Je suis Jérémie SECK, coach sportif diplômé, passionné de course à pied et de fitness. Du coureur débutant en quête de confiance au coureur confirmé visant la performance, je construis des programmes 100% personnalisés. Proposant des plans de running et de musculation, mon approche allie performance, prévention des blessures et bien-être, pour que tu avances plus loin, plus vite… et surtout, plus durablement.",
@@ -71,7 +72,7 @@
     "title": "POURQUOI ME FAIRE CONFIANCE ?",
     "backgroundImage": "/seed/home/home_why_me_cover.png",
     "backgroundAlt": "Fond section Pourquoi",
-    "ctaLabel": "RÉSERVEZ UN COACHING !",
+    "ctaLabel": "RÉSERVER UN COACHING !",
     "items": [
       {
         "num": "01",

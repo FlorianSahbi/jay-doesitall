@@ -62,7 +62,10 @@ export default function StickyHeroSection({
           <div>
             <p className="text-caption text-yellow mb-2">{kicker}</p>
             <h1 className="text-title-1 lg:text-display-s mb-8">{title}</h1>
-            <p className="text-body-l-reg mb-6">{intro}</p>
+            <p
+              className="text-body-l-reg mb-6"
+              dangerouslySetInnerHTML={{ __html: intro }}
+            />
           </div>
           {children}
         </div>

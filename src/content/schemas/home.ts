@@ -5,6 +5,7 @@ const ImageSrc = z.string().min(1, 'image src required')
 
 export const HomeHeroSchema = z.object({
   backgroundImage: ImageSrc,
+  backgroundVideo: z.string().min(1),
   imageAlt: z.string().min(1),
   title: z.string().min(1),
   subtitle: z.string().min(1),
