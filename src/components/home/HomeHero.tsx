@@ -29,20 +29,12 @@ export default function HomeHero({ data }: HomeHeroProps) {
   return (
     <section ref={ref} className="grid-layout col-span-full bg-black">
       <div className="grid-layout relative col-span-full h-screen">
-        <Image
-          src={data.backgroundImage}
-          alt={data.imageAlt}
-          fill
-          priority
-          sizes="100vw"
-          className="block object-cover md:hidden"
-        />
         <video
           width="1440"
           height="900"
           controls={false}
           preload="none"
-          className="absolute hidden object-cover md:block"
+          className="absolute h-full w-full object-cover"
           autoPlay
           muted
           loop
