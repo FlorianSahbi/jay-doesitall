@@ -37,6 +37,7 @@ export default function HomeHero({ data }: HomeHeroProps) {
           className="absolute h-full w-full object-cover"
           autoPlay
           muted
+          playsInline
           loop
         >
           <source src={data.backgroundVideo} type="video/mp4" />
