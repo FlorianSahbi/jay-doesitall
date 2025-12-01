@@ -33,7 +33,7 @@ export default function HomeHero({ data }: HomeHeroProps) {
           width="1440"
           height="900"
           controls={false}
-          preload="none"
+          preload="auto"
           className="absolute h-full w-full object-cover"
           autoPlay
           muted
