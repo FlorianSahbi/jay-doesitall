@@ -10,13 +10,35 @@
     }
   },
   "plans": [
-    { "type": "Plan", "title": "10 km", "features": [], "price": "59€" },
+    {
+      "type": "Plan",
+      "title": "10 km",
+      "features": [
+        "3 mois / 12 semaines de plan structurées",
+        "Incluant progressivité et variations jusqu'a l'objectif",
+        "Sans accompagnement ou personnalisation"
+      ],
+      "price": "59€"
+    },
     {
       "type": "Plan",
       "title": "Semi-marathon",
-      "features": [],
+      "features": [
+        "3 mois / 12 semaines de plan structurées",
+        "Incluant progressivité et variations jusqu'a l'objectif",
+        "Sans accompagnement ou personnalisation"
+      ],
       "price": "69€"
     },
-    { "type": "Plan", "title": "Marathon", "features": [], "price": "89€" }
+    {
+      "type": "Plan",
+      "title": "Marathon",
+      "features": [
+        "3 mois / 12 semaines de plan structurées",
+        "Incluant progressivité et variations jusqu'a l'objectif",
+        "Sans accompagnement ou personnalisation"
+      ],
+      "price": "89€"
+    }
   ]
 }

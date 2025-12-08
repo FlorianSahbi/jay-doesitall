@@ -10,13 +10,35 @@
     }
   },
   "plans": [
-    { "type": "Plan", "title": "10K", "features": [], "price": "€59" },
+    {
+      "type": "Plan",
+      "title": "10K",
+      "features": [
+        "3 months / 12 weeks of structured training plan",
+        "Including gradual progression and variations up to the target goal",
+        "Without coaching support or personalization"
+      ],
+      "price": "€59"
+    },
     {
       "type": "Plan",
       "title": "Half Marathon",
-      "features": [],
+      "features": [
+        "3 months / 12 weeks of structured training plan",
+        "Including gradual progression and variations up to the target goal",
+        "Without coaching support or personalization"
+      ],
       "price": "€69"
     },
-    { "type": "Plan", "title": "Marathon", "features": [], "price": "€89" }
+    {
+      "type": "Plan",
+      "title": "Marathon",
+      "features": [
+        "3 months / 12 weeks of structured training plan",
+        "Including gradual progression and variations up to the target goal",
+        "Without coaching support or personalization"
+      ],
+      "price": "€89"
+    }
   ]
 }

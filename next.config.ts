@@ -6,12 +6,7 @@ const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts')
 
 const config: NextConfig = {
   async headers() {
-    return [
-      {
-        source: '/((?!sitemap\\.xml$|robots\\.txt$|_next/|favicon\\.ico).*)',
-        headers: [{ key: 'X-Robots-Tag', value: 'noindex, follow' }],
-      },
-    ]
+    return []
   },
 }
 
