@@ -12,7 +12,7 @@
   "plans": [
     {
       "type": "Coaching",
-      "title": "Personalized online",
+      "title": "Personalized remote running coaching",
       "features": [
         "1 video call per month",
         "WhatsApp hotline 24/7",
@@ -20,11 +20,11 @@
         "Weekly progress tracking",
         "Plan readjustments based on your evolution and schedule"
       ],
-      "price": "€109/month"
+      "price": "€90/hour"
     },
     {
       "type": "Coaching",
-      "title": "Personalized hybrid",
+      "title": "Personalized remote hybrid coaching",
       "features": [
         "1 video call per month",
         "WhatsApp hotline 24/7",
@@ -32,18 +32,18 @@
         "Weekly progress tracking",
         "Plan readjustments based on your evolution and schedule"
       ],
-      "price": "€159/month"
+      "price": "10h: €850"
     },
     {
       "type": "Coaching",
       "title": "Running",
       "features": [
-        "Personalized running session aligned with your objectives",
+        "Customized running sessions tailored to your goals (posture improvement, running form, pace management, race strategy, etc.)",
         "Tailored guidance to reach your target performance",
         "Pacing at target speed to progress effectively",
         "Key advice to optimize training and recovery"
       ],
-      "price": "€89/hour"
+      "price": "20h: €1600"
     }
   ]
 }

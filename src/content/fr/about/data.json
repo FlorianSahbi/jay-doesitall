@@ -10,7 +10,7 @@
     ],
     "credo": {
       "kicker": "MON CREDO",
-      "title": "“AVANCER AVEC EXIGENCES, ÉVOLUER AVEC PLAISIR”",
+      "title": "“AVANCER AVEC EXIGENCE, ÉVOLUER AVEC PLAISIR”",
       "text": "Sur mes réseaux (Instagram, TikTok et YouTube), je partage aussi conseils, expériences et inspiration pour transmettre une pratique du sport saine, exigeante et accessible à tous."
     }
   },
@@ -98,12 +98,12 @@
   },
   "partners": {
     "title": "MES PARTENAIRES",
-    "intro": "Exigeant sur la qualité et passionné par les produits bien conçus, je collabore depuis plusieurs années avec des marques qui partagent mes valeurs.",
+    "intro": "Reconnaissant que certaines marques acceptent de m'accompagner dans mes challenges sportifs. Je veille à accepter des partenariats en accord avec mes valeurs et ma vision du sport. en lien avec mon projet sportif ou mon lifestyle.",
     "items": [
       {
         "imgSrc": "/seed/about/about_partners_1.png",
         "alt": "Partenaire 1",
-        "description": "Je suis ambassadeur On depuis 4 ans et running coach pour la marque depuis 2 ans, convaincu par leur vision de la performance, leur design épuré et leur approche humaine."
+        "description": "Je suis ambassadeur On depuis 4 ans, et suis également coach running et fitness pour la marque depuis 2 ans. Convaincu par les valeurs, la vision de la performance, le design, et le côté inclusif."
       },
       {
         "imgSrc": "/seed/about/about_partners_2.png",

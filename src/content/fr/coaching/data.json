@@ -12,7 +12,7 @@
   "plans": [
     {
       "type": "Coaching",
-      "title": "En ligne personnalisé",
+      "title": "Suivi run distanciel personnalisé",
       "features": [
         "1 appel visio mensuel",
         "Hotline WhatsApp 24/7",
@@ -20,11 +20,11 @@
         "Suivi hebdomadaire des progressions",
         "Réadaptation du plan selon ton évolution et ton planning"
       ],
-      "price": "109€/mois"
+      "price": "90€/h"
     },
     {
       "type": "Coaching",
-      "title": "Hybrid personnalisé",
+      "title": "Suivi Hybrid distanciel personnalisé",
       "features": [
         "1 appel visio mensuel",
         "Hotline WhatsApp 24/7",
@@ -32,18 +32,18 @@
         "Suivi hebdomadaire des progressions",
         "Réadaptation du plan selon ton évolution et ton planning"
       ],
-      "price": "159€/mois"
+      "price": "10h: 850€"
     },
     {
       "type": "Coaching",
       "title": "Running",
       "features": [
-        "Séance de course adaptée personnalisée et en relation avec vos objectifs",
+        "Séance de course à pieds personnalisée et en relation avec vos objectifs (amélioration de posture, foulée, gestion de vitesse, gestion de course...)",
         "Accompagnement personnalisé pour atteindre les performances visées ",
         "Pacing à l’allure cible pour progresser efficacement",
         "Conseils clés pour optimiser la pratique et ta récupération"
       ],
-      "price": "89€/heure"
+      "price": "20h: 1600€"
     }
   ]
 }

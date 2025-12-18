@@ -20,7 +20,7 @@ export default function StickyHeroSection({
   coverDesktop,
   coverMobile,
   alt = '',
-  topOverlapClass = '-mt-[20vh]',
+  topOverlapClass = '-mt-[35vh]',
   kicker,
   title,
   intro,
