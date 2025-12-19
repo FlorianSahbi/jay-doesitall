@@ -20,7 +20,7 @@
         "Suivi hebdomadaire des progressions",
         "Réadaptation du plan selon ton évolution et ton planning"
       ],
-      "price": "90€/h"
+      "price": ["110€/mois"]
     },
     {
       "type": "Coaching",
@@ -32,7 +32,7 @@
         "Suivi hebdomadaire des progressions",
         "Réadaptation du plan selon ton évolution et ton planning"
       ],
-      "price": "10h: 850€"
+      "price": ["160€/mois"]
     },
     {
       "type": "Coaching",
@@ -41,9 +41,10 @@
         "Séance de course à pieds personnalisée et en relation avec vos objectifs (amélioration de posture, foulée, gestion de vitesse, gestion de course...)",
         "Accompagnement personnalisé pour atteindre les performances visées ",
         "Pacing à l’allure cible pour progresser efficacement",
-        "Conseils clés pour optimiser la pratique et ta récupération"
+        "Conseils clés pour optimiser la pratique et ta récupération",
+        "10h: 850€ / 20h: 1600€"
       ],
-      "price": "20h: 1600€"
+      "price": ["90€/heure"]
     }
   ]
 }

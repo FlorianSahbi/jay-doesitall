@@ -30,7 +30,7 @@ export type ServicePlan = {
   type: string
   title: string
   features: string[]
-  price: string
+  price: string[]
 }
 
 export type ServiceHero = {

@@ -106,7 +106,7 @@ export async function getServiceContent(slug: string, locale?: Locale) {
       type: p?.type,
       title: p?.title,
       features: Array.isArray(p?.features) ? p.features : [],
-      price: p?.price,
+      price: Array.isArray(p?.price) ? p.price : [],
     })),
   }
 

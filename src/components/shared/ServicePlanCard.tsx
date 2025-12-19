@@ -36,9 +36,11 @@ export default function ServicePlanCard({
       )}
 
       <div className="mt-auto pt-4">
-        <p className="text-title-2 text-yellow text-center uppercase">
-          {price}
-        </p>
+        {price.map((p) => (
+          <p key={p} className="text-title-2 text-yellow text-center uppercase">
+            {p}
+          </p>
+        ))}
       </div>
     </article>
   )

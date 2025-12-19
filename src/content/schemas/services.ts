@@ -32,7 +32,7 @@ export const ServicePlanSchema = z.object({
   type: z.string().min(1),
   title: z.string().min(1),
   features: z.array(z.string()).default([]),
-  price: z.string().min(1),
+  price: z.array(z.string()).default([]),
 })
 
 export const ServiceHeroSchema = z.object({

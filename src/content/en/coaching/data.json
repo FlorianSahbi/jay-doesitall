@@ -20,7 +20,7 @@
         "Weekly progress tracking",
         "Plan readjustments based on your evolution and schedule"
       ],
-      "price": "€90/hour"
+      "price": ["€110/month"]
     },
     {
       "type": "Coaching",
@@ -32,7 +32,7 @@
         "Weekly progress tracking",
         "Plan readjustments based on your evolution and schedule"
       ],
-      "price": "10h: €850"
+      "price": ["€160/month"]
     },
     {
       "type": "Coaching",
@@ -41,9 +41,10 @@
         "Customized running sessions tailored to your goals (posture improvement, running form, pace management, race strategy, etc.)",
         "Tailored guidance to reach your target performance",
         "Pacing at target speed to progress effectively",
-        "Key advice to optimize training and recovery"
+        "Key advice to optimize training and recovery",
+        "10h: €850 / 20h: €1600"
       ],
-      "price": "20h: €1600"
+      "price": ["€90/hour"]
     }
   ]
 }
